@@ -1,0 +1,66 @@
+---
+title: "画像生成の概要"
+description: "WJI で生成できる場所と、4 つの生成モードの違い。"
+---
+
+WJI の生成エンジンは 1 つで、複数の場所から使えます。どこから開いてもフォームの動きは同じです。
+
+## 生成できる場所
+
+| 入口 | 内容 |
+|---|---|
+| **アイデア画像生成**アプリ | ワークスペース内。結果は選択中のアイデアに紐づきます |
+| 上部ナビの**画像クリエイター** | ワークスペースに属さない単独の生成ツール |
+| **素材管理**ダイアログ | データセットの素材を順に処理する 3 カラムのダイアログ |
+| **無限キャンバス** | 体験が異なります。参照はアップロード一覧ではなく接続から来ます |
+
+プロジェクト作業にはワークスペース内のアプリを使ってください。左にデータセットのサイドバー、中央にデータセットの中身、右に生成フォームの 3 カラム構成です。生成したものは現在のデータセットに自動で紐づき、履歴も既定でそれで絞り込まれます。
+
+<Frame caption="アイデア画像生成アプリ">
+  <img src="/images/_placeholder.png" alt="データセットのサイドバー、データセットの中身、生成フォームを表示したアイデア画像生成アプリ" />
+</Frame>
+
+## 4 つのモード
+
+フォーム上部のアイコンで切り替えます。
+
+<Columns cols={2}>
+  <Card title="画像" icon="image" href="/ja/image-generation/generation-settings">
+    プロンプトと任意の参照から静止画を作ります。
+  </Card>
+  <Card title="動画" icon="video" href="/ja/image-generation/video-generation">
+    尺、始点と終点のフレーム、タスクモードつきの動画。
+  </Card>
+  <Card title="絵コンテ" icon="table-cells" href="/ja/image-generation/storyboard-mode">
+    1 枚の画像にショットやアングルをグリッドで並べます。
+  </Card>
+  <Card title="テキスト読み上げ" icon="waveform" href="/ja/image-generation/models">
+    話者や速度を指定してテキストから音声を作ります。
+  </Card>
+</Columns>
+
+選んだモードとモデルは次回も引き継がれます。
+
+## 生成の流れ
+
+<Steps>
+  <Step title="プロンプトを書く">
+    [プロンプトを書く](/ja/image-generation/prompts)を参照。WJI は送信前にプロンプトを最適化した最終プロンプトへ書き換えます。
+  </Step>
+  <Step title="モデルを選ぶ">
+    どの設定が表示されるかはモデルが決めます。[モデルを選ぶ](/ja/image-generation/models)を参照。
+  </Step>
+  <Step title="参照を追加する">
+    任意ですが、キャラクターや場所の一貫性を保つ手段はこれです。[参照画像](/ja/image-generation/reference-images)を参照。
+  </Step>
+  <Step title="費用を確認して送信する">
+    生成ボタンに見積もりが表示されます。[クレジットの仕組み](/ja/billing/how-credits-work)を参照。
+  </Step>
+  <Step title="結果を扱う">
+    結果はフォーム下の履歴に入ります。[履歴と結果](/ja/image-generation/history-and-results)を参照。
+  </Step>
+</Steps>
+
+<Warning>
+  送信した生成は**キャンセルできません**。停止ボタンはありません。生成を押す前に設定と見積もりを確認してください。
+</Warning>
