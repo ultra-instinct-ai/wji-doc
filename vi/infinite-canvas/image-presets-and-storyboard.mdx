@@ -1,0 +1,51 @@
+---
+title: "Mẫu ảnh dựng sẵn và bảng phân cảnh"
+description: "Phác thảo, bảng nhân vật, lưới phân cảnh và bộ đa góc máy chỉ với một cú nhấp."
+---
+
+Các nút ảnh, dataset và gói tài nguyên mang theo một bộ mẫu tạo dựng sẵn chỉ cần một cú nhấp. Mỗi mẫu là một câu lệnh soạn trước áp lên ảnh của nút đó, nên bạn không phải tự viết.
+
+## Mười mẫu
+
+<Columns cols={2}>
+  <Card title="Ảnh thành phác thảo" icon="pencil">
+    Biến một ảnh hoàn chỉnh thành bản vẽ nét.
+  </Card>
+  <Card title="Bảng nhân vật" icon="user">
+    Ba biến thể: bảng cơ bản, bảng biểu cảm, và bảng bố trí ánh sáng.
+  </Card>
+  <Card title="Lưới phân cảnh" icon="table-cells">
+    2×2, 3×3 và 4×4. Mỗi ô là một cảnh quay khác nhau, dùng câu lệnh phân cảnh điện ảnh soạn sẵn.
+  </Card>
+  <Card title="Lưới đa góc máy" icon="cube">
+    2×2, 3×3 và 4×4. Mỗi ô là cùng một chủ thể từ một góc khác.
+  </Card>
+</Columns>
+
+Bạn tìm thấy chúng ở **Công cụ phân cảnh** và **Mẫu tạo dựng sẵn** trên thanh công cụ của nút, hoặc ở **Thêm** khi bạn kéo ra từ tay nắm `+`.
+
+**Mẫu dựng sẵn dùng được với nhiều lựa chọn.** Chọn cả một hàng ảnh nhân vật và tạo bảng nhân vật cho tất cả chỉ trong một thao tác.
+
+## Bảng phân cảnh từ văn bản
+
+Một nút văn bản có thể tạo thẳng lưới phân cảnh mà không cần ảnh làm gốc. Nội dung của nút trở thành phần mô tả cảnh quay.
+
+Nếu nút văn bản trống, bạn được báo như vậy thay vì nhận một lưới rỗng.
+
+## Trình dựng bảng phân cảnh
+
+Mở từ nút ảnh, dataset hoặc gói tài nguyên, **trình dựng bảng phân cảnh** là một hộp thoại để ghép các khung chứ không phải tạo một lưới.
+
+Bên trong, bạn có thể lọc các khung khả dụng, kéo khung vào phần đã chọn, và kéo để đổi thứ tự phần đã chọn đó. Khi xong, ảnh được tạo ra sẽ đặt thành các nút ảnh mới, ngay bên phải nút nguồn 24px.
+
+## Nâng cấp một ô
+
+Ô trong lưới chỉ chiếm một phần độ phân giải của cả ảnh. Menu của mỗi ô có **Nâng cấp lên 2K** và **Nâng cấp lên 4K**, sẽ cắt ô đó ra và tạo lại ở kích thước ấy.
+
+<Note>
+  Việc nâng cấp ô phụ thuộc vào một mô hình cụ thể có sẵn trên tài khoản của bạn. Nếu thiếu, WJI báo cho bạn thay vì thay bằng mô hình khác.
+</Note>
+
+<Tip>
+  Tạo một lưới 3×3 để quyết định cách bao quát, chọn hai ba khung dùng được, nâng cấp chúng và bỏ phần còn lại. Lưới là để quyết định, không phải để giao hàng.
+</Tip>

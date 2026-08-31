@@ -1,0 +1,47 @@
+---
+title: "Tổng quan Canvas vô hạn"
+description: "Bàn làm việc dạng nút, nơi các kết nối mang ngữ cảnh vào từng lần tạo."
+---
+
+**Canvas vô hạn** là một bảng để bạn đặt các nút lên và nối chúng lại. Đây là ứng dụng dùng khi một tấm ảnh không còn là đơn vị công việc — khi bạn dựng một chuỗi, giữ cho một loạt cảnh quay nhất quán, hoặc ghép một bản dựng.
+
+<Frame caption="Một canvas với các nút đã nối">
+  <img src="/images/_placeholder.png" alt="Canvas vô hạn với nút ảnh và nút văn bản nối vào một nút tạo" />
+</Frame>
+
+## Ý tưởng duy nhất cần nắm
+
+**Kết nối không phải để trang trí. Nó là đường ngữ cảnh đi tới AI.**
+
+Nối một nút ảnh vào nút tạo thì ảnh đó trở thành tham chiếu. Nối một nút văn bản vào thì nội dung của nó được thêm vào trước câu lệnh. Nối một dataset vào thì các thành viên của nó được bung ra.
+
+Khi điều này đã rõ, phần còn lại của canvas sẽ theo sau. Hãy đọc [Kết nối và tham chiếu](/vi/infinite-canvas/connections-and-references) trước mọi thứ khác.
+
+## Trên màn hình có gì
+
+| Khu vực | Chứa gì |
+|---|---|
+| **Thanh công cụ dạng viên** bên trái | Tạo, thư viện tài nguyên, lịch sử tạo, thanh đạo diễn, cài đặt, phím tắt |
+| **Thanh trên cùng** | Bộ lọc nhãn màu, bộ chuyển canvas, tìm kiếm, cài đặt canvas |
+| **Thanh điều khiển khung nhìn**, dưới trái | Hoàn tác/làm lại, thu phóng, vừa khung, bản đồ thu nhỏ, chế độ hiệu năng |
+| **Thanh đạo diễn**, dưới cùng | Dòng thời gian để ghép các đoạn — mở từ thanh công cụ dạng viên |
+| **Trạng thái lưu**, trên trái | Chờ lưu, đang lưu, đã lưu, hoặc lưu thất bại |
+
+Mở canvas sẽ thu bảng bên trái của không gian làm việc thành một dải hẹp, và nó giữ nguyên như vậy trong suốt thời gian bạn ở đây.
+
+## Đi tiếp
+
+<Columns cols={2}>
+  <Card title="Di chuyển trên canvas" icon="magnifying-glass" href="/vi/infinite-canvas/navigate-the-canvas">
+    Thu phóng, kéo, vừa khung và bản đồ thu nhỏ.
+  </Card>
+  <Card title="Tạo nút" icon="plus" href="/vi/infinite-canvas/create-nodes">
+    Sáu cách đặt thứ gì đó lên bảng.
+  </Card>
+  <Card title="Các loại nút" icon="shapes" href="/vi/infinite-canvas/node-types">
+    Cả mười bốn loại và công dụng của từng loại.
+  </Card>
+  <Card title="Kết nối và tham chiếu" icon="link" href="/vi/infinite-canvas/connections-and-references">
+    Khái niệm cốt lõi. Bắt đầu từ đây.
+  </Card>
+</Columns>

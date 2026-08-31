@@ -1,0 +1,58 @@
+---
+title: "Thanh đạo diễn"
+description: "Ghép các đoạn trên dòng thời gian và xuất ra video hoàn chỉnh hoặc dự án NLE."
+---
+
+**Thanh đạo diễn** mở từ thanh công cụ dạng viên và chạy dọc đáy canvas. Đó là một dòng thời gian để xếp các đoạn theo thứ tự.
+
+## Đưa nội dung vào
+
+- **Kéo** ảnh hoặc video lên dòng thời gian
+- **Alt + kéo** một nút media từ canvas lên thanh — nó thành một đoạn, hoặc đặt làm media chính của một đoạn có sẵn
+- Từ thanh công cụ của nút video, chọn **thêm vào thanh đạo diễn**
+- Gợi ý ở vùng thả: kéo ảnh hoặc video vào đây
+
+## Chế độ
+
+Dòng thời gian làm việc ở chế độ video, ảnh hoặc hỗn hợp. Ảnh dùng **thời lượng ảnh mặc định** mà bạn đặt theo giây.
+
+## Chỉnh sửa
+
+| Thao tác | Cách làm |
+|---|---|
+| Phát / tạm dừng | `Space` |
+| Trước / sau | `←` `→` |
+| Chọn media chính | `↑`, rồi dùng phím mũi tên để duyệt, `Enter` để xác nhận, `Esc` để đóng |
+| Cắt đôi | `S` |
+| Xóa một đoạn | `Delete`, có xác nhận |
+| Hoàn tác / làm lại | `⌘Z` / `⇧⌘Z` |
+| Thu phóng dòng thời gian | `⌘` + con lăn |
+| Kéo | Kéo dòng thời gian |
+
+Các điều khiển khác: tắt tiếng, lặp, **bắt dính**, hiện tất cả, thay media, xóa media, và thêm một dataset trống.
+
+<Note>
+  Bắt dính ở đây là bắt dính giữa các đoạn trên dòng thời gian. Nó không liên quan tới việc căn chỉnh nút trên canvas, vốn hoàn toàn không có bắt dính.
+</Note>
+
+## Xuất
+
+Ba lựa chọn:
+
+<Columns cols={3}>
+  <Card title="Xuất video" icon="film">
+    Kết xuất dòng thời gian thành một tệp MP4.
+  </Card>
+  <Card title="Xuất dự án (NLE)" icon="file-zipper">
+    Một tệp ZIP chứa `timeline.otio`, `timeline.edl`, thư mục `media/` và `manifest.json` — để tiếp tục bản dựng trong phần mềm dựng chuyên nghiệp.
+  </Card>
+  <Card title="Tải toàn bộ media" icon="download">
+    Tệp gốc của từng đoạn.
+  </Card>
+</Columns>
+
+Xuất NLE là thứ bạn cần khi canvas đã làm xong việc của nó và bản dựng phải chuyển sang Premiere, Resolve hay Final Cut. Tệp OTIO và EDL mang theo các quyết định dựng; thư mục media mang theo nguyên liệu.
+
+<Tip>
+  Hãy dùng thanh đạo diễn để kiểm tra một chuỗi có đọc được không, trước khi đầu tư vào nâng cấp hay tạo lại các cảnh của nó. Những đoạn thô xếp đúng thứ tự nói cho bạn nhiều hơn về việc một trường đoạn có ổn hay không so với một cảnh đã trau chuốt.
+</Tip>

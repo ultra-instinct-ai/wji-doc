@@ -1,0 +1,58 @@
+---
+title: "Di chuyển trên canvas"
+description: "Thu phóng, kéo, vừa khung, dùng bản đồ thu nhỏ và chuyển chế độ hiệu năng."
+---
+
+## Thu phóng
+
+| Thao tác | Cách làm |
+|---|---|
+| Phóng to và thu nhỏ | `⌘` + con lăn chuột |
+| Phóng to | `⌘ =` |
+| Thu nhỏ | `⌘ -` |
+| Chụm ngón | Chụm trên bàn di chuột, nhạy hơn trên Mac |
+
+Phạm vi thu phóng là **10% đến 312,5%**. Tỷ lệ hiện tại hiện ở thanh điều khiển khung nhìn góc dưới bên trái.
+
+<Note>
+  WJI chặn `⌘` + con lăn để trình duyệt không phóng to cả trang.
+</Note>
+
+## Kéo khung nhìn
+
+- **Space + kéo**
+- **Kéo bằng nút giữa chuột**
+- **Con lăn** để di chuyển dọc, `Shift` + con lăn để di chuyển ngang
+
+Kéo một nút ra sát mép màn hình sẽ khiến canvas tự cuộn theo.
+
+## Đóng khung nội dung
+
+| Thao tác | Phím tắt |
+|---|---|
+| **Vừa tất cả các nút** | `Shift + Z`, hoặc nút trên thanh điều khiển |
+| **Phóng tới vùng chọn** | `Tab` hoặc `Z` |
+
+Cả hai đều chuyển động mượt chứ không nhảy. Khi bạn phóng tới một nút tạo, khung tạo bên dưới nó cũng được đưa vào tầm nhìn để bạn đọc được.
+
+## Bản đồ thu nhỏ
+
+Bật tắt bằng biểu tượng bản đồ trên thanh điều khiển. Kích thước tối đa 220×140, tô màu các nút theo nhãn màu, và nhấp vào để di chuyển.
+
+## Lưới
+
+Nền là lưới chấm theo tọa độ thế giới — khoảng cách 20 px, co giãn theo mức thu phóng. Nó luôn bật.
+
+<Warning>
+  Không có đường bắt dính hay đường gióng khi bạn kéo. Việc căn chỉnh trong WJI là một thao tác bạn chủ động áp dụng sau, từ thanh công cụ chọn nhiều, chứ không phải điều xảy ra trong lúc bạn di chuyển một nút.
+</Warning>
+
+## Chế độ hiệu năng
+
+Biểu tượng tia sét chuyển giữa kết xuất **tiêu chuẩn** và **nhanh**. Chế độ nhanh ẩn đường kết nối và phần trang trí nhãn, và ngừng vẽ tay nắm kết nối khi thu phóng dưới 20%. Trên một canvas nặng, đây là ranh giới giữa kéo mượt và không.
+
+Thiết lập này được ghi nhớ.
+
+## Ghi nhớ khung nhìn
+
+Mức thu phóng và vị trí được ghi nhớ theo từng canvas, nên quay lại một canvas là bạn về đúng chỗ đã rời đi.

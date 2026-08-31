@@ -226,6 +226,28 @@
               "zh-Hant/image-generation/drag-and-drop",
               "zh-Hant/image-generation/best-practices"
             ]
+          },
+          {
+            "group": "無限畫布",
+            "icon": "diagram-project",
+            "pages": [
+              "zh-Hant/infinite-canvas/overview",
+              "zh-Hant/infinite-canvas/navigate-the-canvas",
+              "zh-Hant/infinite-canvas/create-nodes",
+              "zh-Hant/infinite-canvas/node-types",
+              "zh-Hant/infinite-canvas/work-with-nodes",
+              "zh-Hant/infinite-canvas/connections-and-references",
+              "zh-Hant/infinite-canvas/generate-media",
+              "zh-Hant/infinite-canvas/text-table-and-youtube-nodes",
+              "zh-Hant/infinite-canvas/image-presets-and-storyboard",
+              "zh-Hant/infinite-canvas/video-tools",
+              "zh-Hant/infinite-canvas/director-bar",
+              "zh-Hant/infinite-canvas/asset-library-and-history",
+              "zh-Hant/infinite-canvas/canvas-management",
+              "zh-Hant/infinite-canvas/keyboard-shortcuts",
+              "zh-Hant/infinite-canvas/autosave-and-undo",
+              "zh-Hant/infinite-canvas/best-practices"
+            ]
           }
         ]
       },
@@ -281,6 +303,28 @@
               "ja/image-generation/manage-assets",
               "ja/image-generation/drag-and-drop",
               "ja/image-generation/best-practices"
+            ]
+          },
+          {
+            "group": "無限キャンバス",
+            "icon": "diagram-project",
+            "pages": [
+              "ja/infinite-canvas/overview",
+              "ja/infinite-canvas/navigate-the-canvas",
+              "ja/infinite-canvas/create-nodes",
+              "ja/infinite-canvas/node-types",
+              "ja/infinite-canvas/work-with-nodes",
+              "ja/infinite-canvas/connections-and-references",
+              "ja/infinite-canvas/generate-media",
+              "ja/infinite-canvas/text-table-and-youtube-nodes",
+              "ja/infinite-canvas/image-presets-and-storyboard",
+              "ja/infinite-canvas/video-tools",
+              "ja/infinite-canvas/director-bar",
+              "ja/infinite-canvas/asset-library-and-history",
+              "ja/infinite-canvas/canvas-management",
+              "ja/infinite-canvas/keyboard-shortcuts",
+              "ja/infinite-canvas/autosave-and-undo",
+              "ja/infinite-canvas/best-practices"
             ]
           }
         ]
@@ -338,6 +382,28 @@
               "ko/image-generation/drag-and-drop",
               "ko/image-generation/best-practices"
             ]
+          },
+          {
+            "group": "무한 캔버스",
+            "icon": "diagram-project",
+            "pages": [
+              "ko/infinite-canvas/overview",
+              "ko/infinite-canvas/navigate-the-canvas",
+              "ko/infinite-canvas/create-nodes",
+              "ko/infinite-canvas/node-types",
+              "ko/infinite-canvas/work-with-nodes",
+              "ko/infinite-canvas/connections-and-references",
+              "ko/infinite-canvas/generate-media",
+              "ko/infinite-canvas/text-table-and-youtube-nodes",
+              "ko/infinite-canvas/image-presets-and-storyboard",
+              "ko/infinite-canvas/video-tools",
+              "ko/infinite-canvas/director-bar",
+              "ko/infinite-canvas/asset-library-and-history",
+              "ko/infinite-canvas/canvas-management",
+              "ko/infinite-canvas/keyboard-shortcuts",
+              "ko/infinite-canvas/autosave-and-undo",
+              "ko/infinite-canvas/best-practices"
+            ]
           }
         ]
       },
@@ -393,6 +459,28 @@
               "vi/image-generation/manage-assets",
               "vi/image-generation/drag-and-drop",
               "vi/image-generation/best-practices"
+            ]
+          },
+          {
+            "group": "Canvas vô hạn",
+            "icon": "diagram-project",
+            "pages": [
+              "vi/infinite-canvas/overview",
+              "vi/infinite-canvas/navigate-the-canvas",
+              "vi/infinite-canvas/create-nodes",
+              "vi/infinite-canvas/node-types",
+              "vi/infinite-canvas/work-with-nodes",
+              "vi/infinite-canvas/connections-and-references",
+              "vi/infinite-canvas/generate-media",
+              "vi/infinite-canvas/text-table-and-youtube-nodes",
+              "vi/infinite-canvas/image-presets-and-storyboard",
+              "vi/infinite-canvas/video-tools",
+              "vi/infinite-canvas/director-bar",
+              "vi/infinite-canvas/asset-library-and-history",
+              "vi/infinite-canvas/canvas-management",
+              "vi/infinite-canvas/keyboard-shortcuts",
+              "vi/infinite-canvas/autosave-and-undo",
+              "vi/infinite-canvas/best-practices"
             ]
           }
         ]

@@ -1,0 +1,53 @@
+---
+title: "Tạo nút"
+description: "Sáu cách thêm một nút, từ nhấp đúp lên bảng tới kéo một kết nối."
+---
+
+## Sáu lối vào
+
+<Steps>
+  <Step title="Nhấp đúp vào chỗ trống">
+    Menu tạo mở ra ngay tại điểm đó. Dòng gợi ý trên canvas trống cũng nói vậy.
+  </Step>
+  <Step title="Nhấp chuột phải vào chỗ trống">
+    Cho bạn **Tải lên**, **Tạo nút** và **Dán**.
+  </Step>
+  <Step title="Nút Tạo">
+    Biểu tượng đầu tiên trên thanh công cụ dạng viên. Mở khung tạo; nhấp một loại sẽ đặt nó vào giữa tầm nhìn của bạn.
+  </Step>
+  <Step title="Kéo từ tay nắm kết nối">
+    Kéo tay nắm `+` của một nút ra chỗ trống rồi thả. Menu hiện ra sẽ tạo nút mới **đã được nối sẵn**.
+  </Step>
+  <Step title="Bàn phím">
+    `I`, `V`, `A` tạo nút tạo ảnh, video và âm thanh ngay tại con trỏ. Nếu đang có gì được chọn, nút mới tự động nối vào đó.
+  </Step>
+  <Step title="Kéo, dán hoặc tải lên">
+    Xem [Kéo và thả](/vi/image-generation/drag-and-drop).
+  </Step>
+</Steps>
+
+## Menu tạo có gì
+
+Menu đầy đủ liệt kê các loại nội dung — văn bản, bảng, ảnh, toàn cảnh, video, âm thanh, dataset, gói tài nguyên, nhóm — rồi một đường ngăn, rồi menu con **Chú thích** gồm tiêu đề, ghi chú, việc cần làm và mũi tên.
+
+Kéo từ tay nắm `+` cho danh sách ngắn hơn, vì không phải thứ gì cũng hợp lý khi làm đích của một kết nối. Dataset và nhóm bị loại. Nếu nguồn là một nút ảnh có tài nguyên, toàn cảnh được thêm vào. Menu con **Thêm** mang theo mô tả, bảng phân cảnh, video chiều sâu, nâng cấp video, ảnh thành phác thảo, và bảng nhân vật.
+
+## Dán
+
+`⌘V` trên canvas xử lý nhiều loại nội dung, theo thứ tự sau:
+
+1. **Tệp ảnh hoặc URL ảnh** → tải lên và đặt thành nút ảnh
+2. **Tệp bảng tính** → nút bảng
+3. **Văn bản dạng bảng** (TSV hoặc CSV) → nút bảng
+4. **Văn bản thuần** → nút YouTube nếu là liên kết YouTube, còn lại là nút văn bản
+5. **Các nút bạn đã sao chép trước đó** → dán kèm nguyên vẹn kết nối giữa chúng
+
+Nếu bạn đã di chuột thì nội dung rơi vào vị trí con trỏ, không thì lệch nhẹ so với lần dán trước.
+
+## Mỗi hàng của bảng thành một nút
+
+Kéo một kết nối ra khỏi **nút bảng** để tạo một nút không phải bảng sẽ tạo **một nút đã nối cho mỗi hàng**. Đây là cách nhanh nhất để biến một danh sách cảnh quay thành một loạt nút tạo.
+
+<Tip>
+  Dán danh sách cảnh quay dưới dạng bảng, ánh xạ cột chứa câu lệnh, rồi kéo ra khỏi bảng. Mỗi hàng đến nơi như một nút tạo riêng, đã nối sẵn và đã mang sẵn câu lệnh của nó.
+</Tip>

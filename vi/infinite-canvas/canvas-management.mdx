@@ -1,0 +1,51 @@
+---
+title: "Quản lý canvas"
+description: "Tạo, đổi tên, sắp xếp, tìm kiếm, cấu hình và xóa canvas."
+---
+
+Một không gian làm việc có thể chứa bao nhiêu canvas tùy bạn. Bộ chuyển nằm ở bên phải thanh trên cùng và hiển thị tên canvas hiện tại.
+
+## Bộ chuyển
+
+Mở ra bạn có:
+
+- **Tìm canvas** theo tên
+- **Đổi thứ tự** — kéo để sắp xếp, nhấp đúp vào tên để đổi tên
+- **Canvas mới**
+- Một bánh răng ở mỗi dòng, mở cài đặt của canvas đó
+
+Canvas hiện tại được phản ánh trong URL, nên bạn có thể liên kết thẳng tới một canvas.
+
+## Cài đặt canvas
+
+| Mục | Chứa gì |
+|---|---|
+| **Thông tin canvas** | Thời điểm tạo |
+| **Tên** | |
+| **Mặc định khi tạo** | Mô hình ảnh mặc định, mô hình video mặc định, tỷ lệ khung hình (16:9, 9:16, 21:9) |
+| **Cỡ chữ nút văn bản** | Nhỏ, tiêu chuẩn, lớn, rất lớn |
+| **Vùng nguy hiểm** | Xóa canvas |
+
+Mặc định khi tạo được đặt theo canvas chứ không theo không gian làm việc. Điều này hữu ích hơn vẻ ngoài của nó — một canvas cho bản cắt dọc trên mạng xã hội và một canvas cho cảnh chính 21:9 có thể cùng nằm trong một không gian làm việc với mặc định khác nhau.
+
+## Lọc theo nhãn màu
+
+Bên trái thanh trên cùng là bộ lọc nhãn màu: **Tất cả**, cộng tám nhãn kèm tên và số nút. Di chuột lên một nhãn sẽ hiện **tải toàn bộ tài nguyên mang nhãn này**.
+
+Lọc làm thay đổi phạm vi mà chọn tất cả lấy vào, nên "gắn nhãn rồi lọc rồi chọn tất cả" là cách thực tế để làm việc với một phần của canvas đang bận rộn.
+
+## Sắp xếp giữa các canvas
+
+Không có lệnh chuyển giữa các canvas. Để mang việc sang, hãy sao chép các nút bằng `⌘C`, đổi canvas, rồi dán bằng `⌘V` — kết nối giữa các nút được sao chép sẽ đi theo.
+
+<Warning>
+  Lịch sử hoàn tác bị xóa khi bạn đổi canvas. Thứ gì muốn hoàn tác, hãy hoàn tác trước khi rời đi.
+</Warning>
+
+## Xóa
+
+Từ cài đặt canvas, trong vùng nguy hiểm. Thao tác xóa cần xác nhận.
+
+<Tip>
+  Canvas là thứ rẻ. Thay vì để một bảng phình lên nghìn nút, hãy chia theo chuỗi hoặc theo hồi và dùng bộ chuyển. Hiệu năng tốt hơn, giới hạn 50 nút của chọn tất cả không còn là vấn đề, và truy cập của người xem có thể cấp theo từng canvas.
+</Tip>

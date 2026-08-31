@@ -1,0 +1,47 @@
+---
+title: "Các loại nút"
+description: "Mười bốn loại nút chứa gì và bạn làm được gì với chúng."
+---
+
+## Nút nội dung số
+
+<Columns cols={2}>
+  <Card title="Ảnh" icon="image">
+    Một tài nguyên ảnh, hoặc một nút tạo ra ảnh. Thanh công cụ phong phú nhất trên canvas: cắt, độ nét, chỉnh sửa ảnh, công cụ bảng phân cảnh, mẫu tạo dựng sẵn, lịch sử, mô tả, lưu vào thư viện, tải xuống.
+  </Card>
+  <Card title="Video" icon="video">
+    Một tài nguyên video. Cắt bớt, chụp khung hình, tạo lại một đoạn, chuyển xem giữa bản gốc, đoạn, kết quả tạo và bản ghép, thêm vào thanh đạo diễn.
+  </Card>
+  <Card title="Âm thanh" icon="waveform">
+    Một tệp âm thanh. Cắt bớt, lịch sử tạo, mô tả, tải xuống.
+  </Card>
+  <Card title="Toàn cảnh" icon="panorama">
+    Ảnh 360°. Nhấp đúp hoặc dùng thanh công cụ để mở trình xem toàn cảnh.
+  </Card>
+</Columns>
+
+## Nút nội dung chữ
+
+| Nút | Chứa gì | Thao tác đáng chú ý |
+|---|---|---|
+| **Văn bản** | Markdown | Nhấp đúp để sửa, trợ lý AI, nhập tài liệu, tải xuống dạng Markdown, văn bản thuần hoặc Word, đổi cỡ cửa sổ bằng `[` và `]` |
+| **Bảng** | Hàng và cột có ánh xạ trường | Sửa bảng, trợ lý AI, chỉ định cột nào là văn bản và cột nào là câu lệnh, tải lên lại |
+| **YouTube** | Liên kết YouTube được nhúng | Dán URL là tạo ra. Trợ lý AI tạo bản tóm tắt, bản viết lại và kịch bản dưới dạng nút văn bản |
+| **Dataset** | Một dataset của không gian làm việc | Chuyển giữa xem tài nguyên và xem nội dung, tạo ảnh hoặc video từ nó, tải lên, tải xuống, công cụ bảng phân cảnh |
+| **Gói tài nguyên** | Nhiều nội dung được gom lại qua kết nối | Tải xuống, xem trước, công cụ bảng phân cảnh. Thành viên có thể tắt, đổi thứ tự, đổi tên, gỡ bỏ |
+
+## Cấu trúc và chú thích
+
+| Nút | Công dụng |
+|---|---|
+| **Nhóm** | Một vật chứa trực quan luôn được vẽ dưới cùng. Kéo nó sẽ kéo theo các nút nó chạm vào. Không nối được |
+| **Tiêu đề** | Chữ lớn, khung tự co giãn theo cỡ chữ |
+| **Ghi chú** | Một tờ giấy nhớ |
+| **Việc cần làm** | Danh sách có thêm, xóa và tích |
+| **Mũi tên** | Hai đầu kéo được |
+
+Bốn loại sau gọi chung là **chú thích**. Chúng dùng chung điều khiển màu chữ và màu nền, và người xem có thể được phép thêm chúng mà không cần quyền chỉnh sửa. Xem [Truy cập của người xem](/vi/workspaces/viewer-access).
+
+<Note>
+  Nút nhóm luôn được vẽ dưới các nút khác và không tham gia kết nối. Chúng sắp xếp không gian chứ không mang ý nghĩa vào lần tạo.
+</Note>

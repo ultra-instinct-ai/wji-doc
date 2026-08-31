@@ -1,0 +1,81 @@
+---
+title: "Kết nối và tham chiếu"
+description: "Kết nối là cách bạn đưa ngữ cảnh cho AI. Đây là ý tưởng cốt lõi của canvas."
+---
+
+Đây là trang khiến phần còn lại của canvas trở nên dễ hiểu.
+
+**Một kết nối đi vào nút tạo chính là một tham chiếu.** Mọi thứ bạn nối vào đều trở thành ngữ cảnh mà mô hình nhận được.
+
+## Tạo một kết nối
+
+Di chuột lên một nút sẽ thấy tay nắm `+` ở hai bên. Kéo từ một bên sang nút khác rồi thả.
+
+Chiều là cố định: **bên phải là đầu ra, bên trái là đầu vào**. Kéo ra từ tay nắm bên trái chỉ đảo lại quan hệ để kết quả vẫn đọc từ phải sang trái.
+
+Trong lúc kéo, đường nối cho biết điểm thả có hợp lệ không:
+
+| Màu | Ý nghĩa |
+|---|---|
+| Xanh lá | Kết nối này được phép |
+| Đỏ | Không được phép |
+| Xám | Chưa ở trên một đích nào |
+
+## Mỗi nguồn đóng góp gì
+
+<Columns cols={2}>
+  <Card title="Văn bản, bảng, YouTube" icon="align-left">
+    Nội dung của chúng được **thêm vào trước câu lệnh**, kèm nhãn là tên của nút. Đây là cách bạn đưa cho một lần tạo một kịch bản, một mô tả cảnh quay hay một bản tóm tắt.
+  </Card>
+  <Card title="Ảnh, video, âm thanh, toàn cảnh" icon="image">
+    Được thêm làm tài nguyên tham chiếu, theo giới hạn của mô hình cho từng loại.
+  </Card>
+  <Card title="Dataset và gói tài nguyên" icon="folder">
+    Được bung thành các tài nguyên thành viên, nên một kết nối có thể mang nhiều tham chiếu.
+  </Card>
+  <Card title="Khung đầu và khung cuối" icon="film">
+    Ở các mô hình hỗ trợ, ô khung hình được điền từ kết nối chứ không phải từ việc tải lên.
+  </Card>
+</Columns>
+
+<Note>
+  Một nút dataset ở **chế độ xem nội dung** đóng góp phần chữ; ở **chế độ xem tài nguyên** nó đóng góp phần nội dung số. Cùng một kết nối mang nghĩa khác nhau tùy chế độ của nút.
+</Note>
+
+## Nối nhiều và tỏa ra
+
+| Thao tác | Kết quả |
+|---|---|
+| Chọn nhiều nút, kéo bất kỳ `+` nào | Tất cả nối vào đích |
+| **Alt** + kéo `+` từ vùng chọn | **Tỏa ra** — mỗi nguồn có một nút mới riêng, một đối một |
+| Kéo ra từ một nút bảng | Một nút đã nối **cho mỗi hàng** |
+
+Thanh công cụ chọn nhiều hiển thị huy hiệu `⌥` để nhắc rằng Alt chuyển sang chế độ tỏa ra.
+
+Bạn cũng có thể nối theo nhãn: `⌥1`–`⌥8` khi đang chọn các nút tạo sẽ nối mọi nút mang nhãn đó vào chúng.
+
+## Những gì không được phép
+
+- Một nút không thể nối vào chính nó
+- Không thể tạo cùng một kết nối hai lần
+- **Nút nhóm không nối được ở cả hai đầu**
+- Gói tài nguyên chỉ có thể đưa vào nút tạo
+- Kết nối vượt quá giới hạn tham chiếu của mô hình sẽ bị từ chối kèm lý do
+
+## Tinh chỉnh một kết nối
+
+Kết nối mang nhiều hơn là "hai thứ này được nối":
+
+- **Tài nguyên bị tắt** — với nguồn là dataset hoặc gói, từng thành viên có thể bị loại mà không cần gỡ kết nối
+- **Vai trò và nhãn tham chiếu** — tham chiếu đó được gọi là gì, cũng chính là thứ `@image1` trỏ tới
+- **Ô khung hình** — kết nối nào là khung đầu và kết nối nào là khung cuối
+
+Bạn quản lý những thứ này trong danh sách tham chiếu của khung tạo, nơi bạn cũng có thể kéo để đổi thứ tự tham chiếu.
+
+## Gỡ một kết nối
+
+Nhấp vào đường nối. Một nút kéo hình chiếc kéo hiện ra ở giữa — **cắt kết nối**. Bạn cũng có thể chọn một kết nối rồi nhấn `Backspace` hoặc `Delete`. Cả hai đều hoàn tác được.
+
+<Tip>
+  Khi một lần tạo không lấy được thứ bạn tưởng là có, hãy kiểm tra kết nối trước khi viết lại câu lệnh. Một thành viên dataset bị tắt hoặc một tham chiếu bị loại vì vượt giới hạn của mô hình trông y hệt như một câu lệnh không hiệu quả.
+</Tip>

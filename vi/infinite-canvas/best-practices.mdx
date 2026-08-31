@@ -1,0 +1,51 @@
+---
+title: "Kinh nghiệm dùng canvas"
+description: "Bố cục, cách đặt tên và thói quen nối dây giúp một canvas lớn vẫn dùng được."
+---
+
+## Nghĩ theo kết nối, đừng nghĩ theo nút
+
+Canvas không phải một bảng cảm hứng gắn thêm bộ tạo ảnh. Giá trị của nó nằm ở chỗ ngữ cảnh chảy dọc theo các dây nối. Trước khi thêm một nút, hãy hỏi nó nên nối vào đâu — một nút tạo không nối gì cả chỉ là trình tạo độc lập với thêm vài bước thừa.
+
+## Chia canvas theo chuỗi
+
+Mỗi chuỗi hoặc mỗi hồi một bảng thì hơn cả dự án một bảng:
+
+- Hiệu năng được giữ tốt
+- Giới hạn 50 nút của chọn tất cả không còn quan trọng
+- Mặc định khi tạo có thể khác nhau — dọc ở canvas này, 21:9 ở canvas kia
+- [Truy cập của người xem](/vi/workspaces/viewer-access) được cấp theo canvas, nên bạn cho khách xem một chuỗi mà không lộ phần còn lại
+
+Sao chép nút giữa các canvas bằng `⌘C` và `⌘V` sẽ giữ nguyên kết nối của chúng.
+
+## Đặt tên cho nhãn màu và dùng chúng như trạng thái
+
+Tám màu có tên sẽ thành một quy trình. Một bộ thường gặp: *nháp*, *cần sửa*, *đã duyệt*, *cho khách xem*. Khi đó:
+
+- `⌥1`–`⌥8` lọc bảng về một trạng thái
+- `⇧1`–`⇧8` chọn tất cả những gì ở trạng thái đó để thao tác hàng loạt
+- Truy cập của người xem chỉ để lộ màu đã duyệt cho khách
+
+## Đặt tên cho những nút sẽ được tham chiếu
+
+Tham chiếu được gọi bằng tên trong câu lệnh — `@image1` sáu tuần sau chẳng có nghĩa gì. Nhấp đúp nhãn của nút và gọi nó là `lead-closeup` hay `alley-night`. Câu lệnh đọc được, và bảng cũng vậy.
+
+## Dùng bảng cho danh sách cảnh quay
+
+Một danh sách cảnh quay dán dưới dạng bảng, với cột câu lệnh đã ánh xạ, sẽ thành một nút tạo cho mỗi hàng khi bạn kéo ra khỏi nó. Đây là con đường nhanh nhất từ một danh sách viết ra tới một loạt cảnh quay.
+
+## Rà soát trước khi gửi hàng loạt
+
+Gửi hàng loạt mở hộp thoại rà soát là có lý do. Không thể hủy một lượt tạo, nên đó là cơ hội cuối để bạn nhận ra rằng một nửa số nút đã mất tham chiếu khi bạn đổi mô hình.
+
+## So sánh bằng lịch sử của nút, đừng dùng bản sao
+
+Thay vì tạo bốn nút để thử bốn phiên bản, hãy tạo nhiều lần trên một nút và lật qua bộ chọn lịch sử của nó. Bảng vẫn dễ đọc và bạn vẫn nâng được bất kỳ kết quả nào lên làm bản chính.
+
+## Dựng thô sớm trên thanh đạo diễn
+
+Đặt các đoạn lên dòng thời gian khi chúng còn thô. Một chuỗi có ổn hay không là câu hỏi về thứ tự và nhịp, và một cảnh đã trau chuốt chẳng nói gì về cả hai điều đó.
+
+## Nhớ những gì hoàn tác không cứu được bạn
+
+Tạo, dán, nhân bản, tải lên và tạo nội dung đều **không hoàn tác được**, và lịch sử hoàn tác bị xóa khi bạn đổi canvas. Trước một lần dán lớn hay một lượt tạo hàng loạt, hãy chắc rằng bạn đang ở đúng canvas.

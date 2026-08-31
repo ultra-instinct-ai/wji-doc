@@ -1,0 +1,94 @@
+---
+title: "Làm việc với các nút"
+description: "Chọn, di chuyển, nhân bản, căn chỉnh, nhóm, đổi tên, đổi kích thước và gắn nhãn màu."
+---
+
+## Chọn
+
+| Thao tác | Cách làm |
+|---|---|
+| Chọn một | Nhấp vào nó |
+| Thêm vào vùng chọn | `Shift` + nhấp, hoặc `⌘` + nhấp |
+| Quét chọn | Kéo trên chỗ trống. Bất cứ thứ gì khung **chạm vào** đều được chọn, không cần bao trọn |
+| Quét để chọn thêm | `Shift` + kéo |
+| Chọn tất cả | `⌘A` |
+| Chọn theo nhãn màu | `Shift` + `1`–`8` |
+| Bỏ chọn | `Esc` |
+
+<Warning>
+  **Chọn tất cả và chọn theo nhãn đều giới hạn ở 50 nút.** Trên canvas lớn bạn sẽ không lấy được hết. Nếu đang bật bộ lọc nhãn màu, chọn tất cả chỉ lấy các nút mang nhãn đó.
+</Warning>
+
+Một nút chưa được chọn sẽ được chọn khi bạn **thả** chuột chứ không phải khi nhấn, nên bắt đầu một thao tác kéo sẽ không mở khung của nó.
+
+## Di chuyển và nhân bản
+
+- Kéo để di chuyển
+- **Alt + kéo** để nhân bản — bản gốc ở lại chỗ cũ
+- `⌘D` nhân bản vùng chọn tại chỗ
+- `⌘C` và `⌘V` sao chép và dán, **bao gồm cả kết nối giữa các nút được sao chép**
+
+## Đổi kích thước
+
+Những nút hỗ trợ có tay nắm ở góc dưới bên phải. Kích thước tối thiểu khác nhau: nhóm 120×80, văn bản 120×60, YouTube 240×135. Mũi tên đổi kích thước bằng cách kéo một trong hai đầu.
+
+Nút văn bản còn phản hồi `[` và `]` để co giãn cửa sổ theo tỷ lệ. Khi chọn nhiều nút, khoảng cách giữa chúng được giữ nguyên.
+
+## Đổi tên
+
+**Nhấp đúp vào nhãn tên phía trên nút.** Enter để xác nhận, `Esc` để hủy.
+
+## Thanh công cụ chọn nhiều
+
+Chọn từ hai nút trở lên sẽ có một thanh công cụ trượt lên từ dưới:
+
+| Nút bấm | Tác dụng |
+|---|---|
+| **Nhãn màu** | Gắn nhãn cho mọi thứ đang chọn |
+| **Căn chỉnh** | Ngang, dọc hoặc tự động |
+| **Nhóm** | Bọc vùng chọn trong một nút nhóm |
+| **Thêm tham chiếu** | Vào chế độ chọn từ canvas |
+| **Thiết lập mô hình** | Áp thiết lập mô hình cho mọi nút tạo cùng loại |
+| **Tối ưu câu lệnh** | Tối ưu mọi câu lệnh đang chọn |
+| **Gửi hàng loạt** | Mở hộp thoại rà soát liệt kê câu lệnh, tham chiếu, mô hình và thiết lập của từng nút, rồi gửi tất cả |
+| **Tải mục đã chọn** | Một tệp, hoặc một ZIP đặt tên theo canvas |
+
+Với người xem, chỉ còn lại **Tải mục đã chọn**.
+
+## Căn chỉnh và nhóm
+
+Căn chỉnh là một thao tác một lần, không phải đường gióng thời gian thực:
+
+| Thao tác | Phím tắt |
+|---|---|
+| Căn ngang | `H` |
+| Căn dọc | `V` |
+| Căn tự động | `⌘K` |
+
+Nút nhóm chừa lề 40 px quanh vùng chọn. Kéo một nhóm sẽ kéo theo mọi nút chạm vào nó.
+
+<Note>
+  Khi đang chọn từ hai nút trở lên, `V` mang nghĩa căn dọc chứ không phải "nút video mới".
+</Note>
+
+## Nhãn màu
+
+Tám màu, mỗi màu có thể được đặt tên cho cả canvas.
+
+| Thao tác | Phím tắt |
+|---|---|
+| Bật tắt nhãn trên vùng chọn | `⌘1`–`⌘8` |
+| Xóa nhãn khỏi vùng chọn | `⌘0` |
+| Chọn các nút mang nhãn đó | `⇧1`–`⇧8` |
+| Lọc canvas theo nhãn | `⌥1`–`⌥8` |
+| Bỏ lọc | `⌥0` |
+
+Nhãn chi phối màu trên bản đồ thu nhỏ, bộ lọc trên thanh trên cùng, việc tải hàng loạt theo nhãn, và những gì người xem được phép thấy.
+
+<Tip>
+  Hãy đặt tên cho nhãn. "Đã duyệt", "cần sửa", "được cho khách xem" biến thói quen phân màu thành thứ cả nhóm đọc được — và thiết lập nhãn hiển thị trong truy cập của người xem khi đó mới thực sự làm việc cho bạn.
+</Tip>
+
+## Những gì bạn không làm được
+
+Không có khóa nút, và không có đưa lên trước hay đẩy ra sau. Thứ tự lớp là cố định: nút nhóm luôn được vẽ sau tất cả những thứ khác.

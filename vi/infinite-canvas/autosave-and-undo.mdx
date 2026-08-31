@@ -1,0 +1,54 @@
+---
+title: "Tự động lưu và hoàn tác"
+description: "Công việc của bạn được lưu ra sao, hoàn tác bao gồm những gì, và không bao gồm những gì."
+---
+
+## Không có nút lưu
+
+Canvas tự lưu. Các thay đổi được gom lại và ghi sau khoảng 1,5 giây không thao tác, và nhiều nhất là 3 giây nếu bạn chỉnh sửa liên tục.
+
+Một huy hiệu trạng thái ở góc trên bên trái cho biết bạn đang ở đâu:
+
+| Trạng thái | Nghĩa là |
+|---|---|
+| **Chờ lưu** | Thay đổi đang xếp hàng |
+| **Đang lưu** | Đang được ghi |
+| **Đã lưu** | Mọi thứ đã được lưu |
+| **Lưu thất bại** | Có gì đó trục trặc — đừng đóng tab |
+
+Đóng tab hoặc rời canvas sẽ buộc một lần lưu cuối trước.
+
+## Giới hạn của hoàn tác rất đáng biết
+
+<Warning>
+  Hoàn tác giữ **40 bước**, chỉ tồn tại **trong phiên hiện tại**, và **bị xóa khi bạn đổi canvas**. Tải lại trang là nó trống rỗng.
+</Warning>
+
+Quan trọng hơn, hoàn tác không bao gồm mọi thứ.
+
+<Columns cols={2}>
+  <Card title="Hoàn tác được" icon="rotate-left">
+    Di chuyển nút · Đổi kích thước · Đổi kích thước cửa sổ văn bản · Căn chỉnh · Xóa nút · Xóa kết nối · Tạo kết nối · Gắn nhãn màu · Sửa văn bản · Sửa chú thích
+  </Card>
+  <Card title="Không hoàn tác được" icon="ban">
+    Tạo nút · Dán · Nhân bản · Tải lên · Kết quả tạo bằng AI · Tạo nhóm · Tạo hoặc xóa canvas
+  </Card>
+</Columns>
+
+Hệ quả thực tế: nếu bạn lỡ dán hai mươi nút, `⌘Z` sẽ không lấy chúng lại. Bạn phải chọn và xóa chúng — và *thao tác xóa đó* thì hoàn tác được.
+
+`⌘Z` hoàn tác, `⌘⇧Z` làm lại (`Ctrl+Y` cũng dùng được trên Windows). Thanh điều khiển khung nhìn có nút cho cả hai.
+
+## Đồng bộ thời gian thực
+
+Canvas đồng bộ giữa những người đang làm việc trên đó. Thay đổi của đồng đội được áp lên bảng của bạn mà không cần tải lại.
+
+WJI tạm giữ một thay đổi đến nếu bạn đang thao tác dở, và bỏ qua tiếng vọng của chính những gì bạn ghi, nên chỉnh sửa của đồng đội không cắt ngang cú kéo bạn đang thực hiện.
+
+<Note>
+  Không có chỉ báo hiện diện — không con trỏ, không ảnh đại diện, không vùng sáng cho biết đồng đội đang chọn gì. Bạn thấy kết quả các chỉnh sửa của họ, chứ không thấy con trỏ của họ.
+</Note>
+
+## Những gì không được lưu
+
+Lịch sử hoàn tác và vùng chọn hiện tại chỉ tồn tại trong phiên. Vị trí khung nhìn, chế độ hiệu năng và chiều rộng các khung được ghi nhớ cục bộ trong trình duyệt, theo từng canvas.
