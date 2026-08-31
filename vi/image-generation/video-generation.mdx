@@ -1,0 +1,53 @@
+---
+title: "Tạo video"
+description: "Thời lượng, khung đầu và khung cuối, chế độ tác vụ, video và âm thanh tham chiếu, nâng cấp độ phân giải."
+---
+
+Chuyển sang chế độ video bằng các biểu tượng ở đầu biểu mẫu. Phần lớn biểu mẫu vẫn như cũ; trang này nói về những chỗ khác biệt.
+
+## Thời lượng
+
+Một thanh trượt với phạm vi do mô hình quy định. Đổi mô hình sẽ áp mặc định của mô hình đó.
+
+Các mô hình Seedance có **thời lượng tự động**. Bật lên thì thanh trượt biến mất và mô hình tự quyết định đoạn phim dài bao nhiêu. Khi đó ước tính chi phí hiển thị theo giây thay vì tổng, vì khoản tính cuối phụ thuộc vào những gì mô hình tạo ra.
+
+## Khung đầu và khung cuối
+
+Nếu mô hình hỗ trợ, sẽ có ô cho ảnh bắt đầu và ảnh kết thúc. Bạn có thể tải tệp lên, chọn từ thư viện tài nguyên, hoặc lấy một khung hình từ kết quả trong lịch sử. Một nút hoán đổi cho phép đảo hai ảnh.
+
+Lọc danh sách mô hình video theo *khung đầu* hoặc *khung đầu và cuối* để chỉ thấy những mô hình hỗ trợ điều này.
+
+## Chế độ tác vụ
+
+Các mô hình Seedance có ba chế độ:
+
+| Chế độ | Làm gì | Yêu cầu |
+|---|---|---|
+| **Tạo** | Từ văn bản ra video, hoặc tham chiếu đa phương thức | Không cần gì thêm |
+| **Chỉnh sửa** | Sửa một đoạn có sẵn | Ít nhất một video tham chiếu, và từ khóa chỉnh sửa trong câu lệnh |
+| **Kéo dài** | Nối tiếp một đoạn có sẵn | Ít nhất một video tham chiếu, và từ khóa kéo dài trong câu lệnh |
+
+<Warning>
+  Chế độ tác vụ và cách viết câu lệnh phải khớp nhau. Chế độ chỉnh sửa cần các từ như *edit*, *add*, *remove* hoặc *replace*; chế độ kéo dài cần *extend* hoặc *continue*. Câu lệnh ở chế độ tạo mà chứa từ khóa chỉnh sửa sẽ bị từ chối để tránh phân loại nhầm.
+</Warning>
+
+Chế độ chỉnh sửa và kéo dài ép tỷ lệ khung hình về thích ứng và ẩn bộ chọn tỷ lệ. Chế độ chỉnh sửa còn ép đầu ra thành MOV.
+
+## Nâng cấp độ phân giải video
+
+Đây là một khả năng riêng với thiết lập riêng:
+
+- **Kịch bản** — tổng quát, video ngắn UGC, AIGC, phim ngắn, phục chế phim cũ
+- **Mức tăng cường** — Fast, Standard hoặc Pro
+- **Độ phân giải** — gốc, 720p, 1080p, 2K hoặc 4K
+- **Độ sâu bit** — 8, 10 hoặc 12-bit
+
+Kết quả Seedance cũng có thể nâng cấp HD ngay từ thẻ lịch sử, miễn là bản gốc có seed. Các độ phân giải khả dụng phụ thuộc mô hình và độ phân giải gốc.
+
+## Chuyển văn bản thành âm thanh
+
+Chế độ thứ tư tạo giọng nói. Thiết lập của nó đến từ mô hình TTS: người đọc, tốc độ, cao độ, âm lượng, tần số lấy mẫu và định dạng.
+
+## Những gì không phải là chỉnh sửa video
+
+Ứng dụng này không có trình biên tập dòng thời gian, và không có cách hủy một lượt tạo đang chạy. Việc tạo lại một phần của đoạn phim thì có, nhưng chỉ trên [Canvas vô hạn](/vi/infinite-canvas/video-tools).

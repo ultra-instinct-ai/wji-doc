@@ -1,0 +1,58 @@
+---
+title: "Viết câu lệnh"
+description: "Câu lệnh của bạn, câu lệnh cuối do AI tối ưu, nhắc tên, mẫu và kiểu dựng sẵn."
+---
+
+## Có hai câu lệnh, không phải một
+
+Ô câu lệnh có hai tab.
+
+<Tabs>
+  <Tab title="Câu lệnh người dùng">
+    Những gì bạn gõ. Nó là của bạn và WJI không đổi.
+  </Tab>
+  <Tab title="Câu lệnh cuối">
+    Nội dung thực sự được gửi đi. WJI viết lại câu lệnh của bạn thành mô tả đầy đủ hơn, và bạn có thể sửa kết quả bằng tay hoặc bấm làm mới để tối ưu lại.
+  </Tab>
+</Tabs>
+
+Chuyển sang tab Câu lệnh cuối sẽ tự động chạy tối ưu. Đổi mô hình cũng vậy — mỗi mô hình hợp với một cách diễn đạt khác nhau, nên câu lệnh cuối được tạo lại cho phù hợp.
+
+<Note>
+  Nếu bạn bấm tạo khi quá trình tối ưu còn đang chạy, WJI sẽ đợi nó xong rồi mới gửi. Nút vẫn bị vô hiệu cho tới lúc đó.
+</Note>
+
+## Nhắc tới tài nguyên của bạn
+
+Gõ `@` trong câu lệnh để nhắc tới một tham chiếu bạn đã thêm — `@image1`, `@video1`, `@audio1`. Nhờ vậy mô hình biết bạn đang nói tới cái nào khi bạn viết kiểu "đặt @image1 vào bối cảnh của @image2".
+
+Tham chiếu được đặt tên tự động là `image1`, `image2`… nhưng bạn có thể đổi. Tên dài quá 64 ký tự sẽ quay về tên tự động.
+
+## Mẫu câu lệnh
+
+Thư viện mẫu có 58 mẫu trong bốn nhóm:
+
+| Nhóm | Bao gồm |
+|---|---|
+| **Nhân vật** | Đổi mặt, đổi trang phục, kiểu tóc, biểu cảm, tư thế, tuổi, giới tính |
+| **Bố cục** | Khung hình và cách sắp xếp |
+| **Máy quay** | Chuyển động máy và góc máy |
+| **Hòa trộn** | Kết hợp nhiều tham chiếu |
+
+Nhóm mẫu nhân vật chính là cách hầu hết việc "chỉnh sửa" được thực hiện trong WJI — xem [Kinh nghiệm](/vi/image-generation/best-practices).
+
+## Kiểu dựng sẵn
+
+Có 13 kiểu, cộng thêm tùy chỉnh:
+
+Không · Điện ảnh · Anime Nhật · Hoạt hình 3D · Unreal Engine · Chân thực như ảnh chụp · Hoạt hình · Manga đen trắng · Truyện tranh Mỹ · Kết xuất 3D · Đất nặn · Mô hình blind-box · Phác thảo tay
+
+<Warning>
+  Kiểu được nối vào câu lệnh cuối khi bạn gửi, nhưng **không hiện trong ô câu lệnh**. Nếu kết quả trông cách điệu mà bạn không hiểu vì sao, hãy kiểm tra xem có kiểu nào còn sót lại từ lần tạo trước không.
+</Warning>
+
+Trong không gian làm việc, lựa chọn kiểu được lưu vào không gian làm việc chứ không chỉ trong trình duyệt của bạn.
+
+## Lưu lại câu lệnh ưng ý
+
+**Lưu thành câu lệnh dựng sẵn** để dùng lại. Câu lệnh dựng sẵn có thể đặt ở phạm vi không gian làm việc để cả nhóm dùng chung. Xem [Cài đặt không gian làm việc](/vi/workspaces/settings).

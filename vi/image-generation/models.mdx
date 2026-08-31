@@ -1,0 +1,58 @@
+---
+title: "Chọn mô hình"
+description: "Duyệt các dòng mô hình ảnh và video, và hiểu điều gì thay đổi khi bạn đổi mô hình."
+---
+
+Danh sách mô hình đến từ máy chủ chứ không phải từ tài liệu này — bạn thấy gì tùy vào gói và tổ chức của bạn. Tài khoản miễn phí có một nhóm chọn lọc; tài khoản VIP và SVIP có tất cả.
+
+## Lọc danh sách
+
+<Tabs>
+  <Tab title="Mô hình ảnh">
+    Các nút lọc gom mô hình theo dòng: **Tất cả**, **Nano Banana**, **GPT Image**, **Seedream**, **Không lọc**, và **Khác**.
+  </Tab>
+  <Tab title="Mô hình video">
+    Có hai hàng lọc. Hàng đầu theo **kiểu đầu vào** — tất cả, khung đầu, khung đầu và cuối, ảnh tham chiếu, video tham chiếu, âm thanh tham chiếu. Hàng sau theo **dòng** — Kling, Veo, Sora, Seedance, Wan, Hailuo, không lọc, khác.
+
+    Bộ lọc kiểu đầu vào mới là cái hữu ích. Nếu bạn cần làm cho một ảnh tĩnh sẵn có chuyển động, hãy lọc *khung đầu* và bạn chỉ thấy những mô hình làm được điều đó.
+  </Tab>
+</Tabs>
+
+Mỗi mục hiển thị ảnh đại diện, tên và một dòng mô tả của mô hình.
+
+## Khả năng của mô hình trông ra sao
+
+WJI không liệt kê khả năng bằng nhãn. Thay vào đó, **các điều khiển thay đổi khi bạn đổi mô hình**. Thiết lập nào không có ở đó là thiết lập mô hình ấy không hỗ trợ.
+
+Đổi mô hình cũng có thể thay đổi những gì bạn đã thiết lập:
+
+| Nếu mô hình mới… | WJI sẽ… |
+|---|---|
+| Không hỗ trợ tỷ lệ khung hình hiện tại | Chuyển bạn sang tỷ lệ gần nhất mà nó hỗ trợ |
+| Nhận ít ảnh tham chiếu hơn | **Bỏ phần dư từ đầu danh sách** |
+| Không nhận tham chiếu nào | Báo rằng mô hình không hỗ trợ ảnh tham chiếu |
+| Có giới hạn thời lượng khác | Áp thời lượng mặc định của chính nó |
+
+<Warning>
+  Chuyện cắt bớt tham chiếu đáng để nhớ. Nếu bạn có năm tham chiếu và đổi sang mô hình chỉ nhận ba, bạn giữ lại **ba cái cuối** — những cái thêm vào đầu tiên bị bỏ.
+</Warning>
+
+Đổi mô hình cũng xóa câu lệnh cuối và tối ưu lại.
+
+## Dự phòng tỷ lệ khung hình
+
+Trong không gian làm việc, nếu mô hình mới không hỗ trợ tỷ lệ hiện tại, WJI thử tỷ lệ mặc định của không gian làm việc trước, rồi mới lùi về tỷ lệ đầu tiên mà mô hình hỗ trợ.
+
+## Thiết lập riêng của mô hình
+
+Bất cứ thứ gì riêng của một mô hình đều hiện trong khung thiết lập dưới dạng biểu mẫu động. Những ví dụ thường gặp:
+
+- **Seed** — `-1` nghĩa là không chỉ định
+- **Độ phân giải** hoặc kích thước đầu ra
+- **chaos**, **quality**, **stylize**, **chế độ Raw**, **HD** trên các mô hình dòng Midjourney
+- **Chế độ tác vụ**, **thời lượng tự động**, **định dạng đầu ra** trên mô hình video Seedance
+- **Người đọc**, **tốc độ đọc**, **cao độ**, **âm lượng** trên mô hình chuyển văn bản thành giọng nói
+
+<Note>
+  WJI không có ô câu lệnh phủ định. Hãy mô tả điều bạn muốn thay vì điều bạn không muốn.
+</Note>

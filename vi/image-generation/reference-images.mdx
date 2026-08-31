@@ -1,0 +1,79 @@
+---
+title: "Hình tham chiếu"
+description: "Thêm tham chiếu, gán loại cho chúng, và hiểu giới hạn của từng mô hình."
+---
+
+Tham chiếu là cách giữ cho một nhân vật trông vẫn là chính người đó qua hàng trăm cảnh quay. Với sự nhất quán, chúng quan trọng hơn cách bạn diễn đạt câu lệnh.
+
+## Sáu cách thêm
+
+<Steps>
+  <Step title="Chọn tệp">
+    Nhấp để duyệt. Chọn nhiều được.
+  </Step>
+  <Step title="Kéo hoặc dán">
+    Thả tệp vào ô câu lệnh hoặc dán vào. Cách này chỉ nhận ảnh.
+  </Step>
+  <Step title="Từ dataset">
+    Chọn từ các ý tưởng trong không gian làm việc, được nhóm theo nhân vật, bối cảnh, trang phục, đạo cụ và phong cách.
+  </Step>
+  <Step title="Từ tài nguyên IP">
+    Một tab riêng cho tài nguyên nhân vật ảo.
+  </Step>
+  <Step title="Từ một kết quả">
+    Di chuột lên bất kỳ kết quả nào trong lịch sử và thêm thẳng nó làm tham chiếu.
+  </Step>
+  <Step title="Dùng gần đây">
+    Sáu tham chiếu bạn dùng gần nhất luôn cách một cú nhấp.
+  </Step>
+</Steps>
+
+## Các loại tham chiếu
+
+Mọi tham chiếu đều mang một loại. Nhấp vào thẻ để đặt.
+
+| Loại | Dùng cho |
+|---|---|
+| **Nhân vật** | Con người |
+| **Bối cảnh** | Địa điểm và trường quay |
+| **Trang phục** | Quần áo |
+| **Đạo cụ** | Vật thể |
+| **Phong cách** | Cách nhìn và xử lý hình ảnh |
+| **Bố cục** | Sắp xếp khung hình |
+| **Khác** | Mọi thứ còn lại |
+
+Tham chiếu lấy từ dataset tự động kế thừa loại của nó, thêm một lý do nữa để giữ loại của ý tưởng cho chính xác.
+
+Mỗi tham chiếu cũng có thể được đặt tên. Mặc định là `image1`, `image2`… và đó cũng là tên bạn gọi bằng `@` trong câu lệnh.
+
+## Giới hạn
+
+**Số lượng tham chiếu tối đa do mô hình quy định, không phải WJI.** Khi bạn vượt quá, tham chiếu mới được thêm ở cuối và những cái cũ nhất bị bỏ khỏi đầu danh sách.
+
+Mô hình chạy giao thức Vertex giới hạn mỗi ảnh tham chiếu ở 20 MB.
+
+## Video và âm thanh tham chiếu
+
+Ở chế độ video, bạn còn có thể thêm video và âm thanh tham chiếu.
+
+| Ràng buộc | Giá trị |
+|---|---|
+| Định dạng | MP4 hoặc MOV |
+| Số lượng mặc định | 3 đoạn |
+| Thời lượng | 2–15 giây, tới 30 giây ở một số mô hình |
+| Kích thước tệp | 50 MB tới 15 giây, 200 MB cho 15–30 giây |
+| Kích thước khung | 300–6000 px mỗi cạnh |
+| Tỷ lệ khung hình | Từ 0,4 đến 2,5 |
+| Điểm ảnh | Tối đa 1920×1080 |
+
+<Warning>
+  Nếu WJI không đọc được thời lượng của video, giới hạn dung lượng giảm xuống 50 MB bất kể đoạn đó dài bao nhiêu.
+</Warning>
+
+## Trọng số
+
+Chỉ có một thanh trượt **trọng số tham chiếu** áp cho tất cả cùng lúc, không phải mỗi ảnh một trọng số. Các mô hình dòng Midjourney bổ sung điều khiển trọng số ảnh và trọng số kiểu tham chiếu riêng trong phần thiết lập của mô hình.
+
+## Trên canvas
+
+Canvas vô hạn không dùng danh sách tải lên. Tham chiếu đến từ **kết nối** — bạn nối một nút ảnh, video hoặc âm thanh vào nút tạo và nó trở thành tham chiếu. Xem [Kết nối và tham chiếu](/vi/infinite-canvas/connections-and-references).

@@ -265,6 +265,23 @@
               "ja/idea-studio/workspace-ai-chat",
               "ja/idea-studio/best-practices"
             ]
+          },
+          {
+            "group": "アイデア画像生成",
+            "icon": "image",
+            "pages": [
+              "ja/image-generation/overview",
+              "ja/image-generation/prompts",
+              "ja/image-generation/models",
+              "ja/image-generation/generation-settings",
+              "ja/image-generation/reference-images",
+              "ja/image-generation/video-generation",
+              "ja/image-generation/storyboard-mode",
+              "ja/image-generation/history-and-results",
+              "ja/image-generation/manage-assets",
+              "ja/image-generation/drag-and-drop",
+              "ja/image-generation/best-practices"
+            ]
           }
         ]
       },
@@ -304,6 +321,23 @@
               "ko/idea-studio/workspace-ai-chat",
               "ko/idea-studio/best-practices"
             ]
+          },
+          {
+            "group": "아이디어 이미지 생성",
+            "icon": "image",
+            "pages": [
+              "ko/image-generation/overview",
+              "ko/image-generation/prompts",
+              "ko/image-generation/models",
+              "ko/image-generation/generation-settings",
+              "ko/image-generation/reference-images",
+              "ko/image-generation/video-generation",
+              "ko/image-generation/storyboard-mode",
+              "ko/image-generation/history-and-results",
+              "ko/image-generation/manage-assets",
+              "ko/image-generation/drag-and-drop",
+              "ko/image-generation/best-practices"
+            ]
           }
         ]
       },
@@ -342,6 +376,23 @@
               "vi/idea-studio/file-tree-actions",
               "vi/idea-studio/workspace-ai-chat",
               "vi/idea-studio/best-practices"
+            ]
+          },
+          {
+            "group": "Tạo ảnh từ ý tưởng",
+            "icon": "image",
+            "pages": [
+              "vi/image-generation/overview",
+              "vi/image-generation/prompts",
+              "vi/image-generation/models",
+              "vi/image-generation/generation-settings",
+              "vi/image-generation/reference-images",
+              "vi/image-generation/video-generation",
+              "vi/image-generation/storyboard-mode",
+              "vi/image-generation/history-and-results",
+              "vi/image-generation/manage-assets",
+              "vi/image-generation/drag-and-drop",
+              "vi/image-generation/best-practices"
             ]
           }
         ]

@@ -1,0 +1,66 @@
+---
+title: "Tổng quan tạo ảnh"
+description: "Những nơi có thể tạo nội dung trong WJI và khác biệt giữa bốn chế độ."
+---
+
+WJI chỉ có một cỗ máy tạo nội dung, nhưng vào được từ nhiều nơi. Mở ở đâu thì biểu mẫu cũng hoạt động như nhau.
+
+## Những nơi có thể tạo
+
+| Lối vào | Là gì |
+|---|---|
+| Ứng dụng **Tạo ảnh từ ý tưởng** | Trong không gian làm việc. Kết quả gắn với ý tưởng bạn đang chọn |
+| **Trình tạo hình ảnh** trên thanh điều hướng | Trình tạo độc lập, không gắn với không gian làm việc |
+| Hộp thoại **Quản lý ảnh** | Hộp thoại ba cột để xử lý lần lượt tài nguyên của một dataset |
+| **Canvas vô hạn** | Trải nghiệm khác hẳn — tham chiếu đến từ kết nối chứ không phải danh sách tải lên |
+
+Với công việc dự án, hãy dùng ứng dụng trong không gian làm việc. Nó có ba cột: thanh bên dataset ở trái, nội dung dataset ở giữa, biểu mẫu tạo ở phải. Những gì bạn tạo ra được xếp vào dataset hiện tại một cách tự động, và lịch sử cũng mặc định lọc theo nó.
+
+<Frame caption="Ứng dụng Tạo ảnh từ ý tưởng">
+  <img src="/images/_placeholder.png" alt="Ứng dụng Tạo ảnh từ ý tưởng với thanh bên dataset, nội dung dataset và biểu mẫu tạo" />
+</Frame>
+
+## Bốn chế độ
+
+Các biểu tượng ở đầu biểu mẫu dùng để chuyển giữa chúng.
+
+<Columns cols={2}>
+  <Card title="Ảnh" icon="image" href="/vi/image-generation/generation-settings">
+    Ảnh tĩnh từ câu lệnh và tham chiếu tùy chọn.
+  </Card>
+  <Card title="Video" icon="video" href="/vi/image-generation/video-generation">
+    Video, kèm thời lượng, khung đầu và khung cuối, và các chế độ tác vụ.
+  </Card>
+  <Card title="Bảng phân cảnh" icon="table-cells" href="/vi/image-generation/storyboard-mode">
+    Một lưới cảnh quay hoặc góc máy trong cùng một ảnh.
+  </Card>
+  <Card title="Chuyển văn bản thành âm thanh" icon="waveform" href="/vi/image-generation/models">
+    Tạo giọng nói từ văn bản, có tùy chọn người đọc và tốc độ.
+  </Card>
+</Columns>
+
+Chế độ và mô hình bạn chọn được ghi nhớ giữa các phiên.
+
+## Một lượt tạo diễn ra thế nào
+
+<Steps>
+  <Step title="Viết câu lệnh">
+    Xem [Viết câu lệnh](/vi/image-generation/prompts). WJI có thể viết lại nó thành câu lệnh cuối đã tối ưu trước khi gửi đi.
+  </Step>
+  <Step title="Chọn mô hình">
+    Mô hình quyết định những thiết lập nào xuất hiện. Xem [Chọn mô hình](/vi/image-generation/models).
+  </Step>
+  <Step title="Thêm tham chiếu">
+    Tùy chọn, nhưng đây là cách giữ nhân vật và bối cảnh nhất quán. Xem [Hình tham chiếu](/vi/image-generation/reference-images).
+  </Step>
+  <Step title="Kiểm tra chi phí rồi gửi">
+    Nút tạo hiển thị ước tính trước khi bạn thực hiện. Xem [Credit hoạt động thế nào](/vi/billing/how-credits-work).
+  </Step>
+  <Step title="Xử lý kết quả">
+    Kết quả rơi vào lịch sử bên dưới biểu mẫu. Xem [Lịch sử và kết quả](/vi/image-generation/history-and-results).
+  </Step>
+</Steps>
+
+<Warning>
+  Một lượt tạo **không thể hủy** sau khi đã gửi. Không có nút dừng — hãy kiểm tra thiết lập và chi phí ước tính trước khi bấm tạo.
+</Warning>

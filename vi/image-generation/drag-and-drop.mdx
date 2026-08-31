@@ -1,0 +1,93 @@
+---
+title: "Kéo và thả"
+description: "Mọi thao tác kéo trong WJI, từ tệp trên máy tới nút canvas và các ô tham chiếu."
+---
+
+Kéo là cách phần lớn nội dung di chuyển trong WJI. Trang này liệt kê bạn kéo được gì, thả vào đâu, và điều gì xảy ra.
+
+## Thả lên canvas
+
+| Kéo cái này | Kết quả |
+|---|---|
+| Một tài nguyên từ bất cứ đâu (thư viện, lịch sử, thanh bên, lưới) | Một nút media tại điểm thả |
+| Thẻ dataset trong thư viện tài nguyên | Một nút tham chiếu dataset |
+| Tệp ảnh, video hoặc âm thanh từ máy tính | Mỗi tệp một nút media |
+| Tệp CSV hoặc bảng tính | Một nút bảng — nhiều tệp sẽ xếp chồng xuống dưới |
+| Tài liệu Markdown hoặc văn bản | Một nút văn bản |
+
+<Note>
+  Nếu một tài nguyên có URL nhưng chưa có ID, WJI sẽ phân giải trước. Nếu thất bại, bạn được nhắc thêm ảnh vào thư viện tài nguyên rồi mới kéo.
+</Note>
+
+## Kéo kèm Alt trên canvas
+
+Giữ **Alt** làm thay đổi ý nghĩa của thao tác kéo, và nó mang tới bốn ý nghĩa khác nhau tùy vào thứ bạn nắm.
+
+| Kéo kèm Alt | Lên | Kết quả |
+|---|---|---|
+| Nút media hoặc văn bản | **Nút dataset** | Xếp nó vào dataset đó |
+| Nút media hoặc văn bản | **Dataset trong thư viện tài nguyên** | Xếp nó vào đó |
+| Nút media hoặc văn bản | **Khoảng trống giữa các thẻ thư viện** | Tạo dataset mới ngay vị trí đó |
+| Nút media | **Thanh đạo diễn** | Thêm một đoạn, hoặc đặt làm media chính của đoạn |
+| **Hình thu nhỏ trong nút dataset** | Nút dataset khác | Chuyển tài nguyên giữa các dataset |
+| **Hình thu nhỏ trong nút dataset** | Canvas trống | Tạo một nút media từ nó |
+| **Chính nút đó** | Bất cứ đâu trên canvas | Nhân bản nó |
+| **Tay nắm kết nối** | Nhiều nút | Tỏa ra một-một, mỗi nguồn một nút mới |
+
+Nếu bạn thả vào chỗ không có ý nghĩa gì, WJI cho biết đâu là đích hợp lệ thay vì im lặng bỏ qua.
+
+## Chuyển tài nguyên giữa các dataset
+
+| Từ | Tới | Kết quả |
+|---|---|---|
+| Hình thu nhỏ trong dataset ở thanh bên | Khung nội dung ở giữa | Chuyển vào dataset hiện tại |
+| Thẻ trong lưới nội dung | Thẻ dataset ở thanh bên | Chuyển vào dataset đó |
+| Bất kỳ tài nguyên nào | Khoảng trống ở thanh bên | Mở hộp thoại tạo dataset mới |
+| Bất kỳ tài nguyên hoặc tệp nào | Khoảng trống giữa các thẻ thư viện | Tạo dataset mới ngay vị trí đó |
+
+<Warning>
+  Đây là thao tác **chuyển**, không phải sao chép. Tài nguyên bị gỡ khỏi dataset nguồn và thêm vào đích, cả hai đều được lưu. Thanh bên báo thao tác này là sao chép, nhưng hành vi thực tế là chuyển — hãy dùng **Sao chép tới** trong menu tài nguyên nếu bạn muốn nó có ở cả hai nơi.
+</Warning>
+
+Thả một tài nguyên vốn đã có trong đích sẽ được báo lại và không thay đổi gì.
+
+## Thả vào ô tham chiếu
+
+| Đích | Nhận |
+|---|---|
+| Khối tham chiếu hợp nhất | Tệp hoặc tài nguyên, tự phân loại thành ảnh, video hoặc âm thanh |
+| Danh sách ảnh tham chiếu | Tệp ảnh hoặc tài nguyên ảnh |
+| Danh sách video tham chiếu | Tệp video hoặc tài nguyên video |
+| Danh sách âm thanh tham chiếu | Tệp âm thanh hoặc tài nguyên âm thanh |
+| Ô khung đầu / khung cuối | Tệp ảnh hoặc tài nguyên ảnh |
+
+Tài nguyên kéo từ một dataset mang theo tên và loại của dataset đó, nên tham chiếu vừa tới đã có sẵn tên và đã được xếp loại là nhân vật, bối cảnh, v.v.
+
+<Note>
+  Trên canvas, khung đầu và khung cuối **không** đặt bằng cách kéo. Chúng được gán qua kết nối. Xem [Kết nối và tham chiếu](/vi/infinite-canvas/connections-and-references).
+</Note>
+
+## Thả tệp từ máy tính
+
+Ngoài canvas, những khu vực sau nhận tệp trực tiếp:
+
+- Khung nội dung dataset — ảnh, video và âm thanh
+- Thư viện tài nguyên, sẽ tạo một dataset mới từ thứ bạn thả vào
+- Mọi ô tham chiếu liệt kê ở trên
+
+Khung nội dung dataset cũng nhận tệp **dán** vào.
+
+<Note>
+  Trang chi tiết ý tưởng có nút tải lên nhưng không phải là nơi thả tệp.
+</Note>
+
+## Thay đổi chiều rộng khung
+
+Thanh bên và khung nội dung đều có tay kéo ở cạnh phải.
+
+| Khung | Phạm vi |
+|---|---|
+| Thanh bên | 240–480 px |
+| Nội dung | 300–480 px |
+
+Chiều rộng được ghi nhớ giữa các phiên.

@@ -1,0 +1,59 @@
+---
+title: "Kinh nghiệm tạo ảnh"
+description: "Câu lệnh, tham chiếu và lựa chọn mô hình cho ra kết quả dùng được một cách ổn định."
+---
+
+## Nhất quán nhờ tham chiếu, thay đổi nhờ câu lệnh
+
+Chữ nghĩa rất kém trong việc giữ gương mặt một nhân vật đứng yên qua nhiều cảnh; tham chiếu thì làm tốt. Cách chắc chắn là dùng tham chiếu để cố định danh tính, còn câu lệnh chỉ mô tả phần thay đổi.
+
+> Tham chiếu: ảnh `nhân vật` của vai chính
+> Câu lệnh: "đi xa dần trong con hẻm ướt ban đêm, nhìn từ phía sau"
+
+Cố giữ danh tính chỉ bằng mô tả chính là nguồn gốc của phần lớn sự thiếu nhất quán.
+
+## Gán loại cho tham chiếu
+
+Một tham chiếu gán loại **nhân vật** được xử lý khác với một tham chiếu gán loại **phong cách**. Khi bạn lấy tham chiếu từ ý tưởng, loại tự động đi theo — thêm một lý do để giữ loại của ý tưởng cho chính xác trong [Công cụ ý tưởng](/vi/idea-studio/best-practices).
+
+## Để ý điều gì xảy ra khi bạn đổi mô hình
+
+Đổi mô hình âm thầm thay đổi vài thứ:
+
+- Tỷ lệ khung hình có thể bị chuyển sang tỷ lệ được hỗ trợ gần nhất
+- Tham chiếu vượt quá giới hạn của mô hình mới bị **bỏ từ đầu danh sách**
+- Câu lệnh cuối bị xóa và tối ưu lại
+
+Nếu kết quả bỗng sai sau khi đổi mô hình, hãy kiểm tra danh sách tham chiếu trước tiên.
+
+## Chỉnh sửa nghĩa là tạo lại
+
+WJI không có inpainting, outpainting, xóa nền hay biến thể. "Chỉnh sửa" được thực hiện bằng cách tạo lại với tham chiếu cộng một mẫu câu lệnh.
+
+Nhóm mẫu **Nhân vật** được làm cho đúng việc này — đổi mặt, đổi trang phục, kiểu tóc, biểu cảm, tư thế, tuổi, giới tính. Thêm ảnh gốc làm tham chiếu, áp mẫu, rồi tạo.
+
+## Đọc câu lệnh cuối trước một lượt chạy tốn kém
+
+Tab Câu lệnh cuối cho thấy nội dung thực sự được gửi đi. Trước khi lao vào một lô lớn hoặc một video dài, hãy nhìn qua nó. Việc tối ưu đôi khi thêm chi tiết bạn không định đưa vào, và kiểu dựng sẵn thì được nối vào mà không hiện trong ô.
+
+## Giữ seed khi bạn đã gần đúng
+
+Khi một kết quả gần như đúng ý, hãy sao chép seed của nó từ thẻ lịch sử và dùng lại trong lúc chỉnh câu lệnh. Bạn sẽ nhận được biến thể ở đúng chỗ bạn đổi, chứ không phải một ảnh hoàn toàn khác.
+
+## Bảng phân cảnh trước, tạo từng cảnh sau
+
+Chế độ lưới rất hợp để quyết định cách bao quát và rất tệ cho độ phân giải cuối — mỗi ô chỉ là một phần của một ảnh. Dùng nó để chọn cảnh, rồi tạo những cảnh bạn muốn ở kích thước đầy đủ.
+
+## Xem ước tính trước khi gửi
+
+Nút tạo mang theo ước tính chi phí. Với mô hình tính theo giây, nó hiện đơn giá thay vì tổng, vì khoản tính phụ thuộc vào thời lượng mô hình tạo ra.
+
+**Không thể hủy một lượt tạo.** Ước tính là điểm kiểm tra duy nhất của bạn, nên hãy đọc nó — nhất là trước các lô lớn và đoạn phim dài.
+
+## Đánh dấu thay vì lục tìm
+
+Lịch sử đầy lên rất nhanh. Đánh dấu bất cứ thứ gì bạn có thể quay lại và dùng bộ lọc đã đánh dấu, hoặc lưu ngay vào một ý tưởng. Cuộn để tìm không phải là một cách làm.
+
+## Lưu những câu lệnh hiệu quả
+
+Khi một câu lệnh liên tục cho kết quả tốt, hãy **Lưu thành câu lệnh dựng sẵn**. Đặt ở phạm vi không gian làm việc, nó giúp cả nhóm không phải phát minh lại cùng một cách diễn đạt.
