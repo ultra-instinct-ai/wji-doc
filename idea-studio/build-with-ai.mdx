@@ -3,6 +3,71 @@ title: "Build with AI"
 description: "Turn an outline or a spark of an idea into a full set of ideas in one pass or step by step."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+**Build with AI** is the fastest way to fill an empty workspace. Give it an outline, a script, or
+just a premise, and it produces characters, locations, props, and shots as saved ideas.
 
-Turn an outline or a spark of an idea into a full set of ideas in one pass or step by step.
+Open it from the **AI generate** button in the left toolbar.
+
+## What you give it
+
+<Steps>
+  <Step title="A reference (optional)">
+    Pick an existing outline or screenplay from this workspace. The dropdown lists ideas whose type
+    is outline or screenplay.
+  </Step>
+  <Step title="A premise (optional)">
+    Type the idea in the story inspiration box.
+  </Step>
+  <Step title="Or a file">
+    Upload `.docx`, `.pdf`, `.txt`, `.md`, or an image. You can drag files in or paste them.
+  </Step>
+</Steps>
+
+## What you get back
+
+Choose which outputs you want. All six are selected by default.
+
+| Output | Produces |
+|---|---|
+| **Summary** | An outline of the story |
+| **Script** | A screenplay |
+| **Characters** | One idea per character |
+| **Locations** | One idea per place |
+| **Props** | One idea per object |
+| **Shots** | One idea per shot |
+
+Choosing **Shots** adds a shot-count field. Leave it at `0` to let the AI decide how many there
+should be.
+
+## Two ways to run it
+
+<Tabs>
+  <Tab title="Full auto">
+    Runs everything end to end and shows you the results when it is done. Use this when you trust
+    the input and want a first draft fast.
+  </Tab>
+  <Tab title="Enhanced">
+    Walks through nine stages — summary, script, characters, locations, props, shots, prompts,
+    datasets, and saving — pausing so you can check and correct each one before it continues. Slower,
+    but you catch drift early instead of regenerating the lot.
+  </Tab>
+</Tabs>
+
+## Reviewing before you save
+
+Nothing is written to your workspace until you approve it. The results panel is an editable table:
+
+- Toggle individual cards on and off
+- Edit the name, description, details, and directing notes
+- Choose the **target folder**, and create a new folder inline if you need one
+- Add cards the AI did not think of
+- For shots, fill in shot number, shot size, camera movement, angle, and duration
+
+Each card carries a status badge — pending, processing, running, completed, or failed.
+
+When you save, ideas are filed automatically into the folder matching their type.
+
+<Warning>
+  Re-running Build with AI over the same material creates new ideas. It does not update the ones you
+  already saved.
+</Warning>

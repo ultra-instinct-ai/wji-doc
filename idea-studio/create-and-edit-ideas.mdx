@@ -3,6 +3,58 @@ title: "Create and edit ideas"
 description: "Add an idea by hand or with AI, and fill in its type, summary, tags, and prompts."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Adding an idea
 
-Add an idea by hand or with AI, and fill in its type, summary, tags, and prompts.
+Select the folder you want it in, then click **New idea** in the left toolbar.
+
+The dialog asks for a **name** and a **type**. The type is guessed from the folder you are in, so an
+idea created inside Character starts as a character.
+
+From there you have two paths:
+
+<Tabs>
+  <Tab title="Quick create">
+    Turn on **Quick create** to skip AI entirely and save the idea with just a name and type. Fill
+    in the rest later.
+  </Tab>
+  <Tab title="With AI">
+    Pick a reference outline or screenplay, describe what you want, and optionally attach a file
+    (`.docx`, `.pdf`, `.txt`, `.md`, or an image — drag or paste it in). The AI drafts the idea for
+    you.
+  </Tab>
+</Tabs>
+
+## The idea form
+
+Whether you are creating or editing, the form has the same fields.
+
+| Field | Notes |
+|---|---|
+| **Selected image** | Choose which attached image is the cover |
+| **Type** | Outline, screenplay, character, location, prop, outfit, scene, shot, or other — or type your own |
+| **Title** | |
+| **Summary** | **Required.** This is what AI reads when the idea is used as a reference |
+| **Detailed content** | Markdown |
+| **Tags** | Free text |
+| **Image prompt** | With an **AI generate** button to draft one for you |
+| **Video prompt** | Same |
+
+<Tip>
+  Write the summary as if you were briefing someone who has never seen the project. "Tall, weathered
+  fisherman in his sixties, always in a faded blue coat" gives the model far more to work with than
+  "the fisherman".
+</Tip>
+
+## Editing later
+
+Open an idea and use **Edit** at the bottom of the detail view. The same form opens with the current
+values.
+
+To delete, use **Delete** in the same place. Deletion asks for confirmation.
+
+## Duplicating
+
+Right-click an idea in the file tree and choose **Copy**. The duplicate is named with a "copy"
+suffix and lands in the same folder.
+
+System folders cannot be renamed, deleted, or copied — only the ideas inside them.

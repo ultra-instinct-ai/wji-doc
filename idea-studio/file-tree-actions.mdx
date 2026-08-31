@@ -3,6 +3,59 @@ title: "Folder and file actions"
 description: "Organize ideas into folders and use the right-click AI shortcuts to summarize and expand."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+The file tree in the left panel is where you organize. Right-clicking is where most of its power is.
 
-Organize ideas into folders and use the right-click AI shortcuts to summarize and expand.
+## General actions
+
+Right-click any idea or folder:
+
+| Action | Applies to | Notes |
+|---|---|---|
+| **Add to chat** | Ideas | Sends the idea to the workspace AI chat as context |
+| **New \<type\>** | Folders | Wording matches the folder — "New character" inside Character |
+| **New folder** | Folders | Creates a subfolder |
+| **Copy** | Ideas | Duplicates with a "copy" suffix |
+| **Rename** | Both | |
+| **Delete** | Both | |
+| **Download assets** | Both | A ZIP that preserves the folder structure |
+
+The six system folders — story, character, location, prop, shot, other — cannot be renamed, deleted,
+or copied.
+
+<Note>
+  The file tree has no search box. Use folders and tags to keep things findable.
+</Note>
+
+## AI shortcuts
+
+This is the part worth knowing. Right-clicking an idea offers AI actions based on its **type**.
+
+<Tabs>
+  <Tab title="Outline or screenplay">
+    - **Summarize all characters**
+    - **Summarize all locations**
+    - **Summarize all props**
+    - **Generate storyboard**
+
+    Each reads the whole document and produces the corresponding set of ideas in one pass.
+  </Tab>
+  <Tab title="Scene">
+    - **Summarize all locations**
+    - **Generate storyboard**
+  </Tab>
+</Tabs>
+
+All of these open Build with AI with the outputs preselected and the idea you right-clicked set as
+the reference. You still review everything before it is saved.
+
+<Tip>
+  This is usually the fastest route into a new project. Paste your script into a Story idea, then
+  right-click it and summarize characters, locations, and props in three passes. You end up with a
+  populated workspace in a couple of minutes.
+</Tip>
+
+## Downloading
+
+**Download assets** gathers every image and video under the selected node into a ZIP, keeping the
+folder structure. On a folder it takes everything beneath it; on a single idea it takes just that
+idea's attachments.
