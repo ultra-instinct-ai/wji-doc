@@ -1,0 +1,66 @@
+---
+title: "圖片生成總覽"
+description: "WJI 有哪些生成入口，以及四種生成模式的差別。"
+---
+
+WJI 只有一套生成引擎，但可以從好幾個地方進入。無論從哪裡打開，表單的運作方式都一樣。
+
+## 可以從哪裡生成
+
+| 入口 | 是什麼 |
+|---|---|
+| **創意工具圖片生成**應用 | 在工作區內。生成結果會掛到你選中的創意上 |
+| 頂欄的**圖片生成** | 獨立的生成器，不綁定工作區 |
+| **影像管理**對話框 | 三欄式對話框，適合逐一處理一個數據集的素材 |
+| **無限畫布** | 體驗完全不同 —— 參考素材來自連線，不是上傳清單 |
+
+專案工作請用工作區裡的那個應用。它分三欄：左邊是數據集側欄，中間是數據集內容，右邊是生成器。你生成的東西會自動歸到當前數據集底下，歷史記錄也預設以它篩選。
+
+<Frame caption="創意工具圖片生成應用">
+  <img src="/images/_placeholder.png" alt="創意工具圖片生成應用，顯示數據集側欄、數據集內容與生成表單" />
+</Frame>
+
+## 四種模式
+
+表單頂部的圖示可以切換。
+
+<Columns cols={2}>
+  <Card title="圖片" icon="image" href="/zh-Hant/image-generation/generation-settings">
+    從提示詞與可選的參考素材產生靜態圖片。
+  </Card>
+  <Card title="影片" icon="video" href="/zh-Hant/image-generation/video-generation">
+    影片，含時長、首尾幀與任務類型。
+  </Card>
+  <Card title="分鏡" icon="table-cells" href="/zh-Hant/image-generation/storyboard-mode">
+    在一張圖裡放一組鏡頭或多個角度。
+  </Card>
+  <Card title="文字轉音頻" icon="waveform" href="/zh-Hant/image-generation/models">
+    從文字生成語音，可調發音人與語速。
+  </Card>
+</Columns>
+
+你選的模式與模型會被記住，下次進來還在。
+
+## 一次生成的流程
+
+<Steps>
+  <Step title="寫提示詞">
+    見[撰寫提示詞](/zh-Hant/image-generation/prompts)。WJI 會在送出前把它改寫成優化後的最終提示詞。
+  </Step>
+  <Step title="選模型">
+    模型決定了哪些設定才會出現。見[選擇模型](/zh-Hant/image-generation/models)。
+  </Step>
+  <Step title="加參考素材">
+    選填，但這是讓角色與場景保持一致的方法。見[參考圖](/zh-Hant/image-generation/reference-images)。
+  </Step>
+  <Step title="確認費用後送出">
+    生成按鈕上會先顯示預估。見[積分如何運作](/zh-Hant/billing/how-credits-work)。
+  </Step>
+  <Step title="處理結果">
+    結果會落在表單下方的歷史記錄裡。見[歷史與結果](/zh-Hant/image-generation/history-and-results)。
+  </Step>
+</Steps>
+
+<Warning>
+  生成一旦送出就**無法取消**。沒有停止按鈕 —— 按下生成之前，先檢查設定與預估費用。
+</Warning>

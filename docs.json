@@ -209,6 +209,23 @@
               "zh-Hant/idea-studio/workspace-ai-chat",
               "zh-Hant/idea-studio/best-practices"
             ]
+          },
+          {
+            "group": "創意工具圖片生成",
+            "icon": "image",
+            "pages": [
+              "zh-Hant/image-generation/overview",
+              "zh-Hant/image-generation/prompts",
+              "zh-Hant/image-generation/models",
+              "zh-Hant/image-generation/generation-settings",
+              "zh-Hant/image-generation/reference-images",
+              "zh-Hant/image-generation/video-generation",
+              "zh-Hant/image-generation/storyboard-mode",
+              "zh-Hant/image-generation/history-and-results",
+              "zh-Hant/image-generation/manage-assets",
+              "zh-Hant/image-generation/drag-and-drop",
+              "zh-Hant/image-generation/best-practices"
+            ]
           }
         ]
       },
