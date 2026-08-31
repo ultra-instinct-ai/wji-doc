@@ -3,6 +3,72 @@ title: "Create a workspace"
 description: "Name your workspace, pick a primary image generation mode, and set defaults."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+Open **Workspace** in the top navigation and click **Create workspace**.
 
-Name your workspace, pick a primary image generation mode, and set defaults.
+<Frame caption="The Create workspace dialog">
+  <img src="/images/_placeholder.png" alt="Create workspace dialog with the name field, the two primary image generation mode cards, and the expanded more settings section" />
+</Frame>
+{/* SHOT workspaces/create-01
+    Screen: the Create workspace dialog opened from the workspace list
+    Must show: name field, both primary image generation mode cards, the expanded settings section
+               with dialogue language / aspect ratio / default image model / default video model,
+               and both footer buttons
+    State: personal context, so the billing mode selector is absent; canvas mode not selected
+    UI language: English
+    Size: >= 1400x1000
+    Anonymize: generic workspace name
+*/}
+
+## Workspace name
+
+The only required field. You can change it later in settings.
+
+## Primary image generation mode
+
+This is the choice worth thinking about. It sets which app the workspace opens into.
+
+<Tabs>
+  <Tab title="Open creative image generation">
+    The workspace opens in **Idea Studio**. Use this when you want to write first — build up
+    characters, locations, and shots, then generate images from them.
+  </Tab>
+  <Tab title="Open infinite canvas">
+    The workspace opens on the **Infinite Canvas**. Use this when you want to work visually, wiring
+    references together on a board.
+  </Tab>
+</Tabs>
+
+You are not locked in. All three apps are always available in the left panel; this setting only
+decides where you land.
+
+## More settings
+
+These are optional, and each has a sensible default. All of them can be changed later.
+
+| Setting | What it does |
+|---|---|
+| **Dialogue language** | The language AI uses for generated dialogue. Defaults to automatic. |
+| **Aspect ratio** | The default frame shape for this workspace: 16:9, 21:9, or 9:16. |
+| **Default image model** | Preselected whenever you generate an image. |
+| **Default video model** | Preselected whenever you generate video. |
+
+If you are working inside an organization, you will also see a **billing mode** choice that decides
+whose credits this workspace spends. See
+[Roles and permissions](/organizations/roles-and-permissions).
+
+## Two ways to finish
+
+<Steps>
+  <Step title="Start with AI">
+    Creates the workspace and immediately opens the **Build with AI** wizard in Idea Studio, so you
+    can turn an outline or a premise into a full set of ideas straight away.
+  </Step>
+  <Step title="Create Blank Workspace">
+    Creates the workspace and drops you into it empty, ready for you to add ideas yourself.
+  </Step>
+</Steps>
+
+<Note>
+  WJI does not offer a choice of workspace template. Every new workspace is created with the same
+  set of apps regardless of how you finish this dialog.
+</Note>

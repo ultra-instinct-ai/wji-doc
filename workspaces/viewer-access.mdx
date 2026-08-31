@@ -3,6 +3,49 @@ title: "Viewer access"
 description: "Control what viewers can see and do, down to individual apps and canvases."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+Viewers get read-only access by default, but you can narrow it further. Open
+**Settings → Members → Viewer permissions**. Only the workspace owner sees this panel.
 
-Control what viewers can see and do, down to individual apps and canvases.
+It has four sections.
+
+## Credit visibility
+
+A single toggle. When it is off, viewers do not see the credit badge in the app bar or any spend
+figures. Turn it off when you are sharing work with a client and do not want costs on screen.
+
+## Visible apps
+
+Tick the apps viewers may open. Anything you untick disappears from their left panel.
+
+<Note>
+  If you hide the Infinite Canvas from viewers, they are told the app has not been added rather than
+  seeing an empty panel.
+</Note>
+
+## Comments and likes
+
+Two toggles controlling whether viewers can leave comments and likes on assets. Both are off unless
+you enable them.
+
+## Visible canvases
+
+The most granular section. You choose:
+
+- **Which canvases** viewers can open, one by one
+- **Which color tags** are visible — nodes carrying a hidden tag do not appear
+- **Whether viewers may add annotations** — title, comment, task list, and arrow nodes
+
+Color tags make this genuinely useful. Tag your work-in-progress nodes with one color, expose only
+the approved color to viewers, and a client sees a clean board while you keep working around them.
+
+## What a viewer actually sees
+
+When viewer restrictions apply, WJI strips the interface down:
+
+| Area | What remains |
+|---|---|
+| Node toolbar | **Download** and **Asset preview** only |
+| Multi-select toolbar | **Download selected** only |
+| Canvas | Asset library, director bar, and settings are hidden; connection handles do not appear |
+| Editing | Cannot paste, cannot move nodes, cannot create generation nodes |
+| Annotations | Allowed only if you enabled them |
