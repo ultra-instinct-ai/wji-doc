@@ -482,6 +482,45 @@
               "ko/infinite-canvas/autosave-and-undo",
               "ko/infinite-canvas/best-practices"
             ]
+          },
+          {
+            "group": "디지털 진행자",
+            "icon": "user-tie",
+            "pages": [
+              "ko/digital-host/overview",
+              "ko/digital-host/script-to-video"
+            ]
+          },
+          {
+            "group": "조직",
+            "icon": "building",
+            "pages": [
+              "ko/organizations/overview",
+              "ko/organizations/invite-members",
+              "ko/organizations/roles-and-permissions",
+              "ko/organizations/switching-context"
+            ]
+          },
+          {
+            "group": "요금과 크레딧",
+            "icon": "coins",
+            "pages": [
+              "ko/billing/how-credits-work",
+              "ko/billing/subscriptions",
+              "ko/billing/wallet-and-records",
+              "ko/billing/gift-cards"
+            ]
+          },
+          {
+            "group": "레퍼런스",
+            "icon": "book",
+            "pages": [
+              "ko/reference/supported-file-types",
+              "ko/reference/limits-and-quotas",
+              "ko/reference/troubleshooting",
+              "ko/reference/faq",
+              "ko/reference/glossary"
+            ]
           }
         ]
       },
