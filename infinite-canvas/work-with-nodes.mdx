@@ -44,18 +44,86 @@ the spacing between them is preserved.
 
 ## The multi-select toolbar
 
+<Frame caption="The multi-select toolbar">
+  <img src="/images/infinite-canvas/multi-select-toolbar-01.png" alt="Multi-select toolbar with color tag, align, group, add reference, model settings, improve prompt, submit, and download buttons" />
+</Frame>
+{/* SHOT infinite-canvas/multi-select-toolbar-01
+    Screen: the multi-select toolbar as it slides up from the bottom
+    Must show: every button in the bar, and the option-key fan-out badge on the right
+    State: three or more generation nodes selected so all buttons are enabled
+    UI language: English
+    Size: >= 1400x400, cropped to the toolbar plus a little canvas above it
+*/}
+
 Selecting two or more nodes slides a toolbar up from the bottom:
 
 | Button | Does |
 |---|---|
-| **Color tag** | Applies a tag to everything selected |
-| **Align** | Horizontal, vertical, or automatic |
-| **Group** | Wraps the selection in a group node |
-| **Add reference** | Enters pick-from-canvas mode |
-| **Model settings** | Applies model settings to every generation node of the same type |
-| **Improve prompt** | Optimizes every selected prompt |
-| **Submit** | Opens a review dialog listing each node's prompt, references, model, and settings, then submits them all |
-| **Download selected** | Single file, or a ZIP named after the canvas |
+| <img src="/images/infinite-canvas/icons/color-tag.png" alt="Color tag icon" width="20" /> **Color tag** | Applies a tag to everything selected |
+| <img src="/images/infinite-canvas/icons/align.png" alt="Align icon" width="20" /> **Align** | Horizontal, vertical, or automatic |
+| <img src="/images/infinite-canvas/icons/group.png" alt="Group icon" width="20" /> **Group** | Wraps the selection in a group node |
+| <img src="/images/infinite-canvas/icons/add-reference.png" alt="Add reference icon" width="20" /> **Add reference** | Enters pick-from-canvas mode |
+| <img src="/images/infinite-canvas/icons/model-settings.png" alt="Model settings icon" width="20" /> **Model settings** | Applies model settings to every generation node of the same type |
+| <img src="/images/infinite-canvas/icons/improve-prompt.png" alt="Improve prompt icon" width="20" /> **Improve prompt** | Optimizes every selected prompt |
+| <img src="/images/infinite-canvas/icons/submit.png" alt="Submit icon" width="20" /> **Submit** | Opens a review dialog listing each node's prompt, references, model, and settings, then submits them all |
+| <img src="/images/infinite-canvas/icons/download-selected.png" alt="Download selected icon" width="20" /> **Download selected** | Single file, or a ZIP named after the canvas |
+
+{/* SHOT infinite-canvas/icons/color-tag
+    Screen: close crop of the color tag button in the multi-select toolbar
+    Must show: the icon alone, square crop, transparent or matching background
+    State: the button in its normal, enabled state
+    UI language: English
+    Size: 64x64, exported at 2x so it stays sharp
+*/}
+{/* SHOT infinite-canvas/icons/align
+    Screen: close crop of the align button in the multi-select toolbar
+    Must show: the icon alone, square crop, transparent or matching background
+    State: the button in its normal, enabled state
+    UI language: English
+    Size: 64x64, exported at 2x so it stays sharp
+*/}
+{/* SHOT infinite-canvas/icons/group
+    Screen: close crop of the group button in the multi-select toolbar
+    Must show: the icon alone, square crop, transparent or matching background
+    State: the button in its normal, enabled state
+    UI language: English
+    Size: 64x64, exported at 2x so it stays sharp
+*/}
+{/* SHOT infinite-canvas/icons/add-reference
+    Screen: close crop of the add reference button in the multi-select toolbar
+    Must show: the icon alone, square crop, transparent or matching background
+    State: the button in its normal, enabled state
+    UI language: English
+    Size: 64x64, exported at 2x so it stays sharp
+*/}
+{/* SHOT infinite-canvas/icons/model-settings
+    Screen: close crop of the model settings button in the multi-select toolbar
+    Must show: the icon alone, square crop, transparent or matching background
+    State: the button in its normal, enabled state
+    UI language: English
+    Size: 64x64, exported at 2x so it stays sharp
+*/}
+{/* SHOT infinite-canvas/icons/improve-prompt
+    Screen: close crop of the improve prompt button in the multi-select toolbar
+    Must show: the icon alone, square crop, transparent or matching background
+    State: the button in its normal, enabled state
+    UI language: English
+    Size: 64x64, exported at 2x so it stays sharp
+*/}
+{/* SHOT infinite-canvas/icons/submit
+    Screen: close crop of the submit button in the multi-select toolbar
+    Must show: the icon alone, square crop, transparent or matching background
+    State: the button in its normal, enabled state
+    UI language: English
+    Size: 64x64, exported at 2x so it stays sharp
+*/}
+{/* SHOT infinite-canvas/icons/download-selected
+    Screen: close crop of the download selected button in the multi-select toolbar
+    Must show: the icon alone, square crop, transparent or matching background
+    State: the button in its normal, enabled state
+    UI language: English
+    Size: 64x64, exported at 2x so it stays sharp
+*/}
 
 For viewers, only **Download selected** remains.
 
@@ -77,6 +145,17 @@ touches it.
 </Note>
 
 ## Color tags
+
+<Frame caption="The color tag popover, with tags named">
+  <img src="/images/infinite-canvas/color-tag-popover-01.png" alt="Color tag popover showing eight colors with editable names and a clear tag option" />
+</Frame>
+{/* SHOT infinite-canvas/color-tag-popover-01
+    Screen: the color tag popover open from the multi-select toolbar
+    Must show: all eight colors, at least three with meaningful names such as approved / needs revision / client-visible
+    State: one color currently applied to the selection
+    UI language: English
+    Size: >= 900x800
+*/}
 
 Eight colors, each of which can be named for the whole canvas.
 

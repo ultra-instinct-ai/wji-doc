@@ -5,6 +5,18 @@ description: "Zoom, pan, fit the view, use the minimap, and switch rendering per
 
 ## Zoom
 
+<Frame caption="The viewport control bar">
+  <img src="/images/infinite-canvas/viewport-bar-01.png" alt="Viewport control bar showing undo, redo, zoom out, zoom percentage, zoom in, fit, minimap toggle, and performance mode" />
+</Frame>
+{/* SHOT infinite-canvas/viewport-bar-01
+    Screen: close crop of the viewport control bar, bottom left of the canvas
+    Must show: every button, and the zoom percentage reading a non-round value such as 87%
+    State: standard performance mode, minimap off
+    UI language: English
+    Size: >= 900x220, cropped tight
+    Anonymize: none needed
+*/}
+
 | Action | How |
 |---|---|
 | Zoom in and out | `⌘` + scroll wheel |
@@ -38,6 +50,18 @@ Both animate rather than jumping. When you zoom to a single generation node, the
 below it is included in the framing so you can read it.
 
 ## Minimap
+
+<Frame caption="The minimap, colored by node tag">
+  <img src="/images/infinite-canvas/minimap-01.png" alt="Minimap in the corner of the canvas showing node positions in several tag colors" />
+</Frame>
+{/* SHOT infinite-canvas/minimap-01
+    Screen: the minimap open, cropped to itself plus a little surrounding canvas
+    Must show: at least three different tag colors so the color mapping is obvious
+    State: a canvas with 15 or more nodes so the map has something to show
+    UI language: English
+    Size: >= 800x600
+    Anonymize: none needed
+*/}
 
 Toggle it from the map icon in the control bar. It is capped at 220×140, colors nodes by their color
 tag, and clicking it navigates.

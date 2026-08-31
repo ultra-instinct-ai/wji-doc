@@ -5,6 +5,7 @@
   "scripts": {
     "docs:check": "node scripts/docs-check.mjs",
     "dev": "mint dev",
-    "docs:nav": "node scripts/sync-nav.mjs"
+    "docs:nav": "node scripts/sync-nav.mjs",
+    "docs:images": "node scripts/add-image-slots.mjs && node scripts/docs-check.mjs"
   }
 }

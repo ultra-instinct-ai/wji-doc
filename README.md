@@ -37,6 +37,14 @@ shortcuts, code, or slugs.
 
 ## Screenshots
 
-Image slots point at `/images/_placeholder.png` and carry a `{/* SHOT ... */}` comment describing
-what to capture. Run `npm run docs:check` to regenerate `images/SHOTS.md`, then replace placeholders
-with real captures at the paths listed there. No MDX changes are needed when swapping an image in.
+Every image slot already points at its **final path** — `images/<page>/<name>.png` — and those files
+exist as copies of `images/_placeholder.png`. Swapping in a real screenshot means overwriting one
+file. **No MDX is edited, in any language.**
+
+Each slot carries a `{/* SHOT ... */}` comment in the English source describing exactly what to
+capture. `npm run docs:check` regenerates `images/SHOTS.md`, the capture worklist, and reports a shot
+as still pending while its file is byte-identical to the placeholder.
+
+To add more slots, define them in `scripts/image-slots.mjs` and run `npm run docs:images`. The script
+inserts the same slot into all five languages at the same position, so cross-language parity cannot
+drift.

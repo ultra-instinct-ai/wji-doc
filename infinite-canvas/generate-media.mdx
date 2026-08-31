@@ -7,6 +7,17 @@ Selecting a generation node opens the **generate panel** beneath it.
 
 ## The prompt
 
+<Frame caption="The generate panel">
+  <img src="/images/infinite-canvas/generate-panel-01.png" alt="Generate panel below a node with the prompt box, model selector, parameters button, reference list, cost estimate, and send button" />
+</Frame>
+{/* SHOT infinite-canvas/generate-panel-01
+    Screen: a generation node selected with its panel open
+    Must show: prompt box with placeholder or short prompt, model selector, parameters icon, reference list, and the send button carrying a credit estimate
+    State: two or three references connected
+    UI language: English
+    Size: >= 1400x1000
+*/}
+
 The prompt box tells you what it accepts: describe what you want, press `@` to reference an asset,
 press `/` for commands.
 
@@ -34,12 +45,34 @@ individual remove buttons.
 
 ## Settings and cost
 
+<Frame caption="Generation parameters on the canvas">
+  <img src="/images/infinite-canvas/generate-params-01.png" alt="Generation parameters popover with aspect ratio, batch size, and model specific settings" />
+</Frame>
+{/* SHOT infinite-canvas/generate-params-01
+    Screen: the generation parameters popover open from the generate panel
+    Must show: aspect ratio choices, batch size, and at least two model specific fields such as seed and resolution
+    State: an image model selected
+    UI language: English
+    Size: >= 1000x900
+*/}
+
 The generation parameters popover holds the same settings as the standalone generator, filtered to
 what the selected model supports. The estimated cost updates as you change things.
 
 Press the send button to submit.
 
 ## Working in bulk
+
+<Frame caption="The bulk submit review dialog">
+  <img src="/images/infinite-canvas/bulk-review-01.png" alt="Review dialog listing each selected node with its prompt, references, model, and parameters before submitting" />
+</Frame>
+{/* SHOT infinite-canvas/bulk-review-01
+    Screen: the review dialog opened by bulk submit
+    Must show: at least three rows so the per-node breakdown is clear, plus the submit-all button
+    State: nodes with differing reference counts so the value of reviewing is visible
+    UI language: English
+    Size: >= 1400x1000
+*/}
 
 This is where the canvas pays off. Select several generation nodes and the multi-select toolbar
 gives you:

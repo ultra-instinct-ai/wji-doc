@@ -10,6 +10,17 @@ model receives.
 
 ## Making a connection
 
+<Frame caption="Dragging from a connection handle">
+  <img src="/images/infinite-canvas/connection-handles-01.png" alt="A node with plus handles on both sides and a connection line being dragged toward a generation node" />
+</Frame>
+{/* SHOT infinite-canvas/connection-handles-01
+    Screen: mid-drag, a connection being pulled from an image node to a generation node
+    Must show: both plus handles on the source node, and the in-progress line rendered green to mean the drop is valid
+    State: capture mid-gesture; a second frame showing the red invalid state would also be useful
+    UI language: English
+    Size: >= 1400x900
+*/}
+
 Hovering a node shows a `+` handle on each side. Drag from one to another node and release.
 
 Direction is fixed: **right is the output, left is the input**. Dragging out of a left handle simply
@@ -69,6 +80,17 @@ that tag to them.
 
 ## Fine-tuning a connection
 
+<Frame caption="The reference list on a generation node">
+  <img src="/images/infinite-canvas/reference-list-01.png" alt="Reference list showing connected assets with names, a usage counter, and drag handles for reordering" />
+</Frame>
+{/* SHOT infinite-canvas/reference-list-01
+    Screen: the reference list inside an open generate panel
+    Must show: at least three references with distinct names, the counter reading something like 3 / 5, and one text reference with its view full text control
+    State: a mix of image and text references so both rendering styles appear
+    UI language: English
+    Size: >= 1200x900
+*/}
+
 Connections carry more than "these are joined":
 
 - **Disabled assets** — for dataset and bundle sources, individual members can be excluded without
@@ -80,6 +102,17 @@ Manage these from the generate panel's reference list, where you can also reorde
 dragging.
 
 ## Removing a connection
+
+<Frame caption="Cutting a connection">
+  <img src="/images/infinite-canvas/cut-connection-01.png" alt="A selected connection line with the scissors button showing at its midpoint" />
+</Frame>
+{/* SHOT infinite-canvas/cut-connection-01
+    Screen: a connection clicked so the cut control appears
+    Must show: the scissors button at the midpoint of the line, and both connected nodes
+    State: one connection selected, others unselected for contrast
+    UI language: English
+    Size: >= 1200x700
+*/}
 
 Click the line. A scissors button appears at its midpoint — **cut connection**. You can also select
 a connection and press `Backspace` or `Delete`. Both can be undone.

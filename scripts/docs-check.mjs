@@ -2,6 +2,7 @@
 // 校验 wji-doc 的结构完整性：导航引用、frontmatter、多语言对齐、站内链接、图片与拍摄标注。
 // 同时生成 images/SHOTS.md 拍摄工作单。无外部依赖。
 import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from 'node:fs'
+import { createHash } from 'node:crypto'
 import { join, dirname, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -14,6 +15,12 @@ const warn = (m) => warnings.push(m)
 
 const read = (p) => readFileSync(join(ROOT, p), 'utf8')
 const exists = (p) => existsSync(join(ROOT, p))
+
+// 占位图指纹：目标文件内容与它相同，就说明这张图还没拍
+const PLACEHOLDER = 'images/_placeholder.png'
+const sha = (p) => createHash('sha1').update(readFileSync(join(ROOT, p))).digest('hex')
+const placeholderHash = exists(PLACEHOLDER) ? sha(PLACEHOLDER) : null
+const isPending = (rel) => !exists(rel) || (placeholderHash !== null && sha(rel) === placeholderHash)
 
 // ---------- frontmatter ----------
 function frontmatter(text) {
@@ -107,15 +114,14 @@ for (const rel of allMdx) {
     for (const src of srcs) {
       if (/^https?:/.test(src)) continue
       const name = src.replace(/^\/images\//, '').replace(/\.\w+$/, '')
-      if (src.includes('_placeholder') ) {
-        // 占位图必须有 SHOT 标注说明将来要拍什么
-        if (!shotBlocks.length) err(`${rel}: 使用了占位图但没有 SHOT 标注`)
-      } else if (!shotNames.includes(name)) {
-        err(`${rel}: 图片 ${src} 没有对应的 SHOT 标注`)
-      }
+      if (!shotNames.includes(name)) err(`${rel}: 图片 ${src} 没有对应的 SHOT 标注`)
     }
     for (const [, name, spec] of shotBlocks) {
-      shots.push({ page, file: name, spec: spec.trim(), pending: srcs.some((s) => s.includes('_placeholder')) })
+      const target = `images/${name}.png`
+      if (!srcs.some((s) => s === `/images/${name}.png`)) {
+        err(`${rel}: SHOT ${name} 没有对应的 <img>`)
+      }
+      shots.push({ page, file: name, spec: spec.trim(), pending: isPending(target) })
     }
   } else if (shotBlocks.length) {
     err(`${rel}: 译文不应包含 SHOT 标注（只写在英文源稿）`)
