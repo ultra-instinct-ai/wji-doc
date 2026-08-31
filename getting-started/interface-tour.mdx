@@ -3,6 +3,98 @@ title: "Interface tour"
 description: "Find your way around the top navigation, workspaces, and the app switcher."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## The top navigation
 
-Find your way around the top navigation, workspaces, and the app switcher.
+Every page outside a workspace shares the same header.
+
+<Frame caption="The WJI top navigation">
+  <img src="/images/_placeholder.png" alt="WJI top navigation bar showing Chat, Workspace, Agents, and Image Creator links with account controls on the right" />
+</Frame>
+{/* SHOT getting-started/interface-01
+    Screen: the top navigation bar, cropped to the header only
+    Must show: logo, the Chat / Workspace / Agents / Image Creator links with Workspace active,
+               and the right-hand cluster: theme switcher, language switcher, task tracker,
+               notification bell, and profile avatar
+    State: signed in as a normal user, so the IP/Character and Admin links are absent
+    UI language: English
+    Size: >= 1600x200
+    Anonymize: generic avatar, no real display name
+*/}
+
+| Link | What it opens |
+|---|---|
+| **Chat** | Conversations with agents, outside of any workspace |
+| **Workspace** | Your workspace list — where most work starts |
+| **Agents** | Browse agents and manage the ones you have created |
+| **Image Creator** | A standalone generator, not tied to a workspace |
+
+Two more links appear only for some accounts: **IP/Character** needs an asset group permission, and
+**Admin** appears only for administrators.
+
+On the right side of the header you will find the theme switcher, the language switcher, a task
+tracker for your running generations, a notification bell, and your profile menu. The profile menu
+also holds your **Dashboard**, **Usage**, **Billing history**, **Support**, and the organization
+switcher.
+
+## The workspace list
+
+**Workspace** opens **My Workspaces**. Each card shows the workspace cover, its aspect ratio, its
+language, the members on it, and when it was last updated. Click the star on a card to favorite it.
+
+Above the cards you can:
+
+- Filter by **All**, **Mine**, **Shared with me**, or **Favorites**
+- Sort by updated or created time, ascending or descending
+- Search by keyword
+- Click **Create workspace**
+
+## Inside a workspace
+
+Opening a workspace replaces the whole screen with a three-column layout.
+
+<Frame caption="The workspace layout">
+  <img src="/images/_placeholder.png" alt="Workspace layout showing the app bar, left panel with app icons and file tree, main content area, and the AI chat panel" />
+</Frame>
+{/* SHOT getting-started/interface-02
+    Screen: a workspace open on the Idea Studio app
+    Must show: top app bar with back arrow, workspace name and credit badge; left panel with the
+               three app icons, toolbar, and file tree; main content area; right AI chat panel
+    State: a folder selected in the file tree so the content area is not empty
+    UI language: English
+    Size: >= 1600x900
+    Anonymize: generic workspace name and folder names
+*/}
+
+**The app bar** across the top has a back arrow to the workspace list, the workspace name, and — if
+you are allowed to see it — a credit badge showing the workspace balance.
+
+**The left panel** is where you switch apps. By default a workspace shows three:
+
+<Columns cols={3}>
+  <Card title="Idea Studio" icon="lightbulb" href="/idea-studio/overview">
+    Capture and organize ideas.
+  </Card>
+  <Card title="Idea Image Generation" icon="image" href="/image-generation/overview">
+    Generate images and video.
+  </Card>
+  <Card title="Infinite Canvas" icon="diagram-project" href="/infinite-canvas/overview">
+    Work on a node-based board.
+  </Card>
+</Columns>
+
+Below the app icons sit a toolbar and a file tree whose contents change with the app. The panel also
+holds the task tracker and the settings gear. You can drag its right edge to resize it, or collapse
+it to a narrow rail.
+
+<Note>
+  Opening the Infinite Canvas collapses the left panel to a rail automatically, and it stays that
+  way while you are on the canvas.
+</Note>
+
+**The main area** renders the app you selected. **The right panel** is an AI chat scoped to the
+workspace, and it appears in Idea Studio but not on the canvas.
+
+## First visit
+
+The first time you open a workspace, a short tutorial walks you through the layout. You can dismiss
+it and tick the box to stop it appearing again for that workspace.

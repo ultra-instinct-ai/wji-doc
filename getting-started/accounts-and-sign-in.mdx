@@ -3,6 +3,84 @@ title: "Accounts and sign-in"
 description: "Create an account, sign in with email or a social provider, and secure your account."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Create an account
 
-Create an account, sign in with email or a social provider, and secure your account.
+Go to [app.wji.ai](https://app.wji.ai) and click **Create Account**. The registration form asks for:
+
+<Steps>
+  <Step title="Username and email">
+    Enter the name you want to be known by and a working email address.
+  </Step>
+  <Step title="Verification code">
+    Click **Get Code**. WJI emails you a verification code — enter it in the field next to the
+    button. The button counts down before you can request another code.
+  </Step>
+  <Step title="Password">
+    Choose a password of **at least 8 characters** and confirm it.
+  </Step>
+</Steps>
+
+<Frame caption="The account creation form">
+  <img src="/images/_placeholder.png" alt="WJI registration form showing username, email, verification code, password, and confirm password fields" />
+</Frame>
+{/* SHOT getting-started/accounts-01
+    Screen: the Create Account page at /auth/register
+    Must show: all five fields, the Get Code button, the Register button, and the legal agreement line
+    State: empty form, no validation errors
+    UI language: English
+    Size: >= 1200x900
+    Anonymize: leave all fields empty
+*/}
+
+## Sign in
+
+<Tabs>
+  <Tab title="Email and password">
+    Enter your email and password, then click **Sign In**.
+
+    Your password must be at least 8 characters, and the email must be a valid address — WJI
+    validates both before sending the request.
+  </Tab>
+  <Tab title="Google">
+    Click the Google button under **Third-party Sign In**. You are redirected to Google to choose an
+    account, then returned to WJI signed in.
+  </Tab>
+  <Tab title="Facebook">
+    <Warning>
+      Facebook sign-in is not available yet. The button is visible on the sign-in page, but clicking
+      it shows a message saying the feature is not open. Use email or Google instead.
+    </Warning>
+  </Tab>
+</Tabs>
+
+## Reset a forgotten password
+
+Click **Forgot Password?** on the sign-in page.
+
+<Steps>
+  <Step title="Enter your email">
+    Type the address on your account.
+  </Step>
+  <Step title="Request a code">
+    Click **Get Code** and check your inbox. The button shows a countdown before you can request
+    another one.
+  </Step>
+  <Step title="Set a new password">
+    Enter the code and your new password — again, at least 8 characters — then click
+    **Reset Password**.
+  </Step>
+</Steps>
+
+You are returned to the sign-in page, where you can sign in with the new password.
+
+## Staying signed in
+
+WJI keeps you signed in on the same browser until you sign out or your session expires. If your
+session expires while you are working, you are returned to the sign-in page and sent back to the
+page you were on once you sign in again.
+
+To sign out, open your profile menu at the top right and choose **Logout**.
+
+<Note>
+  You can review recent sign-in activity from the profile menu under **Login history**.
+</Note>

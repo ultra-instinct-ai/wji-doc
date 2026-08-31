@@ -54,117 +54,183 @@
     "display": "header"
   },
   "navigation": {
-    "groups": [
+    "languages": [
       {
-        "group": "Getting started",
-        "icon": "rocket",
-        "pages": [
-          "index",
-          "getting-started/quickstart",
-          "getting-started/accounts-and-sign-in",
-          "getting-started/interface-tour"
+        "language": "en",
+        "default": true,
+        "groups": [
+          {
+            "group": "Getting started",
+            "icon": "rocket",
+            "pages": [
+              "index",
+              "getting-started/quickstart",
+              "getting-started/accounts-and-sign-in",
+              "getting-started/interface-tour"
+            ]
+          },
+          {
+            "group": "Workspaces",
+            "icon": "folder-open",
+            "pages": [
+              "workspaces/overview",
+              "workspaces/create-a-workspace",
+              "workspaces/settings",
+              "workspaces/members-and-permissions",
+              "workspaces/viewer-access"
+            ]
+          },
+          {
+            "group": "Idea Studio",
+            "icon": "lightbulb",
+            "pages": [
+              "idea-studio/overview",
+              "idea-studio/build-with-ai",
+              "idea-studio/create-and-edit-ideas",
+              "idea-studio/idea-detail-and-gallery",
+              "idea-studio/file-tree-actions",
+              "idea-studio/workspace-ai-chat",
+              "idea-studio/best-practices"
+            ]
+          },
+          {
+            "group": "Idea Image Generation",
+            "icon": "image",
+            "pages": [
+              "image-generation/overview",
+              "image-generation/prompts",
+              "image-generation/models",
+              "image-generation/generation-settings",
+              "image-generation/reference-images",
+              "image-generation/video-generation",
+              "image-generation/storyboard-mode",
+              "image-generation/history-and-results",
+              "image-generation/manage-assets",
+              "image-generation/drag-and-drop",
+              "image-generation/best-practices"
+            ]
+          },
+          {
+            "group": "Infinite Canvas",
+            "icon": "diagram-project",
+            "pages": [
+              "infinite-canvas/overview",
+              "infinite-canvas/navigate-the-canvas",
+              "infinite-canvas/create-nodes",
+              "infinite-canvas/node-types",
+              "infinite-canvas/work-with-nodes",
+              "infinite-canvas/connections-and-references",
+              "infinite-canvas/generate-media",
+              "infinite-canvas/text-table-and-youtube-nodes",
+              "infinite-canvas/image-presets-and-storyboard",
+              "infinite-canvas/video-tools",
+              "infinite-canvas/director-bar",
+              "infinite-canvas/asset-library-and-history",
+              "infinite-canvas/canvas-management",
+              "infinite-canvas/keyboard-shortcuts",
+              "infinite-canvas/autosave-and-undo",
+              "infinite-canvas/best-practices"
+            ]
+          },
+          {
+            "group": "Digital Host",
+            "icon": "user-tie",
+            "pages": [
+              "digital-host/overview",
+              "digital-host/script-to-video"
+            ]
+          },
+          {
+            "group": "Organizations",
+            "icon": "building",
+            "pages": [
+              "organizations/overview",
+              "organizations/invite-members",
+              "organizations/roles-and-permissions",
+              "organizations/switching-context"
+            ]
+          },
+          {
+            "group": "Billing and credits",
+            "icon": "coins",
+            "pages": [
+              "billing/how-credits-work",
+              "billing/subscriptions",
+              "billing/wallet-and-records",
+              "billing/gift-cards"
+            ]
+          },
+          {
+            "group": "Reference",
+            "icon": "book",
+            "pages": [
+              "reference/supported-file-types",
+              "reference/limits-and-quotas",
+              "reference/troubleshooting",
+              "reference/faq",
+              "reference/glossary"
+            ]
+          }
         ]
       },
       {
-        "group": "Workspaces",
-        "icon": "folder-open",
-        "pages": [
-          "workspaces/overview",
-          "workspaces/create-a-workspace",
-          "workspaces/settings",
-          "workspaces/members-and-permissions",
-          "workspaces/viewer-access"
+        "language": "zh-Hant",
+        "groups": [
+          {
+            "group": "快速開始",
+            "icon": "rocket",
+            "pages": [
+              "zh-Hant/index",
+              "zh-Hant/getting-started/quickstart",
+              "zh-Hant/getting-started/accounts-and-sign-in",
+              "zh-Hant/getting-started/interface-tour"
+            ]
+          }
         ]
       },
       {
-        "group": "Idea Studio",
-        "icon": "lightbulb",
-        "pages": [
-          "idea-studio/overview",
-          "idea-studio/build-with-ai",
-          "idea-studio/create-and-edit-ideas",
-          "idea-studio/idea-detail-and-gallery",
-          "idea-studio/file-tree-actions",
-          "idea-studio/workspace-ai-chat",
-          "idea-studio/best-practices"
+        "language": "ja",
+        "groups": [
+          {
+            "group": "はじめに",
+            "icon": "rocket",
+            "pages": [
+              "ja/index",
+              "ja/getting-started/quickstart",
+              "ja/getting-started/accounts-and-sign-in",
+              "ja/getting-started/interface-tour"
+            ]
+          }
         ]
       },
       {
-        "group": "Idea Image Generation",
-        "icon": "image",
-        "pages": [
-          "image-generation/overview",
-          "image-generation/prompts",
-          "image-generation/models",
-          "image-generation/generation-settings",
-          "image-generation/reference-images",
-          "image-generation/video-generation",
-          "image-generation/storyboard-mode",
-          "image-generation/history-and-results",
-          "image-generation/manage-assets",
-          "image-generation/drag-and-drop",
-          "image-generation/best-practices"
+        "language": "ko",
+        "groups": [
+          {
+            "group": "시작하기",
+            "icon": "rocket",
+            "pages": [
+              "ko/index",
+              "ko/getting-started/quickstart",
+              "ko/getting-started/accounts-and-sign-in",
+              "ko/getting-started/interface-tour"
+            ]
+          }
         ]
       },
       {
-        "group": "Infinite Canvas",
-        "icon": "diagram-project",
-        "pages": [
-          "infinite-canvas/overview",
-          "infinite-canvas/navigate-the-canvas",
-          "infinite-canvas/create-nodes",
-          "infinite-canvas/node-types",
-          "infinite-canvas/work-with-nodes",
-          "infinite-canvas/connections-and-references",
-          "infinite-canvas/generate-media",
-          "infinite-canvas/text-table-and-youtube-nodes",
-          "infinite-canvas/image-presets-and-storyboard",
-          "infinite-canvas/video-tools",
-          "infinite-canvas/director-bar",
-          "infinite-canvas/asset-library-and-history",
-          "infinite-canvas/canvas-management",
-          "infinite-canvas/keyboard-shortcuts",
-          "infinite-canvas/autosave-and-undo",
-          "infinite-canvas/best-practices"
-        ]
-      },
-      {
-        "group": "Digital Host",
-        "icon": "user-tie",
-        "pages": [
-          "digital-host/overview",
-          "digital-host/script-to-video"
-        ]
-      },
-      {
-        "group": "Organizations",
-        "icon": "building",
-        "pages": [
-          "organizations/overview",
-          "organizations/invite-members",
-          "organizations/roles-and-permissions",
-          "organizations/switching-context"
-        ]
-      },
-      {
-        "group": "Billing and credits",
-        "icon": "coins",
-        "pages": [
-          "billing/how-credits-work",
-          "billing/subscriptions",
-          "billing/wallet-and-records",
-          "billing/gift-cards"
-        ]
-      },
-      {
-        "group": "Reference",
-        "icon": "book",
-        "pages": [
-          "reference/supported-file-types",
-          "reference/limits-and-quotas",
-          "reference/troubleshooting",
-          "reference/faq",
-          "reference/glossary"
+        "language": "vi",
+        "groups": [
+          {
+            "group": "Bắt đầu",
+            "icon": "rocket",
+            "pages": [
+              "vi/index",
+              "vi/getting-started/quickstart",
+              "vi/getting-started/accounts-and-sign-in",
+              "vi/getting-started/interface-tour"
+            ]
+          }
         ]
       }
     ]

@@ -3,6 +3,97 @@ title: "Quickstart"
 description: "Go from a new account to your first generated image in a few minutes."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+This walkthrough takes you from a new account to a generated image saved in a workspace. It should
+take about five minutes.
 
-Go from a new account to your first generated image in a few minutes.
+## Before you begin
+
+You need a WJI account and enough credits to run one generation. New accounts start with a credit
+balance — see [How credits work](/billing/how-credits-work) if you want to understand the charges
+before you spend anything.
+
+<Steps>
+  <Step title="Sign in">
+    Go to [app.wji.ai](https://app.wji.ai) and sign in with your email and password, or with Google.
+    If you do not have an account yet, follow
+    [Accounts and sign-in](/getting-started/accounts-and-sign-in) first.
+  </Step>
+
+  <Step title="Create a workspace">
+    Open **Workspace** in the top navigation and click **Create workspace**.
+
+    Give it a name. The important choice on this screen is **Primary image generation mode**, which
+    decides where the workspace opens:
+
+    - **Open creative image generation** — starts you in Idea Studio, working from written ideas.
+    - **Open infinite canvas** — starts you on the canvas, working visually.
+
+    Pick **Open creative image generation** for this walkthrough, then click
+    **Create Blank Workspace**.
+
+    <Frame caption="The Create workspace dialog">
+      <img src="/images/_placeholder.png" alt="Create workspace dialog showing the name field and the two primary image generation mode options" />
+    </Frame>
+    {/* SHOT getting-started/quickstart-01
+        Screen: the Create workspace dialog, opened from the workspace list
+        Must show: workspace name field filled with a neutral name, both primary image generation
+                   mode cards side by side, the "More settings" section, and both footer buttons
+        State: "Open creative image generation" selected
+        UI language: English
+        Size: >= 1400x900
+        Anonymize: use a generic workspace name such as "Demo project"
+    */}
+  </Step>
+
+  <Step title="Add an idea">
+    The workspace opens in **Idea Studio** with a set of folders already created for you: story,
+    character, location, prop, shot, and other.
+
+    Select the **character** folder, then click **New idea** in the left toolbar. Give the character
+    a name and a one-line summary, and save it.
+
+    <Note>
+      The summary is required. It is what the AI reads when this idea is used as a reference later,
+      so write something descriptive rather than a placeholder.
+    </Note>
+  </Step>
+
+  <Step title="Generate an image">
+    Switch to **Idea Image Generation** using the app icons in the left rail.
+
+    Type a prompt describing the shot you want. Leave the model and settings at their defaults for
+    now, and click the generate button. The button shows an estimated credit cost before you commit.
+
+    <Frame caption="The generation form with a prompt and estimated cost">
+      <img src="/images/_placeholder.png" alt="Image generation form showing a prompt, model selector, and the generate button with its estimated credit cost" />
+    </Frame>
+    {/* SHOT getting-started/quickstart-02
+        Screen: the Idea Image Generation app with a prompt typed in
+        Must show: prompt field with a short neutral prompt, model selector, settings icon,
+                   and the generate button displaying an estimated credit cost
+        State: no reference images added, batch size at default
+        UI language: English
+        Size: >= 1600x900
+        Anonymize: no real user names or workspace names
+    */}
+  </Step>
+
+  <Step title="Keep the result">
+    When the image finishes, it appears in the history below the form. Hover it and use the action
+    menu to **Save to Idea** so it is attached to the character you created.
+
+    From here you can reuse it as a reference image, set it as the idea's cover, or drag it onto a
+    canvas.
+  </Step>
+</Steps>
+
+## What to read next
+
+<Columns cols={2}>
+  <Card title="Writing prompts" icon="pen" href="/image-generation/prompts">
+    Get better results by understanding how WJI rewrites your prompt.
+  </Card>
+  <Card title="Infinite Canvas overview" icon="diagram-project" href="/infinite-canvas/overview">
+    Move from single images to connected shot sequences.
+  </Card>
+</Columns>

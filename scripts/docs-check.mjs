@@ -48,6 +48,7 @@ function navPages(nav) {
   return out
 }
 const navSlugs = navPages(docs.navigation)
+const langNavSlugs = new Set(navSlugs)
 if (!navSlugs.length) err('docs.json: navigation 里没有任何页面')
 
 for (const slug of navSlugs) {
@@ -137,7 +138,11 @@ for (const lang of LANGS) {
   if (!exists(lang)) { warn(`语言目录尚未创建: ${lang}/`); continue }
   const got = new Set(allMdx.filter((p) => p.startsWith(lang + '/')).map((p) => p.slice(lang.length + 1).replace(/\.mdx$/, '')))
   for (const p of enPages) {
-    if (!got.has(p)) err(`${lang}/: 缺少对应页面 ${p}.mdx`)
+    if (!got.has(p)) {
+      // 译文只有被该语言的导航引用后才是必需的；逐组推进期间仅提示
+      if (langNavSlugs.has(`${lang}/${p}`)) err(`${lang}/: 导航引用了缺失的译文 ${p}.mdx`)
+      else warn(`${lang}/: 尚未翻译 ${p}.mdx`)
+    }
     else {
       const a = imagesByPage[p] || []
       const b = imagesByPage[`${lang}/${p}`] || []
