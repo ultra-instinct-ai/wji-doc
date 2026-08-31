@@ -1,0 +1,76 @@
+---
+title: "Câu hỏi thường gặp"
+description: "Trả lời ngắn cho những câu hỏi được đặt ra nhiều nhất."
+---
+
+<AccordionGroup>
+  <Accordion title="Tôi hủy được một lượt tạo đã bắt đầu không?">
+    Không. WJI không có nút hủy hay dừng ở bất cứ đâu. Chi phí ước tính trên nút tạo là điểm kiểm tra của bạn — hãy đọc nó trước khi gửi, nhất là với các lô lớn và video dài.
+  </Accordion>
+
+  <Accordion title="Tôi có sửa được một phần của ảnh, kiểu inpainting không?">
+    Không trực tiếp được. WJI không có inpainting, outpainting, xóa nền hay biến thể. Việc chỉnh sửa được thực hiện bằng cách tạo lại với ảnh gốc làm tham chiếu cộng một mẫu câu lệnh — nhóm mẫu **Nhân vật** bao gồm đổi mặt, đổi trang phục, biểu cảm và tư thế.
+
+    Video là ngoại lệ: canvas có thể tạo lại **một đoạn** của clip rồi ghép về. Xem [Công cụ video](/vi/infinite-canvas/video-tools).
+  </Accordion>
+
+  <Accordion title="Vì sao không có ô câu lệnh phủ định?">
+    WJI không có ô đó. Hãy mô tả điều bạn muốn thay vì điều bạn không muốn.
+  </Accordion>
+
+  <Accordion title="Tôi nhân bản được cả một không gian làm việc không?">
+    Không. Bạn sao chép được từng ý tưởng và tài nguyên, và sao chép nút giữa các canvas, nhưng bản thân không gian làm việc thì không nhân bản được.
+  </Accordion>
+
+  <Accordion title="Vì sao không gian làm việc của tôi chỉ hiện ba ứng dụng?">
+    Mặc định có ba: Công cụ ý tưởng, Tạo ảnh từ ý tưởng, và Canvas vô hạn. Người dẫn chương trình số có thể được thêm nếu tài khoản bạn có quyền. Hệ thống còn những ứng dụng khác nhưng không dùng được cho không gian làm việc.
+  </Accordion>
+
+  <Accordion title="Vì sao tham chiếu của tôi biến mất khi đổi mô hình?">
+    Mô hình mới nhận ít tham chiếu hơn, nên phần dư bị bỏ — và bỏ **từ đầu danh sách**, tức là những cái bạn thêm vào sớm nhất. Hãy kiểm tra danh sách tham chiếu sau mỗi lần đổi mô hình.
+  </Accordion>
+
+  <Accordion title="Vì sao có thứ trên canvas tôi không hoàn tác được?">
+    Hoàn tác bao gồm di chuyển, đổi kích thước, căn chỉnh, xóa, nối, gắn nhãn và sửa văn bản. Nó **không** bao gồm tạo, dán, nhân bản, tải lên, kết quả tạo hay nhóm. Nó cũng chỉ giữ 40 bước và bị xóa khi bạn đổi canvas.
+  </Accordion>
+
+  <Accordion title="Tôi tìm kiếm bên trong một không gian làm việc bằng cách nào?">
+    Bạn tìm được danh sách không gian làm việc, các canvas và câu lệnh dựng sẵn. **Cây tệp không có ô tìm kiếm** — hãy dùng thư mục và thẻ để ý tưởng luôn tìm ra được.
+  </Accordion>
+
+  <Accordion title="Tôi nâng từ VIP lên SVIP thế nào?">
+    Hủy gói hiện tại, chờ kỳ kết thúc, rồi đăng ký SVIP. Không có đường nâng cấp hay hạ cấp trực tiếp.
+  </Accordion>
+
+  <Accordion title="Credit nào bị tiêu trước?">
+    Túi hết hạn sớm nhất. Trong số credit không hết hạn, phần được tặng đi trước phần đã mua.
+  </Accordion>
+
+  <Accordion title="Lượt tạo thất bại có bị tính tiền không?">
+    Trong quy trình tạo thông thường thì không — thất bại được hoàn tiền, và lô hỏng một phần thì hoàn theo tỷ lệ. **Người dẫn chương trình số thì khác**: ở đó lượt tạo thất bại vẫn bị tính phí và cộng vào tổng của chương trình.
+  </Accordion>
+
+  <Accordion title="Tôi xuất được hồ sơ thanh toán không?">
+    Không. Không có xuất CSV, Excel hay PDF. Bạn tải được biên lai Stripe của từng đơn đã hoàn tất.
+  </Accordion>
+
+  <Accordion title="Tôi thu hồi được lời mời tổ chức không?">
+    Không. Lời mời tổ chức không thu hồi được và sẽ hết hạn sau 7 ngày. Liên kết mời **không gian làm việc** thì thu hồi được, và mỗi lần chỉ một liên kết còn hiệu lực.
+  </Accordion>
+
+  <Accordion title="Tôi đổi được tên tổ chức không?">
+    Không. Tên cố định từ lúc tạo, và cũng không tải lên được ảnh đại diện.
+  </Accordion>
+
+  <Accordion title="Tôi tự rời tổ chức được không?">
+    Không tự làm được. Chủ sở hữu hoặc quản trị viên phải gỡ bạn ra.
+  </Accordion>
+
+  <Accordion title="Đồng đội có thấy con trỏ của tôi trên canvas không?">
+    Không. Canvas đồng bộ theo thời gian thực nên bạn thấy kết quả các chỉnh sửa của đồng đội, nhưng không có con trỏ hiện diện, ảnh đại diện hay vùng sáng cho biết ai đang chọn gì.
+  </Accordion>
+
+  <Accordion title="Tôi xuất canvas thành ảnh hoặc PDF được không?">
+    Không. Bạn tải được các tài nguyên trên đó, và xuất được dòng thời gian của thanh đạo diễn thành video hoặc dự án NLE, nhưng bản thân bảng làm việc không xuất ra ảnh hay tệp được.
+  </Accordion>
+</AccordionGroup>

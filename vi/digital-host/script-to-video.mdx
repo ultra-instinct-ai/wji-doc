@@ -1,0 +1,83 @@
+---
+title: "Từ kịch bản đến video"
+description: "Đi qua quy trình từ kịch bản tới các đoạn hoàn chỉnh."
+---
+
+Một chương trình đi qua năm bước. Bạn có thể quay lại bước đã hoàn thành, nhưng không nhảy tới trước được.
+
+## Tạo chương trình
+
+**Chương trình mới** hỏi tên (tối đa 80 ký tự, không trùng trong cùng thư mục), ngôn ngữ lời thoại, tỷ lệ khung hình, và lựa chọn người dẫn, bối cảnh, trang phục.
+
+Tỷ lệ khung hình: 21:9, 16:9, 4:3, 1:1, 3:4, 9:16. Mặc định là 16:9.
+
+## Bước 1 — Kịch bản
+
+Dán kịch bản, hoặc tải lên tệp `.txt`, `.md` hay `.docx`. Tệp `.doc` cũ không được chấp nhận.
+
+## Bước 2 — Chia thành đoạn
+
+Chọn **15 giây** hoặc **30 giây** cho mỗi đoạn — chỉ có hai lựa chọn này — và tùy chọn thêm một chỉ dẫn như "giữ giọng trò chuyện".
+
+**Chia lại** sẽ tạo ra các đoạn, mỗi đoạn có lời thoại, hành động, thời lượng ước tính và sắc thái.
+
+Từ đây bạn có thể sửa bất kỳ dòng thoại nào, tách một đoạn thành hai tại vị trí con trỏ, thêm đoạn bên dưới, và xóa đoạn. Bạn thêm được thẻ, và **Gợi ý thẻ** sẽ đề xuất vài cái.
+
+<Warning>
+  Chia lại **thay thế toàn bộ các đoạn hiện có**, kể cả lời thoại bạn đã sửa tay. WJI cảnh báo trước khi làm việc đó.
+</Warning>
+
+## Bước 3 — Lời thoại
+
+Tích chọn những đoạn bạn muốn, rồi:
+
+- **Cải thiện hoặc dịch lời thoại** bằng AI
+- Tạo lời đọc cho một đoạn hoặc cho cả nhóm đã chọn
+- Nghe lại, chuyển giữa các bản trong lịch sử lời đọc
+- **Duyệt** những bản bạn hài lòng
+
+Mỗi đoạn có thể ghi đè sắc thái và tốc độ đọc của chương trình. Sắc thái có tám lựa chọn: nghiêm túc, điềm tĩnh, ấm áp, vui tươi, năng động, trang trọng, dồn dập, và trò chuyện. Tốc độ đọc chạy từ -50 đến 100, với 0 là tốc độ thường.
+
+## Bước 4 — Video
+
+Mỗi đoạn trở thành một thẻ. Bạn có thể:
+
+- Tối ưu câu lệnh video rồi tạo
+- Đổi mô hình, thời lượng, chuyển động, độ phân giải và ảnh tham chiếu cho từng đoạn
+- **Nâng cấp** một kết quả
+- **Duyệt** nó
+
+Thời lượng mặc định là độ dài lời đọc cộng một giây, tối thiểu năm giây. Chuyển động có tĩnh, tự nhiên, chủ động và sôi nổi — tất cả đều giữ cho người dẫn chớp mắt tự nhiên.
+
+<Note>
+  Một đoạn chưa có lời đọc thì chưa tạo được video. Trạng thái sẽ là **thiếu lời thoại** cho tới khi bạn tạo nó.
+</Note>
+
+Việc tạo hàng loạt mở một hộp thoại tiến trình, xác nhận trước rồi báo cáo từng đoạn khi hoàn tất. Không đóng được trong lúc đang chạy.
+
+## Bước 5 — Hoàn tất
+
+Ba tab: **Các đoạn**, **Lịch sử tạo**, và **Báo cáo credit**.
+
+Các lựa chọn xuất:
+
+| Xuất | Cho ra |
+|---|---|
+| **Tải toàn bộ lời thoại** | Một ZIP chứa `001-audio.mp3` và tương tự |
+| **Tải toàn bộ video** | Một ZIP chứa `001-video.mp4` và tương tự |
+| **Tải toàn bộ tài nguyên** | Một ZIP có thư mục `audio/` và `video/` |
+| **Tải video đã ghép** | Một tệp MP4, ghép ngay trong trình duyệt của bạn |
+| **Xuất báo cáo JSON** | Bản kê đầy đủ |
+| **Xuất CSV** | Lịch sử tạo |
+
+Tệp CSV xuất ra **lịch sử đang được lọc**, không phải toàn bộ, với các cột thời gian, thời lượng xử lý, loại, đoạn, người thao tác, câu lệnh và credit.
+
+## Trạng thái và chi phí
+
+Trạng thái video: đã duyệt, đang tạo, thiếu lời thoại, thất bại, đã tạo, không có bản xem trước, chờ xử lý. Một bộ đếm số lần thử lại xuất hiện trên những đoạn bạn đã tạo lại.
+
+Không có tự động thử lại — hãy tự bấm tạo lần nữa.
+
+<Warning>
+  **Những lượt tạo thất bại vẫn bị tính phí**, và được cộng vào tổng credit của chương trình. Tỷ lệ thành công trong báo cáo credit tính cả thất bại và lần thử lại vào mẫu số, nên nó có thể trông thấp ngay cả với một chương trình cuối cùng ra kết quả tốt.
+</Warning>

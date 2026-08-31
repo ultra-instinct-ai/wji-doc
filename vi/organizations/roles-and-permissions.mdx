@@ -1,0 +1,62 @@
+---
+title: "Vai trò và quyền"
+description: "Chủ sở hữu, quản trị viên tổ chức và thành viên làm được gì."
+---
+
+## Ba vai trò
+
+| Khả năng | Chủ sở hữu | Quản trị viên | Thành viên |
+|---|---|---|---|
+| Mở bảng điều khiển tổ chức | ✅ | ✅ | ❌ |
+| Xem **Danh tính của tôi trong tổ chức** | ✅ | ✅ | ✅ |
+| Tạo liên kết mời | ✅ | ✅ | ❌ |
+| Đổi hạn mức thành viên | ✅ | ✅ | ❌ |
+| Đổi vai trò thành viên | ✅ | ✅ | ❌ |
+| Gỡ thành viên | ✅ | ✅ | ❌ |
+| **Chuyển quyền sở hữu** | ✅ | ❌ | ❌ |
+| Quản lý phòng ban và danh sách mô hình cho phép | ✅ | ✅ | ❌ |
+| Nạp bể credit (trả trước) | ✅ | ✅ | ❌ |
+| Xem hồ sơ tài chính | ✅ | ✅ | ❌ |
+| Liệt kê mọi không gian làm việc trong tổ chức | ✅ | ✅ | ❌ |
+| Xem danh bạ thành viên | ✅ | ✅ | ✅ |
+
+Thành viên không phải quản trị viên thấy **Danh tính của tôi trong tổ chức** thay vì bảng điều khiển: vai trò, phòng ban, hạn mức, số credit hiện có thể tiêu, và những mô hình họ được dùng.
+
+## Đổi vai trò
+
+Vai trò chỉ đổi được giữa **thành viên** và **quản trị viên**. Vai trò của chủ sở hữu không đổi trực tiếp được, và cũng không trao quyền chủ sở hữu bằng cách này — hãy dùng chuyển quyền sở hữu.
+
+<Warning>
+  Các quản trị viên không được bảo vệ trước nhau. Bất kỳ quản trị viên nào cũng có thể hạ một quản trị viên khác xuống thành viên, hoặc gỡ họ khỏi tổ chức.
+</Warning>
+
+## Chuyển quyền sở hữu
+
+Chỉ chủ sở hữu hiện tại mới thấy **Chuyển quyền sở hữu** trong menu `⋯` của một thành viên. Chủ sở hữu mới phải là thành viên đang hoạt động.
+
+Sau khi chuyển, bạn trở thành quản trị viên. Bạn không hoàn tác được từ phía mình — chủ sở hữu mới phải chuyển trả lại.
+
+Chủ sở hữu không thể bị gỡ khỏi tổ chức. Muốn gỡ, hãy chuyển quyền sở hữu trước.
+
+## Hạn mức
+
+Mỗi thành viên có **hạn mức tháng** và **hạn mức vĩnh viễn**, cả hai đều có thể để trống. Đây là những giới hạn mềm về việc người đó được tiêu bao nhiêu credit của tổ chức — bản thân credit thì đằng nào cũng ra từ bể của tổ chức.
+
+Thành viên không được cấu hình hạn mức thì không tự khởi động được các lượt tạo. Họ vẫn làm việc được trong những không gian làm việc đặt ở chế độ **người chịu trách nhiệm ngân sách**, nơi chi tiêu được tính cho người phụ trách.
+
+Phòng ban gom người lại và mang theo danh sách mô hình cho phép. **Phòng ban không mang ngân sách** — hạn mức luôn tính theo từng thành viên.
+
+## Chế độ trừ phí của không gian làm việc
+
+Không gian làm việc trong một tổ chức có chế độ trừ phí quyết định một lượt tạo được tính vào hạn mức của ai.
+
+| Chế độ | Hiệu quả |
+|---|---|
+| **Hạn mức cá nhân của thành viên** | Tính cho người đã chạy lượt tạo |
+| **Người chịu trách nhiệm ngân sách** | Tính cho một người được chỉ định, bất kể ai chạy |
+
+Chế độ người chịu trách nhiệm ngân sách là cách để những người không có hạn mức riêng vẫn đóng góp được cho dự án.
+
+<Note>
+  Người xem không bao giờ khởi động được lượt tạo, ở cả hai chế độ. Một điều nữa đáng biết: các mô hình khả dụng trong một không gian làm việc đi theo danh sách cho phép của **người tạo** ra nó, chứ không phải của người đang tạo nội dung.
+</Note>

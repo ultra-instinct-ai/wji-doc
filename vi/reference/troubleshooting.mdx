@@ -1,0 +1,87 @@
+---
+title: "Khắc phục sự cố"
+description: "Các lỗi thường gặp có nghĩa gì và xử lý ra sao."
+---
+
+## Lượt tạo thất bại
+
+Khi một lượt tạo thất bại, WJI hiển thị lý do bằng ngôn ngữ dễ hiểu chứ không phải mã lỗi của nhà cung cấp. Có 33 lý do, dưới đây nhóm theo việc bạn nên làm.
+
+### Nội dung bị chặn
+
+| Thông báo | Nên làm gì |
+|---|---|
+| **Có người thật** | Ảnh tham chiếu có người thật. Hãy thay ảnh khác |
+| **Câu lệnh không an toàn** | Diễn đạt lại trung tính hơn |
+| **Nội dung video / âm thanh / hình ảnh bị hạn chế** | Chính *đầu ra* chạm vào giới hạn nội dung. Hãy chỉnh câu lệnh |
+| **Kích hoạt chính sách an toàn** | Có thể do tham chiếu hoặc đầu ra. Không chắc thì sửa cả hai |
+| **Có nội dung bị cấm** | Không tạo được ảnh. Hãy chỉnh câu lệnh hoặc tham chiếu |
+| **Có thể liên quan bản quyền** | Đổi câu lệnh hoặc tư liệu tham chiếu |
+| **Âm thanh đầu ra có thể liên quan bản quyền** | Chỉnh câu lệnh, lời thoại hoặc âm thanh tham chiếu |
+
+Việc chặn nội dung do nhà cung cấp mô hình quyết định, không phải WJI. Diễn đạt lại thường hiệu quả hơn thử lại.
+
+### Tư liệu tham chiếu không phù hợp
+
+| Thông báo | Nên làm gì |
+|---|---|
+| **Ảnh tham chiếu quá nhỏ** | Cạnh ngắn phải từ **300 px** trở lên |
+| **Âm thanh quá dài** | Rút ngắn — Seedance thường cần 15 giây trở xuống |
+| **Âm thanh quá ngắn** | Âm thanh tham chiếu của Seedance 2.0 thường cần ít nhất 1,8 giây |
+| **Định dạng âm thanh không hỗ trợ** | Hãy chuyển đổi |
+| **Thời lượng video không hợp lệ** | Kiểm tra yêu cầu của mô hình |
+| **Thời lượng video chỉnh sửa ngoài phạm vi** | Chỉnh sửa video cần đoạn tham chiếu **4 đến 30 giây** |
+| **Độ phân giải quá thấp** | Dùng video tham chiếu có độ phân giải cao hơn |
+| **Thiếu tư liệu tham chiếu** | Thêm ít nhất một ảnh hoặc một video tham chiếu |
+| **Xung đột tham chiếu** | Tạo giọng nói không nhận đồng thời ảnh tham chiếu và âm thanh tham chiếu. Hãy giữ một |
+
+### Vấn đề nằm ở câu lệnh
+
+| Thông báo | Nên làm gì |
+|---|---|
+| **Thiếu câu lệnh** | Hãy nhập vào |
+| **Câu lệnh quá ngắn** | Bổ sung mô tả |
+| **Câu lệnh không khớp loại tác vụ** | Câu lệnh ở chế độ tạo có từ khóa chỉnh sửa hoặc kéo dài. Hãy đổi loại tác vụ, hoặc viết lại |
+| **Thiếu ý định chỉnh sửa** | Chế độ chỉnh sửa cần các từ như *edit*, *add*, *remove* hoặc *replace* |
+| **Thiếu ý định kéo dài** | Chế độ kéo dài cần các từ như *extend* hoặc *continue* |
+| **Loại tác vụ không khớp** | Kiểm tra cùng lúc loại tác vụ, tỷ lệ khung hình, thời lượng và câu lệnh — chỉnh sửa và kéo dài cần tỷ lệ thích ứng và video tham chiếu |
+
+### Không có gì trả về
+
+| Thông báo | Nên làm gì |
+|---|---|
+| **Không tạo được ảnh** | Chỉnh câu lệnh hoặc tham chiếu rồi thử lại |
+| **Mô hình không cho kết quả** | Như trên |
+| **Quá thời gian tạo** | Thử lại sau |
+
+### Sự cố dịch vụ
+
+| Thông báo | Nên làm gì |
+|---|---|
+| **Lỗi dịch vụ** | Tạm thời. Thử lại sau ít phút |
+| **Đã hết hạn ngạch** | Là năng lực của nhà cung cấp, không phải credit của bạn. Thử lại sau |
+| **Lỗi mạng** | Kiểm tra kết nối rồi thử lại |
+| **Yêu cầu không hợp lệ** / **Tham số không hợp lệ** | Kiểm tra câu lệnh và tham chiếu |
+| **Tạo thất bại** | Thông báo dự phòng khi không có lý do cụ thể hơn |
+
+## Các vấn đề thường gặp khác
+
+**"Không thể phân giải ID tài nguyên, hãy thêm ảnh vào thư viện tài nguyên trước"** — bạn đã kéo một ảnh mà WJI không nhận diện được. Hãy lưu nó vào thư viện tài nguyên rồi kéo từ đó.
+
+**Một lượt tạo đang chạy và tôi muốn dừng** — bạn không dừng được. Không có nút hủy. Hãy chờ nó xong hoặc thất bại.
+
+**Tham chiếu của tôi biến mất sau khi đổi mô hình** — mô hình mới nhận ít hơn, nên những cái cũ nhất bị bỏ. Xem [Chọn mô hình](/vi/image-generation/models).
+
+**Kết quả bị cách điệu mà tôi không yêu cầu** — một kiểu dựng sẵn vẫn đang được chọn. Nó được nối vào câu lệnh cuối mà không hiện trong ô câu lệnh. Xem [Viết câu lệnh](/vi/image-generation/prompts).
+
+**Hoàn tác không lấy lại được thứ tôi đã xóa** — hãy xem hoàn tác bao gồm những gì. Tạo, dán, nhân bản, tải lên và kết quả tạo đều không hoàn tác được, và lịch sử hoàn tác bị xóa khi bạn đổi canvas. Xem [Tự động lưu và hoàn tác](/vi/infinite-canvas/autosave-and-undo).
+
+**Tôi không nâng cấp được gói thuê bao** — không có đường nâng cấp. Hãy hủy, chờ kỳ hiện tại kết thúc, rồi đăng ký gói bạn muốn. Xem [Gói thuê bao](/vi/billing/subscriptions).
+
+**"Không gian làm việc đã đạt hạn mức tổng / tháng"** — có một mức trần chi tiêu đang được đặt. Xem [Cài đặt không gian làm việc](/vi/workspaces/settings).
+
+**"Bạn không phải thành viên của tổ chức này" hoặc "tổ chức đã bị vô hiệu hóa"** — bạn được đưa về không gian cá nhân một cách tự động. Xem [Chuyển danh tính](/vi/organizations/switching-context).
+
+**Tôi không gỡ được một thành viên khỏi tổ chức** — người đó vẫn là người chịu trách nhiệm ngân sách của một không gian làm việc. Hãy phân công lại trước.
+
+**Liên kết mời tôi đã chia sẻ cần ngừng hoạt động** — liên kết của không gian làm việc thu hồi được; lời mời tổ chức thì không, và sẽ hết hạn sau 7 ngày.

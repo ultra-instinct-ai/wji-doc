@@ -1,0 +1,48 @@
+---
+title: "Ví và hồ sơ"
+description: "Theo dõi số dư và xem lại mọi giao dịch credit."
+---
+
+Bảng điều khiển chứa thẻ số dư; **Sử dụng** chứa phần chi tiết.
+
+## Thẻ số dư
+
+Hiển thị tổng credit bạn có thể tiêu, một menu các gói nạp, và ô nhập mã khuyến mãi. **Xem chi tiết** mở rộng để hiện từng túi credit riêng — còn bao nhiêu, ban đầu bao nhiêu, và hết hạn khi nào.
+
+Điều này quan trọng vì các túi hết hạn vào những thời điểm khác nhau, và WJI tiêu túi sắp hết hạn nhất trước.
+
+## Sử dụng
+
+Ba tab.
+
+<Tabs>
+  <Tab title="Thống kê">
+    Tổng credit đã tiêu và số lần gọi, chia theo không gian làm việc. Mở rộng một không gian làm việc sẽ thấy mức tiêu của từng người, tỷ trọng và số lần gọi.
+  </Tab>
+  <Tab title="Tiêu thụ">
+    Mỗi khoản tính một dòng, gồm tiêu đề, mô hình, không gian làm việc, người thao tác, mô tả, token vào và ra, **biến động credit**, **giảm giá** (di chuột để xem giá gốc, giá sau giảm, tỷ lệ và nguồn gốc), **hoàn tiền** (di chuột để xem từng khoản), và thời gian.
+
+    Lọc theo khoảng ngày, mô hình và không gian làm việc.
+  </Tab>
+  <Tab title="Nạp tiền">
+    Hai bảng. Bảng **túi credit** hiển thị tiêu đề, loại (đã mua, được tặng, thủ công), mô tả, số tiền, số dư còn lại, thời điểm hiệu lực, và hạn dùng — ghi "vĩnh viễn" khi không có. Bảng **đơn nạp** hiển thị ID, tiêu đề, số tiền, trạng thái, thời điểm tạo và thao tác.
+  </Tab>
+</Tabs>
+
+## Đơn hàng
+
+Trang đơn hàng liệt kê các đơn nạp với cùng những cột đó, lọc theo khoảng ngày.
+
+Trạng thái đơn: chờ xử lý, đã ủy quyền, hoàn tất, đã hủy, và thất bại. Một đơn chưa thanh toán sẽ hết hạn sau hai giờ kể từ khi tạo.
+
+<Warning>
+  **Đơn thuê bao không xuất hiện ở đây.** Cả trang đơn hàng lẫn tab nạp tiền đều chỉ hiển thị đơn nạp. Không có nơi nào để xem lịch sử thanh toán gói thuê bao của bạn.
+</Warning>
+
+## Biên lai và xuất dữ liệu
+
+Một đơn Stripe đã hoàn tất có **Tải biên lai**, mở biên lai trong tab mới.
+
+<Note>
+  WJI không có bất kỳ chức năng xuất dữ liệu thanh toán nào ra CSV, Excel hay PDF. Biên lai Stripe từng đơn là hồ sơ duy nhất tải xuống được.
+</Note>

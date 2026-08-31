@@ -599,6 +599,45 @@
               "vi/infinite-canvas/autosave-and-undo",
               "vi/infinite-canvas/best-practices"
             ]
+          },
+          {
+            "group": "Người dẫn chương trình số",
+            "icon": "user-tie",
+            "pages": [
+              "vi/digital-host/overview",
+              "vi/digital-host/script-to-video"
+            ]
+          },
+          {
+            "group": "Tổ chức",
+            "icon": "building",
+            "pages": [
+              "vi/organizations/overview",
+              "vi/organizations/invite-members",
+              "vi/organizations/roles-and-permissions",
+              "vi/organizations/switching-context"
+            ]
+          },
+          {
+            "group": "Thanh toán và credit",
+            "icon": "coins",
+            "pages": [
+              "vi/billing/how-credits-work",
+              "vi/billing/subscriptions",
+              "vi/billing/wallet-and-records",
+              "vi/billing/gift-cards"
+            ]
+          },
+          {
+            "group": "Tham khảo",
+            "icon": "book",
+            "pages": [
+              "vi/reference/supported-file-types",
+              "vi/reference/limits-and-quotas",
+              "vi/reference/troubleshooting",
+              "vi/reference/faq",
+              "vi/reference/glossary"
+            ]
           }
         ]
       }

@@ -1,0 +1,71 @@
+---
+title: "Định dạng tệp được hỗ trợ"
+description: "Các định dạng và giới hạn dung lượng cho việc tải lên và tham chiếu."
+---
+
+## Giới hạn dung lượng tải lên
+
+| Loại | Giới hạn |
+|---|---|
+| Ảnh, âm thanh, tài liệu | **25 MB** |
+| Video | **200 MB** |
+
+## Video tham chiếu
+
+Video tham chiếu có giới hạn chặt hơn tệp tải lên thông thường, và phụ thuộc vào độ dài.
+
+| Độ dài | Dung lượng tối đa |
+|---|---|
+| Tới 15 giây | **50 MB** |
+| 15 đến 30 giây | **200 MB** |
+
+| Ràng buộc | Giá trị |
+|---|---|
+| Thời lượng tối thiểu | 2 giây |
+| Thời lượng tối đa | 30 giây |
+| Kích thước | 300–6000 px mỗi cạnh |
+| Tỷ lệ khung hình | Từ 0,4 đến 2,5 |
+| Độ phân giải | Tối đa 1920×1080 |
+| Số lượng mặc định | 3 đoạn, trừ khi mô hình quy định khác |
+
+<Warning>
+  Nếu WJI không đọc được thời lượng của video, giới hạn dung lượng giảm xuống **50 MB** bất kể đoạn đó dài bao nhiêu. Mã hóa lại thường xử lý được.
+</Warning>
+
+Phần mở rộng video được chấp nhận: `mp4`, `mov`, `webm`, `m4v`, `mkv`, `avi`. Riêng video tham chiếu nhận **MP4 và MOV**.
+
+## Ảnh tham chiếu
+
+| Ràng buộc | Giá trị |
+|---|---|
+| Cạnh ngắn tối thiểu | **300 px** |
+| Tối đa mỗi ảnh | 20 MB trên các mô hình giao thức Vertex |
+| Số lượng | Do mô hình quy định |
+
+## Âm thanh tham chiếu
+
+Yêu cầu khác nhau tùy mô hình. Các mô hình Seedance mong đợi **từ 1,8 đến 15 giây**.
+
+## Tài liệu
+
+| Tính năng | Nhận |
+|---|---|
+| Build with AI, tạo ý tưởng | `.docx`, `.pdf`, `.txt`, `.md`, hình ảnh |
+| Kịch bản Người dẫn chương trình số | `.txt`, `.md`, `.docx` — **không** nhận `.doc` |
+| Nhập vào nút văn bản trên canvas | Tài liệu Markdown và văn bản |
+| Nút bảng trên canvas | Tệp CSV và bảng tính |
+
+## Ảnh đại diện không gian làm việc
+
+JPG và PNG.
+
+## Tải xuống
+
+| Tải xuống | Định dạng |
+|---|---|
+| Một tài nguyên đơn lẻ | Tệp gốc của nó |
+| Thư mục, dataset hoặc nhiều mục đã chọn | ZIP, giữ nguyên cấu trúc thư mục |
+| Nút văn bản trên canvas | Markdown, văn bản thuần hoặc Word |
+| Video từ thanh đạo diễn | MP4 |
+| Dự án từ thanh đạo diễn | ZIP gồm `timeline.otio`, `timeline.edl`, `media/` và `manifest.json` |
+| Lịch sử Người dẫn chương trình số | CSV |
