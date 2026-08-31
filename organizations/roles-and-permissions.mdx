@@ -3,6 +3,72 @@ title: "Roles and permissions"
 description: "Owner, org admin, and member, and what each role can do."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## The three roles
 
-Owner, org admin, and member, and what each role can do.
+| Capability | Owner | Admin | Member |
+|---|---|---|---|
+| Open the organization console | ✅ | ✅ | ❌ |
+| View **My organization identity** | ✅ | ✅ | ✅ |
+| Generate invite links | ✅ | ✅ | ❌ |
+| Change member limits | ✅ | ✅ | ❌ |
+| Change a member's role | ✅ | ✅ | ❌ |
+| Remove members | ✅ | ✅ | ❌ |
+| **Transfer ownership** | ✅ | ❌ | ❌ |
+| Manage departments and model allowlists | ✅ | ✅ | ❌ |
+| Top up the credit pool (prepaid) | ✅ | ✅ | ❌ |
+| View financial records | ✅ | ✅ | ❌ |
+| List every workspace in the organization | ✅ | ✅ | ❌ |
+| View the member directory | ✅ | ✅ | ✅ |
+
+Members who are not admins see **My organization identity** instead of the console: their role,
+department, limits, current spendable credits, and which models they may use.
+
+## Changing roles
+
+Roles can be changed between **member** and **admin** only. The owner's role cannot be changed
+directly, and owner cannot be granted this way — use ownership transfer.
+
+<Warning>
+  Admins are not protected from each other. Any admin can demote another admin to member, or remove
+  them from the organization.
+</Warning>
+
+## Transferring ownership
+
+Only the current owner sees **Transfer owner** in a member's `⋯` menu. The new owner must be an
+active member.
+
+After the transfer you become an admin. It cannot be undone from your side — the new owner has to
+transfer it back.
+
+The owner cannot be removed from the organization. To remove them, transfer ownership first.
+
+## Limits
+
+Every member has a **monthly limit** and a **permanent limit**, either of which can be left unset.
+These are soft limits on how much of the organization's credits that person may spend — the credits
+themselves come from the organization's pool either way.
+
+A member with no limits configured cannot start generations of their own. They can still work in
+workspaces set to **budget owner** mode, where the spend counts against the responsible person
+instead.
+
+Departments group people and carry model allowlists. **Departments do not carry budgets** — limits
+are always per member.
+
+## Workspace billing mode
+
+Workspaces inside an organization have a billing mode that decides whose limit a generation counts
+against.
+
+| Mode | Effect |
+|---|---|
+| **Individual member allowance** | Counts against whoever ran the generation |
+| **Budget owner** | Counts against one nominated person, whoever ran it |
+
+Budget owner mode is how you let people without their own allowance contribute to a project.
+
+<Note>
+  Viewers can never start generations, in either mode. Also worth knowing: the models available in a
+  workspace follow its **creator's** allowlist, not the allowlist of whoever is generating.
+</Note>

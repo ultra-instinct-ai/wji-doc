@@ -3,6 +3,44 @@ title: "Gift cards"
 description: "Redeem a code and add credits to your account."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Redeeming a code
 
-Redeem a code and add credits to your account.
+Go to your dashboard and find the coupon box at the bottom of the balance card. Enter the code and
+click **Redeem**.
+
+The credits are added straight away as a granted bucket, described as a code top-up.
+
+## Redeeming from a link
+
+The code box can be pre-filled from the URL, using `?code=`, `?coupon=`, or `?giftcard=`. If you have
+been sent a link with a code in it, the field is already filled when the page opens.
+
+## When redemption fails
+
+| Message | Means |
+|---|---|
+| The code does not exist or is no longer valid | Wrong code, or it has been withdrawn |
+| The code has been fully used | Its total number of redemptions has been reached |
+| Already redeemed | You have used this code before — one per account |
+| The code has expired | Past its expiry date |
+
+## Top-up packages
+
+The balance card also sells credit packages directly:
+
+| Package | Credits | Price |
+|---|---|---|
+| 10 USD | 3,000 | $10 |
+| 30 USD | 9,000 | $30 |
+| 100 USD | 30,000 | $100 |
+
+All three are the same rate — there is no bulk discount built into the packages themselves. Discounts
+come from your VIP level, your account group, or an account-specific arrangement, and show as a label
+on the package when one applies.
+
+Checkout is handled by Stripe, in US dollars. That is the only payment provider.
+
+<Note>
+  There is no "my gift cards" page. Redeemed codes do not appear in your wallet records as gift-card
+  entries — you see the resulting credit bucket instead.
+</Note>

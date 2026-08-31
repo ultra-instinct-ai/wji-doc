@@ -3,6 +3,71 @@ title: "Supported file types"
 description: "Accepted formats and size limits for uploads and references."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Upload size limits
 
-Accepted formats and size limits for uploads and references.
+| What | Limit |
+|---|---|
+| Images, audio, documents | **25 MB** |
+| Video | **200 MB** |
+
+## Reference video
+
+Reference video has tighter limits than a plain upload, and they depend on length.
+
+| Length | Maximum size |
+|---|---|
+| Up to 15 seconds | **50 MB** |
+| 15 to 30 seconds | **200 MB** |
+
+| Constraint | Value |
+|---|---|
+| Minimum duration | 2 seconds |
+| Maximum duration | 30 seconds |
+| Dimensions | 300–6000 px per side |
+| Aspect ratio | Between 0.4 and 2.5 |
+| Resolution | Up to 1920×1080 |
+| Default count | 3 clips, unless the model says otherwise |
+
+<Warning>
+  If WJI cannot read a video's duration, the size limit drops to **50 MB** regardless of how long the
+  clip actually is. Re-encoding usually fixes it.
+</Warning>
+
+Accepted video extensions: `mp4`, `mov`, `webm`, `m4v`, `mkv`, `avi`. Reference video specifically
+accepts **MP4 and MOV**.
+
+## Reference images
+
+| Constraint | Value |
+|---|---|
+| Minimum short side | **300 px** |
+| Maximum per image | 20 MB on Vertex-protocol models |
+| Count | Set by the model |
+
+## Reference audio
+
+Requirements vary by model. Seedance models expect between **1.8 and 15 seconds**.
+
+## Documents
+
+| Feature | Accepts |
+|---|---|
+| Build with AI, idea creation | `.docx`, `.pdf`, `.txt`, `.md`, images |
+| Digital Host script | `.txt`, `.md`, `.docx` — **not** `.doc` |
+| Canvas text node import | Markdown and text documents |
+| Canvas table node | CSV and spreadsheet files |
+
+## Workspace avatars
+
+JPG and PNG.
+
+## Downloads
+
+| Download | Format |
+|---|---|
+| A single asset | Its original file |
+| A folder, dataset, or multi-selection | ZIP, preserving folder structure |
+| A canvas text node | Markdown, plain text, or Word |
+| Director bar video | MP4 |
+| Director bar project | ZIP with `timeline.otio`, `timeline.edl`, `media/`, and `manifest.json` |
+| Digital Host history | CSV |

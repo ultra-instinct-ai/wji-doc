@@ -3,6 +3,64 @@ title: "Digital Host overview"
 description: "Turn a script into a presenter-led video. Requires activation."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+<Note>
+  **Digital Host is not enabled by default.** Your account needs access to it, and the app has to be
+  added to the workspace. If you do not see it in the left panel, contact your administrator.
+</Note>
 
-Turn a script into a presenter-led video. Requires activation.
+**Digital Host** takes a script and produces a video of a presenter delivering it: it splits the
+script into segments, generates voiceover for each, then generates video of the presenter speaking.
+
+## Adding the app
+
+Open **Settings → App management → Add app**. Only two apps can be added, and Digital Host is one of
+them. You can give it a custom name and description.
+
+<Warning>
+  Adding the app does not grant access to it. If your account lacks the permission, the app is added
+  to the workspace but stays hidden from your left panel. Get the permission first.
+</Warning>
+
+## Before you start
+
+Digital Host reads three kinds of material from **Idea Studio** in the same workspace:
+
+| Folder | Provides | Must contain |
+|---|---|---|
+| **Character** | The presenter | A reference image **and reference audio** |
+| **Location** | The set | A scene image |
+| **Prop** | The outfit | An image |
+
+The reference audio is not optional — without it, voiceover cannot be generated and WJI tells you to
+upload one first.
+
+## How the app is laid out
+
+Digital Host replaces the usual workspace furniture. The workspace file tree and toolbar are empty
+here, and there is no AI chat panel. Instead you get:
+
+- A **program list**, with search, filters by language, presenter, scene and step, and an archive
+  toggle
+- A **program wizard** with its own sidebar, showing the program name, current step, segment count,
+  cumulative credit spend, and pickers for changing the presenter, scene, and outfit
+
+## Programs and segments
+
+| Level | Is |
+|---|---|
+| **Program** | One finished video project. Holds the script, the settings, and the progress step |
+| **Segment** | One passage of dialogue, with its own voiceover and its own video clip |
+
+Segments are numbered `001`, `002`, and so on.
+
+<Warning>
+  There is no delete for a program — only **archive**. Archived programs are hidden from the list
+  until you switch the filter to archived and restore them. You cannot open an archived program
+  without restoring it first.
+</Warning>
+
+## Next
+
+<Card title="Script to video" icon="film" href="/digital-host/script-to-video">
+  The five steps from script to finished cut.
+</Card>

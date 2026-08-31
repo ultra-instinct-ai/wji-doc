@@ -3,6 +3,93 @@ title: "FAQ"
 description: "Short answers to the questions people ask most."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+<AccordionGroup>
+  <Accordion title="Can I cancel a generation once it has started?">
+    No. There is no cancel or stop control anywhere in WJI. The cost estimate on the generate button
+    is your checkpoint — read it before submitting, especially for batches and long video.
+  </Accordion>
 
-Short answers to the questions people ask most.
+  <Accordion title="Can I edit part of an image, like inpainting?">
+    Not directly. WJI has no inpainting, outpainting, background removal, or variations. Editing is
+    done by generating again with the original as a reference plus a prompt template — the
+    **Character** template category covers face swaps, outfit changes, expressions, and poses.
+
+    Video is the exception: the canvas can regenerate a **section** of a clip and stitch it back. See
+    [Video tools](/infinite-canvas/video-tools).
+  </Accordion>
+
+  <Accordion title="Why is there no negative prompt field?">
+    WJI does not have one. Describe what you want rather than what you do not.
+  </Accordion>
+
+  <Accordion title="Can I duplicate a whole workspace?">
+    No. You can copy individual ideas and assets, and copy canvas nodes between canvases, but a
+    workspace itself cannot be cloned.
+  </Accordion>
+
+  <Accordion title="Why does my workspace only show three apps?">
+    Three are shown by default: Idea Studio, Idea Image Generation, and Infinite Canvas. Digital Host
+    can be added if your account has access to it. Other apps exist in the system but are not
+    available to workspaces.
+  </Accordion>
+
+  <Accordion title="Why did my references disappear when I changed model?">
+    The new model accepts fewer references, so the extras were removed — **from the front of the
+    list**, meaning the ones you added first. Check the reference list after every model change.
+  </Accordion>
+
+  <Accordion title="Why can't I undo something on the canvas?">
+    Undo covers moving, resizing, aligning, deleting, connecting, tagging, and text edits. It does
+    **not** cover creating, pasting, duplicating, uploading, generation results, or grouping. It also
+    holds only 40 steps and is cleared when you switch canvases.
+  </Accordion>
+
+  <Accordion title="How do I search inside a workspace?">
+    You can search the workspace list, canvases, and prompt presets. **The file tree has no search
+    box** — use folders and tags to keep ideas findable.
+  </Accordion>
+
+  <Accordion title="How do I upgrade from VIP to SVIP?">
+    Cancel your current subscription, wait for the period to end, then subscribe to SVIP. There is no
+    direct upgrade or downgrade path.
+  </Accordion>
+
+  <Accordion title="Which credits get spent first?">
+    The bucket that expires soonest. Among credits that never expire, granted credits go before
+    purchased ones.
+  </Accordion>
+
+  <Accordion title="Do I get charged for failed generations?">
+    Not in the normal generation pipeline — failures are refunded, and partial batch failures are
+    refunded proportionally. **Digital Host is different**: failed generations there are charged and
+    counted in the program total.
+  </Accordion>
+
+  <Accordion title="Can I export my billing records?">
+    No. There is no CSV, Excel, or PDF export. You can download an individual Stripe receipt for a
+    completed order.
+  </Accordion>
+
+  <Accordion title="Can I revoke an organization invitation?">
+    No. Organization invitations cannot be revoked and expire after 7 days. **Workspace** invite
+    links can be revoked, and only one can be active at a time.
+  </Accordion>
+
+  <Accordion title="Can I rename my organization?">
+    No. The name is fixed at creation, and no avatar can be uploaded.
+  </Accordion>
+
+  <Accordion title="Can I leave an organization?">
+    Not on your own. An owner or admin has to remove you.
+  </Accordion>
+
+  <Accordion title="Can teammates see my cursor on a canvas?">
+    No. Canvases sync in real time, so you see the results of a teammate's edits, but there are no
+    presence cursors, avatars, or selection highlights.
+  </Accordion>
+
+  <Accordion title="Can I export a canvas as an image or PDF?">
+    No. You can download the assets on it, and export the director bar timeline as video or as an NLE
+    project, but the board itself cannot be exported as a picture or a file.
+  </Accordion>
+</AccordionGroup>

@@ -3,6 +3,96 @@ title: "Script to video"
 description: "Walk through the pipeline from script to finished segments."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+A program moves through five steps. You can click back to a step you have already completed, but not
+skip ahead.
 
-Walk through the pipeline from script to finished segments.
+## Creating the program
+
+**New program** asks for a name (up to 80 characters, unique within the folder), the dialogue
+language, the aspect ratio, and your choice of presenter, scene, and outfit.
+
+Aspect ratios: 21:9, 16:9, 4:3, 1:1, 3:4, 9:16. The default is 16:9.
+
+## Step 1 — Script
+
+Paste the script, or upload a `.txt`, `.md`, or `.docx` file. Older `.doc` files are not accepted.
+
+## Step 2 — Break into segments
+
+Choose **15 seconds** or **30 seconds** per segment — those are the only two options — and optionally
+add an instruction such as "keep it conversational".
+
+**Re-split** generates the segments, each with dialogue, an action, an estimated duration, and a
+tone.
+
+From here you can edit any line of dialogue, split a segment in two at the cursor, add a segment
+below, and delete segments. Tags can be added, and **Suggest tags** proposes some.
+
+<Warning>
+  Re-splitting **replaces every existing segment**, including dialogue you have edited by hand. WJI
+  warns you before it does.
+</Warning>
+
+## Step 3 — Voiceover
+
+Tick the segments you want, then:
+
+- **Improve or translate dialogue** with AI
+- Generate voiceover for one segment or for the whole selection
+- Listen back, switch between takes in the voiceover history
+- **Approve** the ones you are happy with
+
+Each segment can override the program's tone and speech rate. Tone offers eight options: serious,
+composed, warm, cheerful, energetic, dignified, brisk, and conversational. Speech rate runs from
+-50 to 100, where 0 is normal speed.
+
+## Step 4 — Video
+
+Each segment becomes a card. You can:
+
+- Optimize the video prompt, then generate
+- Change the model, duration, motion, resolution, and reference images per segment
+- **Upscale** a result
+- **Approve** it
+
+Duration defaults to the voiceover length plus one second, with a five-second floor. Motion offers
+still, natural, active, and animated — all of them keep the presenter blinking naturally.
+
+<Note>
+  A segment cannot be given video until its voiceover exists. The status shows **missing voiceover**
+  until you generate it.
+</Note>
+
+Bulk generation opens a progress dialog that confirms first, then reports each segment as it
+finishes. It cannot be closed while it is running.
+
+## Step 5 — Finish
+
+Three tabs: **Segments**, **Generation history**, and **Credit report**.
+
+Export options:
+
+| Export | Produces |
+|---|---|
+| **Download all voiceovers** | A ZIP of `001-audio.mp3` and so on |
+| **Download all videos** | A ZIP of `001-video.mp4` and so on |
+| **Download all assets** | A ZIP with `audio/` and `video/` folders |
+| **Download stitched video** | One MP4, joined in your browser |
+| **Export report JSON** | The full manifest |
+| **Export CSV** | The generation history |
+
+The CSV exports **the currently filtered history**, not everything, with columns for time, elapsed,
+type, segment, operator, prompt, and credits.
+
+## Status and cost
+
+Video statuses: approved, generating, missing voiceover, failed, generated, no preview, pending. A
+retry counter appears on segments you have regenerated.
+
+There is no automatic retry — press generate again yourself.
+
+<Warning>
+  **Failed generations are still charged**, and are included in the program's cumulative credit
+  total. The credit report's success rate counts failures and retries in its denominator, which is
+  why it can look low on a program that eventually came out well.
+</Warning>

@@ -3,6 +3,54 @@ title: "Switching context"
 description: "Move between your personal space and an organization."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+Open the profile menu at the top right. The **Current identity** section at the top lists your
+personal space and every organization you belong to, with your role in each.
 
-Move between your personal space and an organization.
+Clicking one switches to it. **The page reloads** and takes you to the workspace list — this is
+deliberate, so nothing is left holding data from the previous identity.
+
+Your choice is remembered, so opening WJI later puts you back in the same context.
+
+## What changes when you switch
+
+<Columns cols={2}>
+  <Card title="What you can see" icon="eye">
+    Workspaces, conversations, agents, and asset groups are filtered to the current identity.
+    Personal work is invisible inside an organization, and vice versa.
+  </Card>
+  <Card title="Who pays" icon="credit-card">
+    Personal context spends your own wallet. Organization context spends the organization's pool and
+    counts against your personal limit inside it.
+  </Card>
+  <Card title="Which models you get" icon="microchip">
+    Organization context uses the organization's model entitlements. **Your personal VIP benefits do
+    not apply** while you are in an organization.
+  </Card>
+  <Card title="What the credit badge shows" icon="coins">
+    Your spendable allowance inside the organization, rather than your wallet balance.
+  </Card>
+</Columns>
+
+<Note>
+  Your personal wallet page shows a banner when you are in an organization, reminding you that the
+  balance and top-ups there are personal, while work inside the organization draws on the
+  organization's pool.
+</Note>
+
+## Opening a link from another context
+
+If you open a link to an organization workspace while in a different context, WJI switches you
+automatically rather than showing an error.
+
+## When access goes away
+
+If you are removed from an organization, or the organization is disabled, your next request fails
+and WJI moves you back to your personal space with a message saying the organization identity is no
+longer valid. The organization disappears from your profile menu.
+
+There is no dedicated page explaining this — you are simply returned to your personal workspace list.
+
+## Trying to reach the wrong thing
+
+Requesting a resource that belongs to another identity is refused with a message telling you to
+switch organization first. This is a safety net, not something you should hit in normal use.

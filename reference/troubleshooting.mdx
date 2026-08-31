@@ -3,6 +3,99 @@ title: "Troubleshooting"
 description: "What common errors mean and how to resolve them."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Generation failures
 
-What common errors mean and how to resolve them.
+When a generation fails, WJI shows a plain-language reason rather than a provider error code. There
+are 33 of them, grouped below by what you should do about it.
+
+### Content was blocked
+
+| Message | What to do |
+|---|---|
+| **Contains a real person** | The reference image shows a real person. Replace it |
+| **Prompt is unsafe** | Rephrase in more neutral terms |
+| **Video / audio / image content restricted** | The *output* triggered a content limit. Adjust the prompt |
+| **Triggered safety policy** | Either the reference or the output. Change both if unsure |
+| **Contains prohibited content** | The image could not be produced. Adjust the prompt or reference |
+| **May involve copyright** | Change the prompt or the reference material |
+| **Output audio may involve copyright** | Adjust the prompt, dialogue, or reference audio |
+
+Content blocks are decided by the model provider, not by WJI. Rewording usually helps more than
+retrying.
+
+### Reference material is wrong
+
+| Message | What to do |
+|---|---|
+| **Reference image too small** | The short side must be at least **300 px** |
+| **Audio too long** | Shorten it — Seedance generally needs 15 seconds or less |
+| **Audio too short** | Seedance 2.0 reference audio generally needs at least 1.8 seconds |
+| **Audio format unsupported** | Convert it |
+| **Video duration invalid** | Check the model's requirements |
+| **Edit video duration out of range** | Video editing needs a reference clip of **4 to 30 seconds** |
+| **Resolution too low** | Use a higher-resolution reference video |
+| **Missing reference material** | Add at least one reference image or video |
+| **Reference conflict** | Speech generation cannot take a reference image and reference audio together. Keep one |
+
+### The prompt is the problem
+
+| Message | What to do |
+|---|---|
+| **Prompt missing** | Enter one |
+| **Prompt too short** | Add more description |
+| **Prompt does not match the task type** | A generate-mode prompt contains edit or extend keywords. Switch the task type, or reword |
+| **Missing edit intent** | Edit mode needs words like *edit*, *add*, *remove*, or *replace* |
+| **Missing extend intent** | Extend mode needs words like *extend* or *continue* |
+| **Task type mismatch** | Check task type, aspect ratio, duration, and prompt together — edit and extend need adaptive ratio and a reference video |
+
+### Nothing came back
+
+| Message | What to do |
+|---|---|
+| **No image generated** | Adjust the prompt or reference and try again |
+| **No result from the model** | Same |
+| **Generation timed out** | Retry later |
+
+### Service problems
+
+| Message | What to do |
+|---|---|
+| **Service error** | Temporary. Retry shortly |
+| **Quota exhausted** | Provider capacity, not your credits. Retry later |
+| **Network error** | Check your connection and retry |
+| **Invalid request** / **Invalid parameter** | Check the prompt and references |
+| **Generation failed** | The generic fallback when nothing more specific applies |
+
+## Other common problems
+
+**"Cannot resolve asset ID, add the image to the asset library first"** — you dragged an image WJI
+could not identify. Save it to the asset library, then drag it from there.
+
+**A generation is running and I want to stop it** — you cannot. There is no cancel. Wait for it to
+finish or fail.
+
+**My references disappeared after switching models** — the new model accepts fewer, so the oldest
+were dropped. See [Choosing a model](/image-generation/models).
+
+**My result is stylized and I did not ask for it** — a style preset is still selected. It is appended
+to the final prompt without appearing in the prompt box. See
+[Writing prompts](/image-generation/prompts).
+
+**Undo will not bring back what I deleted** — check what undo covers. Creating, pasting, duplicating,
+uploading, and generation results are not undoable, and undo is cleared when you switch canvases.
+See [Autosave and undo](/infinite-canvas/autosave-and-undo).
+
+**I cannot upgrade my subscription** — there is no upgrade path. Cancel, wait for the period to end,
+then subscribe to the plan you want. See [Subscriptions](/billing/subscriptions).
+
+**"Workspace has reached its total / monthly limit"** — a spending cap is set. See
+[Workspace settings](/workspaces/settings).
+
+**"You are not a member of this organization" or "the organization is disabled"** — you are returned
+to your personal space automatically. See [Switching context](/organizations/switching-context).
+
+**I cannot remove a member from my organization** — they are still the budget owner of a workspace.
+Reassign it first.
+
+**The invite link I shared needs to stop working** — workspace links can be revoked; organization
+invitations cannot, and expire after 7 days.

@@ -3,6 +3,65 @@ title: "Limits and quotas"
 description: "Selection caps, zoom range, undo depth, and other hard limits."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Canvas
 
-Selection caps, zoom range, undo depth, and other hard limits.
+| Limit | Value |
+|---|---|
+| Zoom range | 10% to 312.5% |
+| Select all | **50 nodes** |
+| Select by color tag | **50 nodes** |
+| Undo depth | **40 steps**, session-only, cleared on canvas switch |
+| Color tags | 8 |
+| Grid spacing | 20 px |
+| Autosave | After ~1.5s idle, at most 3s during continuous editing |
+
+Minimum node sizes: group 120×80, text 120×60, YouTube 240×135.
+
+## Generation
+
+| Limit | Set by |
+|---|---|
+| Reference images, video, and audio counts | The model |
+| Batch size | The model |
+| Video duration | The model's minimum, maximum, and step |
+| Aspect ratios | The model |
+
+When you exceed a reference limit, the newest references are kept and the **oldest are dropped from
+the front of the list**.
+
+## Digital Host
+
+| Limit | Value |
+|---|---|
+| Program name | 80 characters |
+| Segment length | 15 or 30 seconds — no other option |
+| Segment video duration | 5 to 60 seconds |
+| Speech rate | -50 to 100 |
+
+## Workspace spending
+
+A workspace can carry a **total** cap and a **monthly** cap, in credits. Either can be left unset.
+The monthly cap resets on the 1st of the calendar month.
+
+For features whose cost cannot be estimated in advance, a workspace that has spent **exactly** its
+limit cannot start new work.
+
+## Subscription
+
+| | Free | VIP | SVIP |
+|---|---|---|---|
+| Concurrent generations | 1 | 4 | 8 |
+| Monthly credits | 300 grant | 4,500 | 10,000 |
+
+## Other
+
+| Limit | Value |
+|---|---|
+| Free monthly grant | 300 credits, on your sign-up anniversary |
+| Organization invitation validity | **7 days**, not adjustable |
+| Workspace invite links | **One active at a time** |
+| Order expiry | 2 hours if unpaid |
+| IP asset uploads | 20, on every plan |
+| Recently used references | 6 |
+| Prompt templates | 58, in 4 categories |
+| Style presets | 13, plus custom |
