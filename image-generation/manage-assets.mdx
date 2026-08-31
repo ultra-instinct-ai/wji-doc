@@ -3,6 +3,80 @@ title: "Managing assets"
 description: "Save, organize, preview, reorder, rename, and comment on the media you generate."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Filing a result
 
-Save, organize, preview, reorder, rename, and comment on the media you generate.
+| Action | Where | What it does |
+|---|---|---|
+| **Save to Idea** | Result menu, workspace only | Attaches the asset to the current idea |
+| **Set as Idea cover** | Result menu | Makes it the idea's cover image |
+| **Create idea from image** | Result menu | Creates a new idea with this image attached |
+| **Save to asset library** | Canvas node toolbar | Files a canvas node's media into a dataset |
+| **Move to** | Asset menu | Moves between datasets — removed from the source |
+| **Copy to** | Asset menu | Adds to the target and keeps the original |
+
+**Move to** and **Copy to** open a tree picker where you select the destination dataset. Both work
+on a multi-selection, and report how many items were moved or copied.
+
+<Note>
+  Moving an asset that is the source dataset's cover promotes another image to cover automatically.
+</Note>
+
+## Preview
+
+Six different preview surfaces exist, each suited to a different job.
+
+| Preview | Opens from | Good for |
+|---|---|---|
+| **Lightbox** | Clicking an image | Quick look, arrow-key paging, zoom |
+| **Asset preview dialog** | The eye icon, thumbnails, history | Everything — info, generation details, comments, reuse |
+| **Dataset preview** | A canvas dataset node | Reviewing and reordering a set, editing its fields inline |
+| **Bundle preview** | A canvas bundle node | Enabling, disabling, renaming, and reordering members |
+| **Panorama viewer** | A panorama node | 360° viewing |
+| **Gallery view** | Idea detail | Full-screen browsing with keyboard navigation |
+
+<Warning>
+  The lightbox is for images only. Video deliberately does not use it, because clicking would
+  trigger a download instead of playing.
+</Warning>
+
+The **asset preview dialog** is the one worth knowing well. It carries basic info, file details,
+full generation details, both prompts with copy buttons, the references used, tags, comments,
+likes, inline renaming, and **Use for generation again**.
+
+## Reordering
+
+Nine different lists support drag-to-reorder, and they persist in different places:
+
+| List | Persists as |
+|---|---|
+| Datasets in the sidebar | The folder's child order |
+| Datasets in the asset library | The parent's child order |
+| Assets inside a dataset | The dataset's image order |
+| Assets inside a bundle | The bundle node's asset order |
+| Canvas generation references | The order of the node's connections |
+| Reference cards in the generator | The submitted reference array |
+| Director bar clips | The timeline |
+| Storyboard builder shots | The builder's selection |
+
+<Note>
+  In the generator, only references of the **same media type** can be reordered against each other.
+</Note>
+
+## Renaming, tagging, and deleting
+
+Rename inline at the top of the asset preview dialog, or in its info panel. Tags are added in the
+same panel — type and press Enter.
+
+Delete from the asset menu, the sidebar thumbnail popover, or the idea detail view. Deleting a
+single asset asks for confirmation; deleting a multi-selection tells you how many will go.
+
+## Comments and likes
+
+Both live in the asset preview dialog, and both depend on the workspace allowing them. Hovering a
+like shows who liked it and when. See [Viewer access](/workspaces/viewer-access).
+
+## AI description
+
+**Describe image**, **Describe video**, or **Describe audio** runs AI over the asset and returns a
+written description you can copy. On the canvas, the same feature creates a text node from the
+result.

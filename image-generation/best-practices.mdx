@@ -3,6 +3,70 @@ title: "Image generation best practices"
 description: "Prompting, references, and model choices that reliably produce usable results."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Use references for consistency, prompts for change
 
-Prompting, references, and model choices that reliably produce usable results.
+Words are bad at holding a character's face steady across shots; references are good at it. The
+reliable pattern is to fix identity with a reference and describe only what changes in the prompt.
+
+> Reference: `character` photo of your lead
+> Prompt: "walking away down a wet alley at night, seen from behind"
+
+Trying to hold identity through description alone is where most inconsistency comes from.
+
+## Type your references
+
+A reference typed as **character** is treated differently from one typed as **style**. When you pull
+references from your ideas the type comes across automatically — one more reason to keep idea types
+accurate in [Idea Studio](/idea-studio/best-practices).
+
+## Watch what happens when you switch models
+
+Switching models silently changes things:
+
+- Your aspect ratio may move to the nearest supported one
+- References beyond the new model's limit are **dropped from the front of the list**
+- The final prompt is cleared and re-optimized
+
+If a result suddenly looks wrong after a model change, check the reference list first.
+
+## Editing means regenerating
+
+WJI has no inpainting, outpainting, background removal, or variations. "Editing" is done by
+generating again with references plus a prompt template.
+
+The **Character** template category is built for this — face swap, outfit change, hairstyle,
+expression, pose, age, gender. Add the original as a reference, apply the template, and generate.
+
+## Read the final prompt before an expensive run
+
+The Final prompt tab shows what is actually being sent. Before committing to a large batch or a long
+video, look at it. Optimization sometimes adds detail you did not intend, and the style preset is
+appended without appearing in the box.
+
+## Keep a seed when you are close
+
+When a result is nearly right, copy its seed from the history card and reuse it while you adjust the
+prompt. You get variation in what you changed rather than a different image entirely.
+
+## Storyboard first, then generate shots individually
+
+Grid mode is excellent for deciding coverage and terrible for final resolution — each cell is a
+fraction of one image. Use it to choose the shots, then generate the ones you want at full size.
+
+## Estimate before you commit
+
+The generate button carries a cost estimate. For per-second models it shows a rate rather than a
+total, because the charge depends on the duration the model produces.
+
+**Generations cannot be cancelled.** The estimate is your only checkpoint, so read it — especially
+before batches and long clips.
+
+## Bookmark instead of hunting
+
+History fills up quickly. Bookmark anything you might return to and use the bookmarked filter, or
+save it to an idea straight away. Searching by scrolling is not a plan.
+
+## Save prompts that work
+
+When a prompt produces good results repeatedly, **Save as prompt preset**. Scoped to a workspace,
+presets stop everyone on the project reinventing the same phrasing.

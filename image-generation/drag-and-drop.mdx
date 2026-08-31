@@ -3,6 +3,99 @@ title: "Drag and drop"
 description: "Every drag interaction in WJI, from desktop files to canvas nodes to reference slots."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+Dragging is how most media moves around WJI. This page lists what you can drag, where you can drop
+it, and what happens.
 
-Every drag interaction in WJI, from desktop files to canvas nodes to reference slots.
+## Dropping onto the canvas
+
+| Drag this | Result |
+|---|---|
+| An asset from anywhere (library, history, sidebar, grid) | A media node at the drop point |
+| A dataset card from the asset library | A dataset reference node |
+| Image, video, or audio files from your desktop | One media node per file |
+| A CSV or spreadsheet file | A table node — multiple files stack downward |
+| A Markdown or text document | A text node |
+
+<Note>
+  If an asset has a URL but no ID yet, WJI resolves it first. If that fails you are told to add the
+  image to the asset library before dragging it.
+</Note>
+
+## Alt-dragging on the canvas
+
+Holding **Alt** changes what a drag means, and it means four different things depending on what you
+grab.
+
+| Alt-drag | Onto | Result |
+|---|---|---|
+| A media or text node | A **dataset node** | Files it into that dataset |
+| A media or text node | An **asset library dataset** | Files it there |
+| A media or text node | The **gap between library cards** | Creates a new dataset at that position |
+| A media node | The **director bar** | Adds a clip, or sets the clip's main media |
+| A **thumbnail inside a dataset node** | Another dataset node | Moves the asset between datasets |
+| A **thumbnail inside a dataset node** | Empty canvas | Creates a media node from it |
+| **A node itself** | Anywhere on canvas | Duplicates it |
+| **A connection handle** | Multiple nodes | Fans out one new node per source |
+
+If you drop somewhere that means nothing, WJI tells you where valid targets are rather than failing
+silently.
+
+## Moving assets between datasets
+
+| From | To | Result |
+|---|---|---|
+| A sidebar dataset thumbnail | The middle contents pane | Moves into the current dataset |
+| A contents grid card | A sidebar dataset card | Moves into that dataset |
+| Any asset | Sidebar empty space | Opens the new-dataset dialog |
+| Any asset or file | A gap between asset library cards | Creates a new dataset at that position |
+
+<Warning>
+  These are **moves**, not copies. The asset is removed from its source dataset and added to the
+  target, and both are saved. The sidebar reports the drag as a copy operation, but the behaviour is
+  a move — use **Copy to** from the asset menu if you want it in both places.
+</Warning>
+
+Dropping an asset that is already in the target tells you so and changes nothing.
+
+## Dropping onto reference slots
+
+| Target | Accepts |
+|---|---|
+| The unified reference block | Files or assets, sorted automatically into image, video, or audio |
+| Reference image list | Image files or image assets |
+| Reference video list | Video files or video assets |
+| Reference audio list | Audio files or audio assets |
+| First frame / last frame slots | An image file or image asset |
+
+Assets dragged from a dataset carry their dataset name and type with them, so the reference arrives
+already named and already typed as character, location, and so on.
+
+<Note>
+  On the canvas, first and last frames are **not** set by dragging. They are assigned through
+  connections. See [Connections and references](/infinite-canvas/connections-and-references).
+</Note>
+
+## Dropping files from your desktop
+
+Beyond the canvas, these areas accept files directly:
+
+- The dataset contents pane — images, video, and audio
+- The asset library, which creates a new dataset from what you drop
+- Every reference slot listed above
+
+The dataset contents pane also accepts **pasted** files.
+
+<Note>
+  The idea detail page has an upload button but is not a drop target.
+</Note>
+
+## Resizing panels
+
+The sidebar and contents panes both have a drag handle on their right edge.
+
+| Pane | Range |
+|---|---|
+| Sidebar | 240–480 px |
+| Contents | 300–480 px |
+
+Widths are remembered between sessions.

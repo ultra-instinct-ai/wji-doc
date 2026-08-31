@@ -3,6 +3,64 @@ title: "History and results"
 description: "Filter your generation history, bookmark results, and reuse settings."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+Everything you generate appears in the history below the form, newest first. Scrolling loads more.
 
-Filter your generation history, bookmark results, and reuse settings.
+## Filtering
+
+Two rows of controls:
+
+| Row | Options |
+|---|---|
+| Scope | **All**, the current dataset's name, or **Bookmarked** |
+| Media type | **All**, **Image**, **Video**, **Audio** |
+
+A view toggle switches between list and grid. Audio only appears as an option when you are working
+in a dataset context.
+
+## What each entry shows
+
+- Mode, model, aspect ratio, resolution
+- **Seed** — click it to copy
+- Number of results
+- **Credits charged**
+- Duration and creation time
+- The final prompt, with the original prompt expandable beneath it
+- Reference thumbnails, which preview on hover
+
+## Actions on an entry
+
+| Action | Notes |
+|---|---|
+| **Bookmark** | Adds it to the bookmarked filter |
+| **Edit again** | Loads model, ratio, batch size, prompt, references, and model settings back into the form |
+| **Rerun** | Restores the settings and submits immediately, skipping prompt optimization |
+| **HD upscale** | Seedance results with a seed |
+| **Move to current dataset** | Refiles the entry |
+| **Delete** | Asks for confirmation |
+
+## Actions on a single result
+
+Hovering an individual image or clip gives you more:
+
+- **Download**
+- **Describe** the image, video, or audio with AI
+- **Edit again** — reconstructs the settings from the asset itself
+- Add as **reference image**, **reference video**, or **reference audio**
+- Set as **first frame** or **last frame**
+- Inside a workspace: **Save to Idea**, **Set as Idea cover**, **Create idea from image**
+
+You can also drag a result straight onto a canvas, or click it to open the full preview dialog.
+
+## Retrying a failure
+
+There is no retry button. Use **Rerun** on the history entry, or **Edit again** if you want to
+change something first.
+
+Failures show a plain-language reason. See [Troubleshooting](/reference/troubleshooting) for what
+each one means.
+
+## Credits
+
+The credits figure on a history entry is the **actual** charge, not the estimate. For models billed
+per second or per minute it is filled in shortly after the result completes, once the real duration
+is known.

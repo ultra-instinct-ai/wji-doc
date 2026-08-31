@@ -3,6 +3,59 @@ title: "Generation settings"
 description: "Aspect ratio, batch size, reference weights, and the settings specific to each model."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+Open the gear icon beside the prompt box.
 
-Aspect ratio, batch size, reference weights, and the settings specific to each model.
+<Frame caption="The generation settings popover">
+  <img src="/images/_placeholder.png" alt="Generation settings popover showing aspect ratio thumbnails, batch size slider, and weight sliders" />
+</Frame>
+{/* SHOT image-generation/settings-01
+    Screen: the generation settings popover open over the generation form
+    Must show: the aspect ratio thumbnail grid, the batch size slider, at least one weight slider,
+               and the style prompt entry
+    State: an image model selected that exposes reference weight
+    UI language: English
+    Size: >= 1200x900
+    Anonymize: none needed
+*/}
+
+## Settings you will see most
+
+| Setting | What it does |
+|---|---|
+| **Aspect ratio** | A grid of ratio thumbnails. Only ratios the model supports appear |
+| **Batch size** | How many results per run. The range comes from the model |
+| **Reference weight** | How strongly references influence the result |
+| **Omni weight** | On models that support it |
+| **Style weight** | On models that support it |
+| **Stylize** | Typically 0–1000, on Midjourney-family models |
+| **Style prompt** | Opens the style picker |
+| **Duration** | Video only |
+
+**Auto match** is a valid aspect ratio choice on some models — it matches the input image rather
+than forcing a shape.
+
+## Seed
+
+When a model exposes a seed, it appears as a tag on the main form. `-1` means unspecified, so the
+model picks its own.
+
+The seed is what makes a result repeatable. If you get an image that is nearly right, note its seed
+from the history card — clicking the seed tag copies it — and reuse it while you adjust the prompt.
+
+## Model-specific settings
+
+Everything else in the popover is generated from the model definition and changes as you switch
+models. Each control has a tooltip explaining what it does.
+
+Common ones:
+
+- **Resolution** and **output format**
+- **Chaos** — variety, 0 to 100
+- **Quality**
+- **Image weight** and **style reference weight** on Midjourney-family models
+- **Raw mode** and **HD**
+
+## Batch size and storyboards
+
+Choosing a storyboard layout forces batch size to 1, because the grid *is* the single output. See
+[Storyboard mode](/image-generation/storyboard-mode).

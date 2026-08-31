@@ -1,8 +1,67 @@
 ---
 title: "Storyboard mode"
-description: "Generate a grid of shots or multiple angles, then upscale the frames you keep."
+description: "Generate a grid of shots or multiple angles in one image, then upscale the frames you keep."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+Storyboard mode produces a single image divided into a grid, where each cell is a different shot or
+a different angle on the same subject.
 
-Generate a grid of shots or multiple angles, then upscale the frames you keep.
+## Two modes
+
+<Tabs>
+  <Tab title="Storyboard">
+    Each cell is a **different shot** — a sequence. Use it to block out how a scene cuts together.
+  </Tab>
+  <Tab title="Multi-angle">
+    Each cell is the **same subject from a different angle**. Use it for character turnarounds and
+    reference sheets.
+  </Tab>
+</Tabs>
+
+## Layout
+
+Three layouts, chosen from a dropdown:
+
+| Layout | Cells |
+|---|---|
+| 2×2 | 4 |
+| 3×3 | 9 |
+| 4×4 | 16 |
+
+Choosing a layout forces batch size to 1 — the grid is the output.
+
+**Add shot descriptions** is a toggle. With it on, each cell carries a caption describing the shot.
+
+## Upscaling a cell
+
+The grid is one image, so an individual cell is only a fraction of its resolution. When you find a
+frame worth keeping, upscale it.
+
+<Steps>
+  <Step title="Pick the cell">
+    From the storyboard result card.
+  </Step>
+  <Step title="Choose a resolution">
+    2K or 4K, with an optional detail-enhancement toggle.
+  </Step>
+  <Step title="Start the upscale">
+    WJI crops that cell, uploads it, and regenerates it at the higher resolution.
+  </Step>
+</Steps>
+
+<Note>
+  Cell upscaling requires a specific model to be available on your account. If it is missing, WJI
+  tells you rather than silently substituting a different one.
+</Note>
+
+## On the canvas
+
+The canvas has its own storyboard tools that go further — one-click 2×2, 3×3, and 4×4 grids from an
+existing image, plus a storyboard builder for assembling frames. See
+[Image presets and storyboards](/infinite-canvas/image-presets-and-storyboard).
+
+<Tip>
+  Storyboard mode is at its best early, when you are deciding how a scene should be covered. Once
+  you know the shots you want, generate them individually at full resolution instead — you get more
+  control per frame and do not have to upscale afterwards.
+</Tip>

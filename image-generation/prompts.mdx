@@ -3,6 +3,68 @@ title: "Writing prompts"
 description: "User prompts, AI-optimized final prompts, mentions, templates, and style presets."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Two prompts, not one
 
-User prompts, AI-optimized final prompts, mentions, templates, and style presets.
+The prompt box has two tabs.
+
+<Tabs>
+  <Tab title="User prompt">
+    What you typed. This is yours and WJI does not change it.
+  </Tab>
+  <Tab title="Final prompt">
+    What actually gets sent. WJI rewrites your prompt into a fuller description, and you can edit
+    the result by hand or press refresh to optimize again.
+  </Tab>
+</Tabs>
+
+Switching to the Final prompt tab triggers optimization automatically. So does changing the model —
+different models respond to different phrasing, so the final prompt is regenerated to suit.
+
+<Note>
+  If you press generate while optimization is still running, WJI waits for it to finish before
+  submitting. The button stays disabled until then.
+</Note>
+
+## Referencing your assets
+
+Type `@` in the prompt to mention a reference you have added — `@image1`, `@video1`, `@audio1`.
+This tells the model which reference you mean when you write something like
+"put @image1 in the setting from @image2".
+
+References are auto-named `image1`, `image2` and so on, but you can rename them. Names longer than
+64 characters fall back to the automatic name.
+
+## Prompt templates
+
+The template library has 58 templates in four categories:
+
+| Category | Covers |
+|---|---|
+| **Character** | Face swaps, outfit changes, hairstyles, expressions, poses, age, gender |
+| **Composition** | Framing and layout |
+| **Camera** | Camera movement and angles |
+| **Blend** | Combining references |
+
+The character templates are how most editing gets done in WJI — see
+[Best practices](/image-generation/best-practices).
+
+## Style presets
+
+Thirteen styles are available, plus a custom option:
+
+None · Cinematic · Japanese anime · 3D animation · Unreal Engine · Photorealistic · Cartoon ·
+Japanese manga · American comic · 3D render · Claymation · Blind-box figure · Hand-drawn sketch
+
+<Warning>
+  The style is appended to the final prompt when you submit, but it is **not shown in the prompt
+  box**. If your results look stylized and you cannot see why, check whether a style is still
+  selected from an earlier generation.
+</Warning>
+
+Inside a workspace, your style choice is saved to the workspace rather than just your browser.
+
+## Saving a prompt you like
+
+**Save as prompt preset** stores the prompt for reuse. Presets can be scoped to the workspace so
+everyone on the project can use them. See
+[Workspace settings](/workspaces/settings).

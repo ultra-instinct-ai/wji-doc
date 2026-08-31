@@ -3,6 +3,65 @@ title: "Choosing a model"
 description: "Browse image and video model families and understand what changes when you switch."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+The model list comes from the server, not from this documentation — what you see depends on your
+plan and your organization. Free accounts get a curated selection; VIP and SVIP accounts get all
+models.
 
-Browse image and video model families and understand what changes when you switch.
+## Filtering the list
+
+<Tabs>
+  <Tab title="Image models">
+    Filter buttons group models into families: **All**, **Nano Banana**, **GPT Image**,
+    **Seedream**, **Unfiltered**, and **Other**.
+  </Tab>
+  <Tab title="Video models">
+    Two filter rows. The first is by **input type** — all, first frame, first and last frame,
+    reference image, reference video, reference audio. The second is by **family** — Kling, Veo,
+    Sora, Seedance, Wan, Hailuo, unfiltered, other.
+
+    The input-type filter is the useful one. If you need to animate a still you already have, filter
+    to *first frame* and you only see models that can do it.
+  </Tab>
+</Tabs>
+
+Each entry shows the model's avatar, name, and a one-line description.
+
+## What a model's capabilities look like
+
+WJI does not list capabilities as badges. Instead, **the controls change when you switch models**.
+A setting that is not there is a setting that model does not support.
+
+Switching models can also change your existing settings:
+
+| If the new model... | WJI... |
+|---|---|
+| Does not support your aspect ratio | Moves you to the closest ratio it does support |
+| Accepts fewer reference images | **Drops the extra ones from the front of the list** |
+| Does not accept references at all | Tells you the model does not support reference images |
+| Has different duration limits | Applies its own default duration |
+
+<Warning>
+  The reference trimming is worth remembering. If you have five references and switch to a model
+  that takes three, you keep the **last three** — the ones you added first are removed.
+</Warning>
+
+Switching models also clears the final prompt and re-optimizes it.
+
+## Aspect ratio fallbacks
+
+Inside a workspace, if the new model does not support your current ratio, WJI first tries the
+workspace's default ratio, and only then falls back to the model's first supported ratio.
+
+## Model-specific settings
+
+Anything unique to a model appears in the settings popover as a dynamic form. Common examples:
+
+- **Seed** — `-1` means unspecified
+- **Resolution** or output size
+- **Chaos**, **quality**, **stylize**, **raw mode**, **HD** on Midjourney-family models
+- **Task mode**, **auto duration**, **output format** on Seedance video models
+- **Speaker**, **speech rate**, **pitch**, **loudness** on text-to-speech models
+
+<Note>
+  There is no negative prompt field in WJI. Describe what you want rather than what you do not.
+</Note>

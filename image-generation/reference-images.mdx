@@ -3,6 +3,85 @@ title: "Reference images"
 description: "Add references, label them by type, and understand the per-model limits."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+References are how you keep a character looking like the same person across a hundred shots. They
+matter more than prompt wording for consistency.
 
-Add references, label them by type, and understand the per-model limits.
+## Six ways to add one
+
+<Steps>
+  <Step title="Pick a file">
+    Click to browse. Multiple selection works.
+  </Step>
+  <Step title="Drag or paste">
+    Drop files onto the prompt box or paste them. Only images are accepted this way.
+  </Step>
+  <Step title="From a dataset">
+    Choose from your workspace ideas, grouped by character, location, outfit, prop, and style.
+  </Step>
+  <Step title="From IP assets">
+    A separate tab for virtual character assets.
+  </Step>
+  <Step title="From a result">
+    Hover any history result and add it as a reference directly.
+  </Step>
+  <Step title="Recently used">
+    The last six references you used stay one click away.
+  </Step>
+</Steps>
+
+## Reference types
+
+Every reference carries a type. Set it by clicking the card.
+
+| Type | Use for |
+|---|---|
+| **Character** | People |
+| **Location** | Places and sets |
+| **Outfit** | Clothing |
+| **Prop** | Objects |
+| **Style** | Look and treatment |
+| **Layout** | Composition |
+| **Other** | Anything else |
+
+References pulled from a dataset inherit their type automatically, which is a good reason to keep
+your idea types accurate.
+
+Each reference can also be named. Names default to `image1`, `image2` and so on, and are what you
+address with `@` mentions in the prompt.
+
+## Limits
+
+**The maximum number of references is set by the model, not by WJI.** When you exceed it, new
+references are added at the end and the oldest ones are dropped from the front.
+
+Vertex-protocol models cap a single reference image at 20 MB.
+
+## Reference video and audio
+
+In video mode you can also add reference video and audio.
+
+| Constraint | Value |
+|---|---|
+| Format | MP4 or MOV |
+| Default maximum | 3 clips |
+| Duration | 2–15 seconds, extended to 30 on some models |
+| File size | 50 MB up to 15s, 200 MB for 15–30s |
+| Dimensions | 300–6000 px per side |
+| Aspect ratio | Between 0.4 and 2.5 |
+| Pixels | Up to 1920×1080 |
+
+<Warning>
+  If WJI cannot read a video's duration, the size limit drops to 50 MB regardless of length.
+</Warning>
+
+## Weights
+
+There is a single **reference weight** slider applying to all references at once, not one per image.
+Midjourney-family models add separate image weight and style reference weight controls in the
+model-specific settings.
+
+## On the canvas
+
+The Infinite Canvas does not use an upload list. References come from **connections** — you wire an
+image, video, or audio node into a generation node and it becomes a reference. See
+[Connections and references](/infinite-canvas/connections-and-references).
