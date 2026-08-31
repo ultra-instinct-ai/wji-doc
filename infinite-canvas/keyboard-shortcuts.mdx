@@ -3,6 +3,85 @@ title: "Keyboard shortcuts"
 description: "Every canvas shortcut, grouped by nodes, editing, viewport, tags, and the director bar."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+Press the question mark in the capsule toolbar to see this list in the app. Mac keys are shown; on
+Windows use `Ctrl` where `⌘` appears.
 
-Every canvas shortcut, grouped by nodes, editing, viewport, tags, and the director bar.
+## Nodes
+
+| Shortcut | Action |
+|---|---|
+| `I` | New image generation node |
+| `V` | New video generation node |
+| `A` | New audio generation node |
+| `/` | Create a text node from a prompt preset |
+| `⌥` + `I` / `V` / `A` | One-to-one generation from each selected node |
+| Double-click empty space | Create menu |
+| Double-click a text node | Edit it |
+| `⌘ ↵` | Commit a text edit |
+| `⌥` + drag | Duplicate a node, or drop into a dataset |
+| Drag `+` | Connect from a multi-selection |
+| `⌥` + drag `+` | Fan out from a multi-selection |
+
+## Editing
+
+| Shortcut | Action |
+|---|---|
+| `⌘Z` | Undo |
+| `⌘⇧Z` (Windows `Ctrl+Y`) | Redo |
+| `⌘C` | Copy |
+| `⌘V` | Paste |
+| `⌘D` | Duplicate |
+| `⌫` or `Del` | Delete |
+| `Esc` | Cancel or clear selection |
+| `⌘A` | Select all, up to 50 nodes |
+| `⌘G` | Group |
+
+## Viewport
+
+| Shortcut | Action |
+|---|---|
+| `Space` + drag | Pan |
+| Middle mouse drag | Pan |
+| Scroll | Pan vertically; `Shift` + scroll pans horizontally |
+| `⌘` + scroll | Zoom |
+| `⌘ =` | Zoom in |
+| `⌘ -` | Zoom out |
+| `⇧Z` | Fit all nodes |
+| `Tab` or `Z` | Zoom to selection |
+| `H` | Align horizontally |
+| `V` | Align vertically, when two or more nodes are selected |
+| `⌘K` | Auto align |
+| `[` | Shrink a text node's window |
+| `]` | Grow a text node's window |
+| `⇧` + click or drag | Add to selection |
+
+## Tags and panels
+
+| Shortcut | Action |
+|---|---|
+| `⌘B` | Asset library |
+| `⌥` + `` ` `` | Toggle pick-reference mode |
+| `⌘1`–`⌘8` | Toggle a color tag on the selection |
+| `⌘0` | Clear tags from the selection |
+| `⇧1`–`⇧8` | Select nodes carrying that tag, up to 50 |
+| `⌥1`–`⌥8` | Filter by tag, or connect tagged nodes to selected generation nodes |
+| `⌥0` | Clear the tag filter |
+
+## Director bar
+
+These apply when the director bar has focus.
+
+| Shortcut | Action |
+|---|---|
+| `Space` | Play / pause |
+| `←` `→` | Previous / next |
+| `↑` | Choose main media |
+| `S` | Split |
+| `Delete` | Delete the clip |
+| `⌘Z` / `⇧⌘Z` | Undo / redo |
+| `⌘` + scroll | Zoom the timeline |
+
+<Note>
+  `V` is overloaded on purpose. With nothing selected it creates a video node; with two or more nodes
+  selected it aligns them vertically.
+</Note>

@@ -3,6 +3,55 @@ title: "Video tools"
 description: "Trim, capture frames, regenerate a section, upscale, and create panoramas."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Local tools
 
-Trim, capture frames, regenerate a section, upscale, and create panoramas.
+These run in your browser and do not cost credits.
+
+| Tool | Node | Does |
+|---|---|---|
+| **Trim** | Video, audio | Shortens the clip |
+| **Capture frame** | Video | Takes a still, as a new image node |
+| **Crop** | Image | Standard cropping |
+| **Annotate** | Image | Rectangles, circles, arrows, lines, and text, with a layer panel |
+| **Clarity** | Image | A sharpening filter |
+| **Quick slice** | Image | Cuts an image into a grid of separate nodes |
+
+## Selective regeneration
+
+The most useful video feature on the canvas: regenerate **part** of a clip and stitch it back.
+
+<Steps>
+  <Step title="Choose a section">
+    On a video node, pick the range you want to replace.
+  </Step>
+  <Step title="Generate a replacement">
+    WJI uploads the segment and regenerates it in edit mode.
+  </Step>
+  <Step title="Review the four tracks">
+    The node can preview the original, the segment, the generated replacement, and the stitched
+    result.
+  </Step>
+  <Step title="Stitch">
+    **Stitch full video** joins it back together. The result can be added to the director bar as the
+    stitched clip, the generated segment alone, or the before-and-after arrangement.
+  </Step>
+</Steps>
+
+Selective editing requires a model that supports it. The status runs through pending, running, done,
+and failed.
+
+## AI video tools
+
+| Tool | Notes |
+|---|---|
+| **Depth video** | Requires a depth model to be available |
+| **Video upscale** | Creates an upscale generation node |
+| **Generate panorama** | Turns an image into a 360° panorama, viewable in the panorama viewer |
+
+If a required model is not available on your account, WJI names the missing model rather than
+failing quietly.
+
+## The panorama viewer
+
+Panorama nodes open a dedicated viewer, either by double-clicking or from the toolbar. The viewer can
+export the current view as a JPEG.

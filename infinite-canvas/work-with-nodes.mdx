@@ -3,6 +3,101 @@ title: "Working with nodes"
 description: "Select, move, duplicate, align, group, rename, resize, and color-tag your nodes."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Selecting
 
-Select, move, duplicate, align, group, rename, resize, and color-tag your nodes.
+| Action | How |
+|---|---|
+| Select one | Click it |
+| Add to selection | `Shift` + click, or `⌘` + click |
+| Marquee | Drag on empty space. Anything the box **touches** is selected, not only what it fully contains |
+| Add by marquee | `Shift` + drag |
+| Select all | `⌘A` |
+| Select by color tag | `Shift` + `1`–`8` |
+| Clear selection | `Esc` |
+
+<Warning>
+  **Select all and select-by-tag are capped at 50 nodes.** On a large canvas you will not get
+  everything. If a color tag filter is active, select all only takes nodes carrying that tag.
+</Warning>
+
+An unselected node is selected on mouse **release**, not on press, so starting a drag does not
+trigger its panel.
+
+## Moving and duplicating
+
+- Drag to move
+- **Alt + drag** to duplicate — the original stays behind
+- `⌘D` duplicates the selection in place
+- `⌘C` and `⌘V` copy and paste, **including the connections between the copied nodes**
+
+## Resizing
+
+Nodes that support it have a handle at the bottom right. Minimum sizes vary: group 120×80, text
+120×60, YouTube 240×135. Arrows are resized by dragging either endpoint.
+
+Text nodes also respond to `[` and `]`, which scale the window proportionally. With several selected,
+the spacing between them is preserved.
+
+## Renaming
+
+**Double-click the name label above a node.** Enter commits, `Esc` cancels.
+
+## The multi-select toolbar
+
+Selecting two or more nodes slides a toolbar up from the bottom:
+
+| Button | Does |
+|---|---|
+| **Color tag** | Applies a tag to everything selected |
+| **Align** | Horizontal, vertical, or automatic |
+| **Group** | Wraps the selection in a group node |
+| **Add reference** | Enters pick-from-canvas mode |
+| **Model settings** | Applies model settings to every generation node of the same type |
+| **Improve prompt** | Optimizes every selected prompt |
+| **Submit** | Opens a review dialog listing each node's prompt, references, model, and settings, then submits them all |
+| **Download selected** | Single file, or a ZIP named after the canvas |
+
+For viewers, only **Download selected** remains.
+
+## Aligning and grouping
+
+Alignment is a one-off action, not a live guide:
+
+| Action | Shortcut |
+|---|---|
+| Horizontal align | `H` |
+| Vertical align | `V` |
+| Auto align | `⌘K` |
+
+Group nodes take a 40 px margin around the selection. Dragging a group carries along any node that
+touches it.
+
+<Note>
+  With two or more nodes selected, `V` means vertical align rather than "new video node".
+</Note>
+
+## Color tags
+
+Eight colors, each of which can be named for the whole canvas.
+
+| Action | Shortcut |
+|---|---|
+| Toggle a tag on the selection | `⌘1`–`⌘8` |
+| Clear tags | `⌘0` |
+| Select nodes with a tag | `Shift 1`–`Shift 8` |
+| Filter the canvas by tag | `⌥1`–`⌥8` |
+| Clear the filter | `⌥0` |
+
+Tags drive the minimap colors, the top bar filter, bulk download by tag, and what viewers are allowed
+to see.
+
+<Tip>
+  Name your tags. "Approved", "needs revision", "client-visible" turn a color-coding habit into
+  something the whole team can read — and the visible-tag setting in viewer access then does real
+  work for you.
+</Tip>
+
+## What you cannot do
+
+There is no node locking, and no bring-to-front or send-to-back. Layering is fixed: group nodes
+always render behind everything else.

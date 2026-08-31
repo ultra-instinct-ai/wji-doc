@@ -3,6 +3,62 @@ title: "Creating nodes"
 description: "Six ways to add a node, from double-clicking the board to dragging a connection."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Six entry points
 
-Six ways to add a node, from double-clicking the board to dragging a connection.
+<Steps>
+  <Step title="Double-click empty space">
+    Opens the create menu at that point. The empty-canvas hint tells you this.
+  </Step>
+  <Step title="Right-click empty space">
+    Gives you **Upload**, **Create node**, and **Paste**.
+  </Step>
+  <Step title="The Create button">
+    First icon in the capsule toolbar. Opens the create panel; clicking a type places it at the
+    centre of your view.
+  </Step>
+  <Step title="Drag from a connection handle">
+    Drag a node's `+` handle into empty space and release. The menu that appears creates the new
+    node **already connected**.
+  </Step>
+  <Step title="Keyboard">
+    `I`, `V`, and `A` create image, video, and audio generation nodes at the pointer. If something
+    is selected, the new node is connected to it automatically.
+  </Step>
+  <Step title="Drag, paste, or upload">
+    See [Drag and drop](/image-generation/drag-and-drop).
+  </Step>
+</Steps>
+
+## What the create menu offers
+
+The full menu lists media types — text, table, image, panorama, video, audio, dataset, bundle,
+group — then a divider, then an **Annotation** submenu containing title, comment, task list, and
+arrow.
+
+Dragging from a `+` handle gives a shorter list, because not everything makes sense as the target of
+a connection. Dataset and group are excluded. If the source is an image node with media, panorama is
+added. A **More** submenu carries describe, storyboard, depth video, video upscale, image-to-sketch,
+and character sheet.
+
+## Pasting
+
+`⌘V` on the canvas handles several kinds of content, in this order:
+
+1. An **image file or image URL** → uploaded and placed as an image node
+2. A **spreadsheet file** → a table node
+3. **Tabular text** (TSV or CSV) → a table node
+4. **Plain text** → a YouTube node if it is a YouTube link, otherwise a text node
+5. **Nodes you copied earlier** in WJI → pasted with their connections intact
+
+Pasting places content at the pointer if you have moved the mouse, otherwise slightly offset from
+the last paste.
+
+## Table rows become nodes
+
+Dragging a connection out of a **table node** to create a non-table node creates **one connected
+node per row**. This is the fastest way to turn a shot list into a set of generation nodes.
+
+<Tip>
+  Paste a shot list as a table, map the column holding the prompt, then drag out from the table.
+  Every row arrives as its own generation node, already connected and already carrying its prompt.
+</Tip>

@@ -3,6 +3,58 @@ title: "Generating media"
 description: "Use the generate panel to turn prompts and connected references into images, video, and audio."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+Selecting a generation node opens the **generate panel** beneath it.
 
-Use the generate panel to turn prompts and connected references into images, video, and audio.
+## The prompt
+
+The prompt box tells you what it accepts: describe what you want, press `@` to reference an asset,
+press `/` for commands.
+
+- **`@` mentions** address your connected references by name — `@image1`, `@video1`, `@audio1`
+- **`/`** opens the prompt preset picker, with tabs for workspace, personal, and marketplace presets.
+  Choosing one creates a text node at the pointer
+
+## Improving the prompt
+
+The panel has the same two-tab arrangement as the standalone generator — your prompt, and the
+AI-optimized final prompt. You can regenerate the optimization or accept it as written. **Save as
+prompt preset** stores a prompt you want to keep.
+
+## The reference list
+
+Everything wired into this node appears here.
+
+- Remove a reference without deleting the connection
+- **Drag to reorder** — order matters to some models
+- A counter shows how many of the model's allowance you are using, for example "3 / 5"
+- Long text references have a **view full text** control
+
+For video models with frame support, first and last frame slots appear, with a swap control and
+individual remove buttons.
+
+## Settings and cost
+
+The generation parameters popover holds the same settings as the standalone generator, filtered to
+what the selected model supports. The estimated cost updates as you change things.
+
+Press the send button to submit.
+
+## Working in bulk
+
+This is where the canvas pays off. Select several generation nodes and the multi-select toolbar
+gives you:
+
+- **Model settings** — apply one model and its settings to every selected node of that type
+- **Improve prompt** — optimize all the prompts at once
+- **Submit** — opens a review dialog listing every node's prompt, references, model, and parameters,
+  so you can check the batch before committing, then submits them together
+
+<Tip>
+  The review dialog before bulk submit is the last checkpoint you get — generations cannot be
+  cancelled. Read it, especially the reference counts, before pressing submit on twenty nodes.
+</Tip>
+
+## After it runs
+
+Results attach to the node. The node's history picker lets you look through every result it has
+produced and promote a different one to be the node's main output.

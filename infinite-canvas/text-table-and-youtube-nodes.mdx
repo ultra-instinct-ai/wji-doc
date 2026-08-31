@@ -3,6 +3,49 @@ title: "Text, table, and YouTube nodes"
 description: "Rewrite text, build tables, and summarize videos with the built-in AI assistants."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+Three node types carry their own AI assistants. All of them can take connected references as input.
 
-Rewrite text, build tables, and summarize videos with the built-in AI assistants.
+## Text nodes
+
+<Tabs>
+  <Tab title="AI assistant">
+    The toolbar's AI button takes an instruction and produces a **new** node — text or table. You can
+    ask for multiple outputs, and choose which agent handles it.
+  </Tab>
+  <Tab title="Generate and replace">
+    The text generate panel rewrites or expands the text **in place**. Its prompt box explains that
+    you can connect images, video, audio, and text nodes as references.
+
+    If you connect a video reference, you are asked to pick an agent with video understanding.
+  </Tab>
+</Tabs>
+
+Text nodes also handle documents: **import a document** to replace the content, and download the
+content as Markdown, plain text, or Word.
+
+## Table nodes
+
+| Action | Result |
+|---|---|
+| **Edit table** | Add and remove rows and columns, reorder rows, validate column names |
+| **AI assistant** | Produces a text node from the table |
+| **AI table generation** | Rewrites the table in place |
+| **Field mapping** | Choose which column is the text, which is the prompt, and which rows are included |
+| **Upload a table file** | From a text node's toolbar, creates a new table node |
+
+Field mapping is what makes a table useful: it tells WJI which column to treat as the prompt when
+you drag connections out of the table to create one generation node per row.
+
+## YouTube nodes
+
+Paste a YouTube link onto the canvas and a YouTube node appears with the video embedded.
+
+Its AI assistant takes an instruction — summarize, rewrite, turn into a script — and produces a text
+node named after the video. It requires an agent with video understanding, so the automatic agent is
+not offered.
+
+<Tip>
+  A common workflow: paste a reference video from YouTube, ask the assistant for a shot-by-shot
+  breakdown, then drag out of the resulting text node to create generation nodes that already carry
+  the description as context.
+</Tip>

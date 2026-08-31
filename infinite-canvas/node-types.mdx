@@ -3,6 +3,51 @@ title: "Node types"
 description: "What each of the fourteen node types holds and what you can do with it."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Media nodes
 
-What each of the fourteen node types holds and what you can do with it.
+<Columns cols={2}>
+  <Card title="Image" icon="image">
+    An image asset, or a generation node producing one. The richest toolbar on the canvas: crop,
+    clarity, image editing, storyboard tools, generation presets, history, describe, save to
+    library, download.
+  </Card>
+  <Card title="Video" icon="video">
+    A video asset. Trim, capture a frame, regenerate a section, switch preview between original,
+    segment, generated, and stitched, add to the director bar.
+  </Card>
+  <Card title="Audio" icon="waveform">
+    An audio file. Trim, generation history, describe, download.
+  </Card>
+  <Card title="Panorama" icon="panorama">
+    A 360° image. Double-click or use the toolbar to open the panorama viewer.
+  </Card>
+</Columns>
+
+## Content nodes
+
+| Node | Holds | Notable actions |
+|---|---|---|
+| **Text** | Markdown | Double-click to edit, AI assistant, import a document, download as Markdown, plain text, or Word, resize the window with `[` and `]` |
+| **Table** | Rows and columns with field mapping | Edit the table, AI assistant, map which column is text and which is the prompt, re-upload |
+| **YouTube** | A YouTube link, embedded | Paste a URL to create one. AI assistant produces summaries, rewrites, and scripts as text nodes |
+| **Dataset** | A workspace dataset | Switch between asset view and content view, create images or video from it, upload, download, storyboard tools |
+| **Bundle** | Several media items gathered by connection | Download, preview, storyboard tools. Members can be disabled, reordered, renamed, removed |
+
+## Structure and annotation
+
+| Node | Purpose |
+|---|---|
+| **Group** | A visual container drawn behind everything else. Dragging it moves the nodes it touches. Cannot be connected |
+| **Title** | Large text that resizes its box to the font size |
+| **Comment** | A sticky note |
+| **Task list** | A checklist with add, delete, and tick |
+| **Arrow** | Two draggable endpoints |
+
+The last four are collectively **annotations**. They share foreground and background color controls,
+and viewers can be allowed to add them without being given edit rights. See
+[Viewer access](/workspaces/viewer-access).
+
+<Note>
+  Group nodes always render beneath other nodes, and cannot take part in connections. They organize
+  space; they do not carry meaning into generations.
+</Note>

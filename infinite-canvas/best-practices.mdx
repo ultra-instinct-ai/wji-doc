@@ -3,6 +3,61 @@ title: "Canvas best practices"
 description: "Layouts, naming, and connection habits that keep a large canvas workable."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## Think in connections, not in nodes
 
-Layouts, naming, and connection habits that keep a large canvas workable.
+The canvas is not a moodboard with a generator attached. Its value is that context flows along the
+wires. Before adding a node, ask what it should be connected to — a generation node with nothing
+wired in is just the standalone generator with extra steps.
+
+## Split canvases by sequence
+
+One board per sequence or act beats one board for the whole project:
+
+- Performance stays good
+- The 50-node cap on select-all stops mattering
+- Generation defaults can differ — vertical on one canvas, 21:9 on another
+- [Viewer access](/workspaces/viewer-access) is granted per canvas, so you can show a client one
+  sequence without exposing the rest
+
+Copying nodes between canvases with `⌘C` and `⌘V` keeps their connections.
+
+## Name your color tags and use them as status
+
+Eight colors with names turn into a workflow. A common set: *draft*, *needs revision*, *approved*,
+*client-visible*. Then:
+
+- `⌥1`–`⌥8` filters the board to one status
+- `⇧1`–`⇧8` selects everything at that status for a bulk action
+- Viewer access shows a client only the approved color
+
+## Rename nodes that get referenced
+
+A reference is addressed by name in the prompt — `@image1` means nothing six weeks later.
+Double-click a node's label and call it `lead-closeup` or `alley-night`. Prompts become readable and
+so does the board.
+
+## Use tables for shot lists
+
+A shot list pasted as a table, with the prompt column mapped, becomes one generation node per row
+when you drag out of it. This is by far the fastest route from a written list to a set of shots.
+
+## Review before bulk submit
+
+Bulk submit opens a review dialog for a reason. Generations cannot be cancelled, so that dialog is
+your last chance to notice that half the nodes lost their references when you switched models.
+
+## Compare with node history, not with copies
+
+Rather than making four nodes to try four versions, generate repeatedly on one node and flip through
+its history picker. The board stays legible and you can still promote any result to be the main one.
+
+## Rough-cut early in the director bar
+
+Put clips on the timeline while they are still rough. Whether a sequence works is a question about
+order and rhythm, and one polished shot tells you nothing about either.
+
+## Remember what undo will not save you from
+
+Creating, pasting, duplicating, uploading, and generating are **not undoable**, and undo is cleared
+when you switch canvases. Before a large paste or a bulk generation, make sure you are on the right
+canvas.

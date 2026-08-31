@@ -3,6 +3,59 @@ title: "Asset library and history"
 description: "Browse your workspace assets and pull results from generation history."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+## The asset library
 
-Browse your workspace assets and pull results from generation history.
+Open it with `⌘B` or the second icon in the capsule toolbar. It shows your workspace's folder tree
+and its datasets.
+
+Each dataset's `⋮` menu offers:
+
+- **Edit**
+- **Switch between asset view and content view**
+- **Create image** and **Create video** — starts a generation using that dataset's image or video
+  prompt
+- **Download**
+- **Delete**
+
+You can also create folders and datasets, refresh, search, and reorder datasets by dragging.
+
+**Alt + drag** an asset from the library onto the canvas to create a node from it. Dragging a whole
+dataset card creates a dataset node.
+
+<Note>
+  The hint in the panel says it: Alt-drag to the canvas creates a node; drag onto another dataset
+  node to move the asset instead.
+</Note>
+
+## Generation history
+
+The third capsule icon opens the canvas-wide history panel. It scrolls indefinitely and shows each
+result's thumbnail, prompt, type, and time. Results without a prompt are labelled as such. Clicking
+one opens the large preview.
+
+This is history for the whole canvas, regardless of which node produced it.
+
+## Node history
+
+Media nodes have their own history picker in the toolbar. It lists every result that node has
+produced and lets you **promote a different result to be the node's main output**.
+
+<Tip>
+  This is how you compare takes without cluttering the canvas. Generate four versions on one node,
+  then flip between them in the history picker and keep the best — rather than creating four nodes
+  and deleting three.
+</Tip>
+
+## Preview dialogs
+
+Depending on what you open, you get a different preview:
+
+| Node | Preview |
+|---|---|
+| Image | Lightbox, or the full asset preview dialog |
+| Dataset | Dataset preview — reorder thumbnails, edit fields inline |
+| Bundle | Bundle preview — enable, disable, rename, reorder, remove members |
+| Panorama | Panorama viewer |
+| Text reference | Text reference preview |
+
+See [Managing assets](/image-generation/manage-assets) for what each one can do.

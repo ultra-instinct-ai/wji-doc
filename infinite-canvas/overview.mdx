@@ -3,6 +3,60 @@ title: "Infinite Canvas overview"
 description: "A node-based workspace where connections carry context into every generation."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+The **Infinite Canvas** is a board you place nodes on and wire together. It is the app to use when
+one image is not the unit of work — when you are building a sequence, keeping a set of shots
+consistent, or assembling a cut.
 
-A node-based workspace where connections carry context into every generation.
+<Frame caption="A canvas with connected nodes">
+  <img src="/images/_placeholder.png" alt="Infinite Canvas showing image and text nodes connected into a generation node" />
+</Frame>
+{/* SHOT infinite-canvas/overview-01
+    Screen: a canvas with a small working graph
+    Must show: two image nodes and one text node connected into a generation node, the capsule
+               toolbar on the left, the top bar with canvas switcher, and the viewport control bar
+               bottom left
+    State: zoom near 100%, nothing selected
+    UI language: English
+    Size: >= 1600x1000
+    Anonymize: generic canvas name, no real people in images
+*/}
+
+## The one idea that matters
+
+**A connection is not decoration. It is how context reaches the AI.**
+
+Wire an image node into a generation node and that image becomes a reference. Wire a text node in
+and its content is prepended to the prompt. Wire in a dataset and its members are expanded.
+
+Once that clicks, the rest of the canvas follows. Read
+[Connections and references](/infinite-canvas/connections-and-references) before anything else.
+
+## What is on screen
+
+| Area | Contains |
+|---|---|
+| **Capsule toolbar**, left | Create, asset library, generation history, director bar, settings, shortcuts |
+| **Top bar** | Color tag filter, canvas switcher, search, canvas settings |
+| **Viewport control bar**, bottom left | Undo/redo, zoom, fit, minimap, performance mode |
+| **Director bar**, bottom | A timeline for assembling clips — opened from the capsule toolbar |
+| **Save status**, top left | Pending, saving, saved, or failed |
+
+Opening the canvas collapses the workspace's left panel to a narrow rail, and it stays collapsed
+while you are here.
+
+## Where to go next
+
+<Columns cols={2}>
+  <Card title="Navigating the canvas" icon="magnifying-glass" href="/infinite-canvas/navigate-the-canvas">
+    Zoom, pan, fit, and the minimap.
+  </Card>
+  <Card title="Creating nodes" icon="plus" href="/infinite-canvas/create-nodes">
+    Six ways to put something on the board.
+  </Card>
+  <Card title="Node types" icon="shapes" href="/infinite-canvas/node-types">
+    All fourteen, and what each is for.
+  </Card>
+  <Card title="Connections and references" icon="link" href="/infinite-canvas/connections-and-references">
+    The core concept. Start here.
+  </Card>
+</Columns>

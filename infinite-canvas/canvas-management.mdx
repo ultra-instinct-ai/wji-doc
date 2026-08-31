@@ -3,6 +3,57 @@ title: "Managing canvases"
 description: "Create, rename, reorder, search, configure, and delete canvases."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+A workspace can hold as many canvases as you need. The switcher sits at the right of the top bar and
+shows the current canvas name.
 
-Create, rename, reorder, search, configure, and delete canvases.
+## The switcher
+
+Opening it gives you:
+
+- **Search canvases** by name
+- **Reorder** — drag to arrange, double-click a name to rename
+- **New canvas**
+- A gear on each row, opening that canvas's settings
+
+The current canvas is reflected in the URL, so you can link straight to one.
+
+## Canvas settings
+
+| Section | Contains |
+|---|---|
+| **Canvas info** | Creation time |
+| **Name** | |
+| **Generation defaults** | Default image model, default video model, aspect ratio (16:9, 9:16, 21:9) |
+| **Text node font size** | Small, standard, large, or extra large |
+| **Danger zone** | Delete canvas |
+
+Generation defaults are per canvas, not per workspace. That is more useful than it sounds — a canvas
+for vertical social cuts and a canvas for 21:9 hero shots can sit in the same workspace with
+different defaults.
+
+## Filtering by color tag
+
+The left of the top bar has the color tag filter: **All**, plus the eight tags with their names and
+node counts. Hovering a tag reveals **download all assets with this tag**.
+
+Filtering changes what select-all picks up, so tag-then-filter-then-select-all is a practical way to
+work on a subset of a busy canvas.
+
+## Organizing across canvases
+
+There is no move-between-canvases command. To carry work across, copy the nodes with `⌘C`, switch
+canvas, and paste with `⌘V` — connections between the copied nodes come with them.
+
+<Warning>
+  Undo history is cleared when you switch canvases. Anything you want to undo, undo before you leave.
+</Warning>
+
+## Deleting
+
+From canvas settings, in the danger zone. Deletion asks for confirmation.
+
+<Tip>
+  Canvases are cheap. Rather than letting one board grow to a thousand nodes, split by sequence or by
+  act and use the switcher. Performance stays better, select-all's 50-node cap stops being a
+  problem, and viewer access can be granted one canvas at a time.
+</Tip>

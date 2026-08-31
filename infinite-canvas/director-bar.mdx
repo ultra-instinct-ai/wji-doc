@@ -3,6 +3,66 @@ title: "Director bar"
 description: "Assemble clips on a timeline and export a finished video or an NLE project."
 ---
 
-{/* DRAFT: skeleton page. Content to be written. */}
+The **director bar** opens from the capsule toolbar and runs along the bottom of the canvas. It is a
+timeline for putting clips in order.
 
-Assemble clips on a timeline and export a finished video or an NLE project.
+## Getting media in
+
+- **Drag** images or video onto the timeline
+- **Alt + drag** a media node from the canvas onto the bar — it becomes a clip, or sets an existing
+  clip's main media
+- From a video node's toolbar, **add to director bar**
+- Drop zone hint: drag images or video here
+
+## Modes
+
+The timeline works in video, image, or mixed mode. Images use a **default image duration** you set
+in seconds.
+
+## Editing
+
+| Action | How |
+|---|---|
+| Play / pause | `Space` |
+| Previous / next | `←` `→` |
+| Choose main media | `↑`, then arrows to browse, `Enter` to confirm, `Esc` to close |
+| Split | `S` |
+| Delete a clip | `Delete`, with confirmation |
+| Undo / redo | `⌘Z` / `⇧⌘Z` |
+| Zoom the timeline | `⌘` + scroll |
+| Pan | Drag the timeline |
+
+Other controls: mute, loop, **snap**, show all, replace media, clear media, and add an empty
+dataset.
+
+<Note>
+  Snap here is timeline snapping between clips. It is unrelated to node alignment on the canvas,
+  which has no snapping at all.
+</Note>
+
+## Exporting
+
+Three options:
+
+<Columns cols={3}>
+  <Card title="Export video" icon="film">
+    Renders the timeline into a single MP4.
+  </Card>
+  <Card title="Export project (NLE)" icon="file-zipper">
+    A ZIP containing `timeline.otio`, `timeline.edl`, a `media/` folder, and `manifest.json` — for
+    continuing the edit in a professional editor.
+  </Card>
+  <Card title="Download all media" icon="download">
+    Every clip's source file.
+  </Card>
+</Columns>
+
+The NLE export is the one to use when the canvas has done its job and the cut needs to move to
+Premiere, Resolve, or Final Cut. The OTIO and EDL files carry the edit decisions; the media folder
+carries the sources.
+
+<Tip>
+  Use the director bar to check that a sequence reads before you invest in upscaling or regenerating
+  its shots. Rough clips in the right order tell you more about whether a scene works than one
+  polished shot does.
+</Tip>
