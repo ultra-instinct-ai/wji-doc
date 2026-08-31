@@ -185,6 +185,30 @@
               "zh-Hant/getting-started/accounts-and-sign-in",
               "zh-Hant/getting-started/interface-tour"
             ]
+          },
+          {
+            "group": "工作區",
+            "icon": "folder-open",
+            "pages": [
+              "zh-Hant/workspaces/overview",
+              "zh-Hant/workspaces/create-a-workspace",
+              "zh-Hant/workspaces/settings",
+              "zh-Hant/workspaces/members-and-permissions",
+              "zh-Hant/workspaces/viewer-access"
+            ]
+          },
+          {
+            "group": "創意工具",
+            "icon": "lightbulb",
+            "pages": [
+              "zh-Hant/idea-studio/overview",
+              "zh-Hant/idea-studio/build-with-ai",
+              "zh-Hant/idea-studio/create-and-edit-ideas",
+              "zh-Hant/idea-studio/idea-detail-and-gallery",
+              "zh-Hant/idea-studio/file-tree-actions",
+              "zh-Hant/idea-studio/workspace-ai-chat",
+              "zh-Hant/idea-studio/best-practices"
+            ]
           }
         ]
       },
@@ -199,6 +223,30 @@
               "ja/getting-started/quickstart",
               "ja/getting-started/accounts-and-sign-in",
               "ja/getting-started/interface-tour"
+            ]
+          },
+          {
+            "group": "ワークスペース",
+            "icon": "folder-open",
+            "pages": [
+              "ja/workspaces/overview",
+              "ja/workspaces/create-a-workspace",
+              "ja/workspaces/settings",
+              "ja/workspaces/members-and-permissions",
+              "ja/workspaces/viewer-access"
+            ]
+          },
+          {
+            "group": "アイデアツール",
+            "icon": "lightbulb",
+            "pages": [
+              "ja/idea-studio/overview",
+              "ja/idea-studio/build-with-ai",
+              "ja/idea-studio/create-and-edit-ideas",
+              "ja/idea-studio/idea-detail-and-gallery",
+              "ja/idea-studio/file-tree-actions",
+              "ja/idea-studio/workspace-ai-chat",
+              "ja/idea-studio/best-practices"
             ]
           }
         ]
@@ -215,6 +263,30 @@
               "ko/getting-started/accounts-and-sign-in",
               "ko/getting-started/interface-tour"
             ]
+          },
+          {
+            "group": "워크스페이스",
+            "icon": "folder-open",
+            "pages": [
+              "ko/workspaces/overview",
+              "ko/workspaces/create-a-workspace",
+              "ko/workspaces/settings",
+              "ko/workspaces/members-and-permissions",
+              "ko/workspaces/viewer-access"
+            ]
+          },
+          {
+            "group": "아이디어 도구",
+            "icon": "lightbulb",
+            "pages": [
+              "ko/idea-studio/overview",
+              "ko/idea-studio/build-with-ai",
+              "ko/idea-studio/create-and-edit-ideas",
+              "ko/idea-studio/idea-detail-and-gallery",
+              "ko/idea-studio/file-tree-actions",
+              "ko/idea-studio/workspace-ai-chat",
+              "ko/idea-studio/best-practices"
+            ]
           }
         ]
       },
@@ -229,6 +301,30 @@
               "vi/getting-started/quickstart",
               "vi/getting-started/accounts-and-sign-in",
               "vi/getting-started/interface-tour"
+            ]
+          },
+          {
+            "group": "Không gian làm việc",
+            "icon": "folder-open",
+            "pages": [
+              "vi/workspaces/overview",
+              "vi/workspaces/create-a-workspace",
+              "vi/workspaces/settings",
+              "vi/workspaces/members-and-permissions",
+              "vi/workspaces/viewer-access"
+            ]
+          },
+          {
+            "group": "Công cụ ý tưởng",
+            "icon": "lightbulb",
+            "pages": [
+              "vi/idea-studio/overview",
+              "vi/idea-studio/build-with-ai",
+              "vi/idea-studio/create-and-edit-ideas",
+              "vi/idea-studio/idea-detail-and-gallery",
+              "vi/idea-studio/file-tree-actions",
+              "vi/idea-studio/workspace-ai-chat",
+              "vi/idea-studio/best-practices"
             ]
           }
         ]

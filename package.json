@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "docs:check": "node scripts/docs-check.mjs",
-    "dev": "mint dev"
+    "dev": "mint dev",
+    "docs:nav": "node scripts/sync-nav.mjs"
   }
 }
