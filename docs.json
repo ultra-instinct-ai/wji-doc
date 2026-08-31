@@ -248,6 +248,45 @@
               "zh-Hant/infinite-canvas/autosave-and-undo",
               "zh-Hant/infinite-canvas/best-practices"
             ]
+          },
+          {
+            "group": "數字主持人",
+            "icon": "user-tie",
+            "pages": [
+              "zh-Hant/digital-host/overview",
+              "zh-Hant/digital-host/script-to-video"
+            ]
+          },
+          {
+            "group": "組織",
+            "icon": "building",
+            "pages": [
+              "zh-Hant/organizations/overview",
+              "zh-Hant/organizations/invite-members",
+              "zh-Hant/organizations/roles-and-permissions",
+              "zh-Hant/organizations/switching-context"
+            ]
+          },
+          {
+            "group": "積分與帳務",
+            "icon": "coins",
+            "pages": [
+              "zh-Hant/billing/how-credits-work",
+              "zh-Hant/billing/subscriptions",
+              "zh-Hant/billing/wallet-and-records",
+              "zh-Hant/billing/gift-cards"
+            ]
+          },
+          {
+            "group": "參考",
+            "icon": "book",
+            "pages": [
+              "zh-Hant/reference/supported-file-types",
+              "zh-Hant/reference/limits-and-quotas",
+              "zh-Hant/reference/troubleshooting",
+              "zh-Hant/reference/faq",
+              "zh-Hant/reference/glossary"
+            ]
           }
         ]
       },
