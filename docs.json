@@ -365,6 +365,45 @@
               "ja/infinite-canvas/autosave-and-undo",
               "ja/infinite-canvas/best-practices"
             ]
+          },
+          {
+            "group": "デジタル司会者",
+            "icon": "user-tie",
+            "pages": [
+              "ja/digital-host/overview",
+              "ja/digital-host/script-to-video"
+            ]
+          },
+          {
+            "group": "組織",
+            "icon": "building",
+            "pages": [
+              "ja/organizations/overview",
+              "ja/organizations/invite-members",
+              "ja/organizations/roles-and-permissions",
+              "ja/organizations/switching-context"
+            ]
+          },
+          {
+            "group": "料金とクレジット",
+            "icon": "coins",
+            "pages": [
+              "ja/billing/how-credits-work",
+              "ja/billing/subscriptions",
+              "ja/billing/wallet-and-records",
+              "ja/billing/gift-cards"
+            ]
+          },
+          {
+            "group": "リファレンス",
+            "icon": "book",
+            "pages": [
+              "ja/reference/supported-file-types",
+              "ja/reference/limits-and-quotas",
+              "ja/reference/troubleshooting",
+              "ja/reference/faq",
+              "ja/reference/glossary"
+            ]
           }
         ]
       },
