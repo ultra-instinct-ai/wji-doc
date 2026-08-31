@@ -1,0 +1,47 @@
+---
+title: "무한 캔버스 개요"
+description: "연결이 생성할 때마다 맥락을 실어 나르는 노드 기반 작업대."
+---
+
+**무한 캔버스**는 노드를 놓고 서로 잇는 보드입니다. 이미지 한 장이 더는 작업 단위가 아닐 때 — 시퀀스를 짜거나, 여러 숏의 일관성을 지키거나, 편집본을 조립할 때 — 쓰는 앱입니다.
+
+<Frame caption="연결된 노드가 있는 캔버스">
+  <img src="/images/_placeholder.png" alt="이미지 노드와 텍스트 노드가 생성 노드로 연결된 무한 캔버스" />
+</Frame>
+
+## 중요한 개념은 하나
+
+**연결은 장식이 아닙니다. 맥락이 AI에 닿는 통로입니다.**
+
+이미지 노드를 생성 노드에 이으면 그 이미지가 참조가 됩니다. 텍스트 노드를 이으면 그 내용이 프롬프트 앞에 붙습니다. 데이터셋을 이으면 구성원이 펼쳐집니다.
+
+이것이 이해되면 나머지는 따라옵니다. 다른 무엇보다 [연결과 참조](/ko/infinite-canvas/connections-and-references)를 먼저 읽으세요.
+
+## 화면에 있는 것
+
+| 영역 | 담긴 것 |
+|---|---|
+| 왼쪽 **캡슐 툴바** | 만들기, 소재 라이브러리, 생성 기록, 디렉터 바, 설정, 단축키 |
+| **상단 바** | 색상 태그 필터, 캔버스 전환기, 검색, 캔버스 설정 |
+| 왼쪽 아래 **뷰포트 제어 바** | 실행 취소/다시 실행, 확대, 맞춤, 미니맵, 성능 모드 |
+| 아래쪽 **디렉터 바** | 클립을 배열하는 타임라인. 캡슐 툴바에서 엽니다 |
+| 왼쪽 위 **저장 상태** | 대기 중, 저장 중, 저장됨, 저장 실패 |
+
+캔버스를 열면 워크스페이스의 왼쪽 패널이 좁은 레일로 접히고, 캔버스에 있는 동안 계속 접혀 있습니다.
+
+## 다음에 볼 것
+
+<Columns cols={2}>
+  <Card title="캔버스 이동" icon="magnifying-glass" href="/ko/infinite-canvas/navigate-the-canvas">
+    확대, 이동, 맞춤, 미니맵.
+  </Card>
+  <Card title="노드 만들기" icon="plus" href="/ko/infinite-canvas/create-nodes">
+    보드에 무언가를 올리는 여섯 가지 방법.
+  </Card>
+  <Card title="노드 종류" icon="shapes" href="/ko/infinite-canvas/node-types">
+    열네 가지 전부와 각각의 쓰임새.
+  </Card>
+  <Card title="연결과 참조" icon="link" href="/ko/infinite-canvas/connections-and-references">
+    핵심 개념. 여기서 시작하세요.
+  </Card>
+</Columns>
