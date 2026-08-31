@@ -1,0 +1,47 @@
+---
+title: "無限畫布總覽"
+description: "以節點構成的工作台，連線會把上下文帶進每一次生成。"
+---
+
+**無限畫布**是一片你放置節點並把它們接起來的板子。當一張圖不再是工作單位時 —— 當你在建構一個序列、要讓一組鏡頭保持一致、或要組一個剪輯時 —— 就該用這個應用。
+
+<Frame caption="接好線的畫布">
+  <img src="/images/_placeholder.png" alt="無限畫布上，圖片與文字節點接進一個生成節點" />
+</Frame>
+
+## 唯一重要的概念
+
+**連線不是裝飾，它是上下文抵達 AI 的方式。**
+
+把圖片節點接進生成節點，那張圖就成為參考素材。接一個文字節點進去，它的內容會被加到提示詞前面。接一個數據集進去，它的成員會被展開。
+
+想通這一點，畫布其餘的部分就順了。請先讀[連線與參考](/zh-Hant/infinite-canvas/connections-and-references)，再看別的。
+
+## 螢幕上有什麼
+
+| 區域 | 內容 |
+|---|---|
+| 左側**膠囊工具列** | 創建、素材庫、生成歷史、導演欄、設置、快捷鍵 |
+| **頂欄** | 顏色標籤篩選、畫布切換器、搜尋、畫布設置 |
+| 左下**視口控制列** | 撤回／前進、縮放、適應、小地圖、效能模式 |
+| 底部**導演欄** | 組裝片段的時間軸 —— 從膠囊工具列開啟 |
+| 左上**儲存狀態** | 待保存、保存中、已保存或保存失敗 |
+
+開啟畫布會讓工作區的左側面板收成窄欄，而且在這裡時它會一直保持收合。
+
+## 接下來看什麼
+
+<Columns cols={2}>
+  <Card title="畫布導覽" icon="magnifying-glass" href="/zh-Hant/infinite-canvas/navigate-the-canvas">
+    縮放、平移、適應與小地圖。
+  </Card>
+  <Card title="建立節點" icon="plus" href="/zh-Hant/infinite-canvas/create-nodes">
+    把東西放上板子的六種方式。
+  </Card>
+  <Card title="節點類型" icon="shapes" href="/zh-Hant/infinite-canvas/node-types">
+    全部十四種，以及各自的用途。
+  </Card>
+  <Card title="連線與參考" icon="link" href="/zh-Hant/infinite-canvas/connections-and-references">
+    核心概念。從這裡開始。
+  </Card>
+</Columns>
