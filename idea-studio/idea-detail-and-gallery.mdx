@@ -8,8 +8,9 @@ An idea opens in **detail view**. A button at the top right switches to **galler
 ## Detail view
 
 <Frame caption="An idea in detail view">
-  <img src="/images/idea-studio/detail-01.png" alt="Idea detail view showing the idea card, detailed content, attached images, and collapsible prompt panels" />
+  ![Idea detail view showing the idea card, detailed content, attached images, and collapsible prompt panels](/images/##-Detail-view.png)
 </Frame>
+
 {/* SHOT idea-studio/detail-01
     Screen: an idea open in detail view inside Idea Studio
     Must show: the large idea card at top, the detailed content block, the image grid with at least
@@ -18,23 +19,22 @@ An idea opens in **detail view**. A button at the top right switches to **galler
     UI language: English
     Size: >= 1600x1000
     Anonymize: fictional character name, no real people in the images
-*/}
+  */}
 
 The page is made of:
 
-- **The idea card** — clicking its avatar jumps straight into Idea Image Generation with this idea
-  selected
+- **The idea card** — clicking its avatar jumps straight into Idea Image Generation with this idea selected
 - **Detailed content** — rendered Markdown, with a copy button and an expand control
-- **Images** — a grid of everything attached. Upload more, download or delete individual items,
-  open the asset preview, and like an image
+- **Images** — a grid of everything attached. Upload more, download or delete individual items, open the asset preview, and like an image
 - **Image prompt**, **video prompt**, and **metadata** — collapsible panels, each with a copy button
 - **Edit** and **Delete** at the bottom
 
 ## Gallery view
 
 <Frame caption="Gallery view">
-  <img src="/images/idea-studio/gallery-view-01.png" alt="Full-screen gallery view with a large image, the thumbnail strip along the bottom, and the like control" />
+  ![Full-screen gallery view with a large image, the thumbnail strip along the bottom, and the like control](/images/idea-studio/gallery-view-01.png)
 </Frame>
+
 {/* SHOT idea-studio/gallery-view-01
     Screen: gallery view opened from an idea with several images
     Must show: the large image, the thumbnail strip, the image and idea position indicators, and the like control
@@ -42,18 +42,17 @@ The page is made of:
     UI language: English
     Size: >= 1600x1000
     Anonymize: no real people
-*/}
+  */}
 
 Gallery view is a full-screen black canvas for looking at the images rather than the text.
 
 | Key | Does |
-|---|---|
+| --- | --- |
 | `←` `→` | Previous and next image |
 | `↑` `↓` | Previous and next idea |
 | `Esc` | Back to detail view |
 
-A thumbnail strip along the bottom jumps between images. The bottom right has asset preview and a
-like button — hovering the like button shows who liked it and when.
+A thumbnail strip along the bottom jumps between images. The bottom right has asset preview and a like button — hovering the like button shows who liked it and when.
 
 ## The asset preview dialog
 
@@ -61,17 +60,14 @@ Opening any image gives you a larger dialog with more to work with:
 
 - **Basic info** — name, type, created and updated times
 - **Asset details** — file size, resolution, aspect ratio, duration
-- **Generation details** — model, seed, resolution, mode, aspect ratio, batch size, duration, and
-  credits charged
+- **Generation details** — model, seed, resolution, mode, aspect ratio, batch size, duration, and credits charged
 - **Original and final prompts**, each with a copy button
 - **Reference assets** used in the generation
 - **Tags**
 - **Use for generation again** — loads the original settings back into the generation form
 
-The right side has tabs for **Info** and **Comments**, with a like button beside them. Renaming the
-asset is done inline at the top.
+The right side has tabs for **Info** and **Comments**, with a like button beside them. Renaming the asset is done inline at the top.
 
 <Note>
-  Comments and likes are available only when the workspace allows them. See
-  [Viewer access](/workspaces/viewer-access).
+  Comments and likes are available only when the workspace allows them. See [Viewer access](/workspaces/viewer-access).
 </Note>
