@@ -1278,4 +1278,28 @@ UI language: English
 Size: >= 1800x900
 Anonymize: generic workspace and operator names`,
   },
+
+  {
+    page: 'billing/subscriptions', after: 'top',
+    file: 'billing/plans-01',
+    caption: L(
+      'The subscription plans',
+      '訂閱方案',
+      'サブスクリプションのプラン',
+      '구독 요금제',
+      'Các gói thuê bao'),
+    alt: L(
+      'Three plan cards - Basic, WJI VIP, and WJI SVIP - with the monthly and yearly toggle above them',
+      '三張方案卡片 —— Basic、WJI VIP 與 WJI SVIP —— 上方是月付與年付的切換',
+      'Basic、WJI VIP、WJI SVIP の 3 枚のプランカードと、その上の月額と年額の切り替え',
+      'Basic, WJI VIP, WJI SVIP 세 장의 요금제 카드와 그 위의 월간·연간 토글',
+      'Ba thẻ gói - Basic, WJI VIP và WJI SVIP - cùng công tắc theo tháng và theo năm phía trên'),
+    shot: `Screen: the Subscribe page
+Must show: the Yearly / Monthly toggle with the Save 16% badge, and all three plan cards
+           with their complete benefit lists
+State: signed in on a Basic account so the first card reads Current Subscription
+UI language: English
+Size: >= 2000x900
+Anonymize: none needed`,
+  },
 ]
