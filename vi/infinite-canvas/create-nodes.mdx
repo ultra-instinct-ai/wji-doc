@@ -26,7 +26,7 @@ description: "Sáu cách thêm một nút, từ nhấp đúp lên bảng tới k
     `I`, `V`, `A` tạo nút tạo ảnh, video và âm thanh ngay tại con trỏ. Nếu đang có gì được chọn, nút mới tự động nối vào đó.
   </Step>
   <Step title="Kéo, dán hoặc tải lên">
-    Xem [Kéo và thả](/vi/image-generation/drag-and-drop).
+    Xem **Đưa tệp lên canvas** bên dưới.
   </Step>
 </Steps>
 
@@ -39,6 +39,46 @@ description: "Sáu cách thêm một nút, từ nhấp đúp lên bảng tới k
 Menu đầy đủ liệt kê các loại nội dung — văn bản, bảng, ảnh, toàn cảnh, video, âm thanh, dataset, gói tài nguyên, nhóm — rồi một đường ngăn, rồi menu con **Chú thích** gồm tiêu đề, ghi chú, việc cần làm và mũi tên.
 
 Kéo từ tay nắm `+` cho danh sách ngắn hơn, vì không phải thứ gì cũng hợp lý khi làm đích của một kết nối. Dataset và nhóm bị loại. Nếu nguồn là một nút ảnh có tài nguyên, toàn cảnh được thêm vào. Menu con **Thêm** mang theo mô tả, bảng phân cảnh, video chiều sâu, nâng cấp video, ảnh thành phác thảo, và bảng nhân vật.
+
+## Đưa tệp lên canvas
+
+Bạn không cần tải tệp lên đâu đó trước. Cứ thả nó lên bảng và WJI sẽ tự nhận ra đó là gì.
+
+### Bốn cách
+
+<Steps>
+  <Step title="Kéo từ máy tính">
+    Thả một hoặc nhiều tệp vào bất cứ chỗ nào trên bảng. Mỗi tệp thành một nút riêng ngay tại điểm thả.
+  </Step>
+  <Step title="Dán">
+    `⌘V` nhận ảnh từ bộ nhớ tạm, tệp bảng tính, văn bản dạng bảng, hoặc văn bản thuần.
+  </Step>
+  <Step title="Nhấp chuột phải vào chỗ trống">
+    Chọn **Tải lên** rồi chọn tệp.
+  </Step>
+  <Step title="Nút tải lên của chính nút đó">
+    Các nút ảnh, video, âm thanh và dataset đều có nút tải lên trên thanh công cụ, để đưa tệp vào một nút đã có sẵn.
+  </Step>
+</Steps>
+
+### Mỗi loại tệp trở thành gì
+
+| Thả cái này | Bạn nhận được |
+|---|---|
+| Tệp ảnh | Nút **ảnh** |
+| Tệp video — `mp4`, `mov`, `webm`, `m4v`, `mkv`, `avi` | Nút **video** |
+| Tệp âm thanh — `mp3`, `wav`, `m4a`, `aac`, `ogg`, `flac`, `opus`, `weba`, `webm` | Nút **âm thanh** |
+| Tệp CSV hoặc bảng tính | Nút **bảng**. Nhiều tệp cùng lúc sẽ xếp chồng xuống dưới |
+| Tài liệu Markdown hoặc văn bản | Nút **văn bản** |
+| Liên kết YouTube dán dưới dạng văn bản | Nút **YouTube** |
+
+Ảnh được nhận diện theo loại chứ không theo phần mở rộng, nên bất cứ thứ gì trình duyệt coi là ảnh đều dùng được.
+
+<Warning>
+  Giới hạn tải lên là **25 MB** cho ảnh, âm thanh và tài liệu, và **200 MB** cho video. Xem [Định dạng tệp được hỗ trợ](/vi/reference/supported-file-types) để biết đầy đủ giới hạn, gồm cả những giới hạn chặt hơn áp cho video tham chiếu.
+</Warning>
+
+Kéo một **tài nguyên** đã có thay vì một tệp — từ thư viện tài nguyên, từ lịch sử tạo, hay từ nơi khác trong ứng dụng — cũng tạo ra một nút. Thao tác đó và mọi cử chỉ kéo khác được liệt kê đầy đủ trong [Kéo và thả](/vi/image-generation/drag-and-drop).
 
 ## Dán
 

@@ -36,7 +36,7 @@ description: "Six ways to add a node, from double-clicking the board to dragging
     is selected, the new node is connected to it automatically.
   </Step>
   <Step title="Drag, paste, or upload">
-    See [Drag and drop](/image-generation/drag-and-drop).
+    See **Adding files to the canvas** below.
   </Step>
 </Steps>
 
@@ -61,6 +61,53 @@ Dragging from a `+` handle gives a shorter list, because not everything makes se
 a connection. Dataset and group are excluded. If the source is an image node with media, panorama is
 added. A **More** submenu carries describe, storyboard, depth video, video upscale, image-to-sketch,
 and character sheet.
+
+## Adding files to the canvas
+
+You never have to upload a file somewhere else first. Drop it on the board and WJI works out what it
+is.
+
+### Four ways in
+
+<Steps>
+  <Step title="Drag from your desktop">
+    Drop one or several files anywhere on the board. Each becomes its own node at the drop point.
+  </Step>
+  <Step title="Paste">
+    `⌘V` accepts an image from the clipboard, a spreadsheet file, tabular text, or plain text.
+  </Step>
+  <Step title="Right-click empty space">
+    Choose **Upload** and pick files.
+  </Step>
+  <Step title="A node's upload button">
+    Image, video, audio, and dataset nodes each have an upload control in their toolbar, for putting
+    a file into a node that already exists.
+  </Step>
+</Steps>
+
+### What each file type becomes
+
+| Drop this | You get |
+|---|---|
+| An image file | An **image** node |
+| A video file — `mp4`, `mov`, `webm`, `m4v`, `mkv`, `avi` | A **video** node |
+| An audio file — `mp3`, `wav`, `m4a`, `aac`, `ogg`, `flac`, `opus`, `weba`, `webm` | An **audio** node |
+| A CSV or spreadsheet file | A **table** node. Several at once stack downward |
+| A Markdown or text document | A **text** node |
+| A YouTube link, pasted as text | A **YouTube** node |
+
+Images are recognized by type rather than by extension, so anything your browser treats as an image
+works.
+
+<Warning>
+  Uploads are capped at **25 MB** for images, audio, and documents, and **200 MB** for video. See
+  [Supported file types](/reference/supported-file-types) for the full limits, including the tighter
+  ones that apply to reference video.
+</Warning>
+
+Dragging an existing **asset** rather than a file — from the asset library, from generation history,
+or from another part of the app — also creates a node. That and every other drag gesture is
+catalogued in [Drag and drop](/image-generation/drag-and-drop).
 
 ## Pasting
 
