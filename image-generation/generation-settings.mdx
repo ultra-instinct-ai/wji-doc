@@ -6,8 +6,9 @@ description: "Aspect ratio, batch size, reference weights, and the settings spec
 Open the gear icon beside the prompt box.
 
 <Frame caption="The generation settings popover">
-  <img src="/images/image-generation/settings-01.png" alt="Generation settings popover showing aspect ratio thumbnails, batch size slider, and weight sliders" />
+  ![Generation settings popover showing aspect ratio thumbnails, batch size slider, and weight sliders](/images/Generation-settings.png)
 </Frame>
+
 {/* SHOT image-generation/settings-01
     Screen: the generation settings popover open over the generation form
     Must show: the aspect ratio thumbnail grid, the batch size slider, at least one weight slider,
@@ -16,12 +17,12 @@ Open the gear icon beside the prompt box.
     UI language: English
     Size: >= 1200x900
     Anonymize: none needed
-*/}
+  */}
 
 ## Settings you will see most
 
 | Setting | What it does |
-|---|---|
+| --- | --- |
 | **Aspect ratio** | A grid of ratio thumbnails. Only ratios the model supports appear |
 | **Batch size** | How many results per run. The range comes from the model |
 | **Reference weight** | How strongly references influence the result |
@@ -31,21 +32,17 @@ Open the gear icon beside the prompt box.
 | **Style prompt** | Opens the style picker |
 | **Duration** | Video only |
 
-**Auto match** is a valid aspect ratio choice on some models — it matches the input image rather
-than forcing a shape.
+**Auto match** is a valid aspect ratio choice on some models — it matches the input image rather than forcing a shape.
 
 ## Seed
 
-When a model exposes a seed, it appears as a tag on the main form. `-1` means unspecified, so the
-model picks its own.
+When a model exposes a seed, it appears as a tag on the main form. `-1` means unspecified, so the model picks its own.
 
-The seed is what makes a result repeatable. If you get an image that is nearly right, note its seed
-from the history card — clicking the seed tag copies it — and reuse it while you adjust the prompt.
+The seed is what makes a result repeatable. If you get an image that is nearly right, note its seed from the history card — clicking the seed tag copies it — and reuse it while you adjust the prompt.
 
 ## Model-specific settings
 
-Everything else in the popover is generated from the model definition and changes as you switch
-models. Each control has a tooltip explaining what it does.
+Everything else in the popover is generated from the model definition and changes as you switch models. Each control has a tooltip explaining what it does.
 
 Common ones:
 
@@ -57,5 +54,4 @@ Common ones:
 
 ## Batch size and storyboards
 
-Choosing a storyboard layout forces batch size to 1, because the grid *is* the single output. See
-[Storyboard mode](/image-generation/storyboard-mode).
+Choosing a storyboard layout forces batch size to 1, because the grid _is_ the single output. See [Storyboard mode](/image-generation/storyboard-mode).

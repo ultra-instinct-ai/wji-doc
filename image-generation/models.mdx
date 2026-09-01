@@ -3,35 +3,30 @@ title: "Choosing a model"
 description: "Browse image and video model families and understand what changes when you switch."
 ---
 
-The model list comes from the server, not from this documentation — what you see depends on your
-plan and your organization. Free accounts get a curated selection; VIP and SVIP accounts get all
-models.
+The model list comes from the server, not from this documentation — what you see depends on your plan and your organization. Free accounts get a curated selection; VIP and SVIP accounts get all models.
 
 ## Filtering the list
 
 <Frame caption="The video model selector, filtered by input type">
-  <img src="/images/image-generation/model-select-01.png" alt="Model selector showing the input type filter row above the family filter row, with matching models listed" />
+  ![Model selector showing the input type filter row above the family filter row, with matching models listed](/images/9月1日\(15\).gif)
 </Frame>
+
 {/* SHOT image-generation/model-select-01
     Screen: the video model selector open
     Must show: both filter rows, with the first-frame filter active so only models supporting it remain
     State: several models listed with avatars and one-line descriptions
     UI language: English
     Size: >= 1200x1000
-*/}
+  */}
 
 <Tabs>
   <Tab title="Image models">
-    Filter buttons group models into families: **All**, **Nano Banana**, **GPT Image**,
-    **Seedream**, **Unfiltered**, and **Other**.
+    Filter buttons group models into families: **All**, **Nano Banana**, **GPT Image**, **Seedream**, **Unfiltered**, and **Other**.
   </Tab>
   <Tab title="Video models">
-    Two filter rows. The first is by **input type** — all, first frame, first and last frame,
-    reference image, reference video, reference audio. The second is by **family** — Kling, Veo,
-    Sora, Seedance, Wan, Hailuo, unfiltered, other.
+    Two filter rows. The first is by **input type** — all, first frame, first and last frame, reference image, reference video, reference audio. The second is by **family** — Kling, Veo, Sora, Seedance, Wan, Hailuo, unfiltered, other.
 
-    The input-type filter is the useful one. If you need to animate a still you already have, filter
-    to *first frame* and you only see models that can do it.
+    The input-type filter is the useful one. If you need to animate a still you already have, filter to _first frame_ and you only see models that can do it.
   </Tab>
 </Tabs>
 
@@ -39,29 +34,26 @@ Each entry shows the model's avatar, name, and a one-line description.
 
 ## What a model's capabilities look like
 
-WJI does not list capabilities as badges. Instead, **the controls change when you switch models**.
-A setting that is not there is a setting that model does not support.
+WJI does not list capabilities as badges. Instead, **the controls change when you switch models**. A setting that is not there is a setting that model does not support.
 
 Switching models can also change your existing settings:
 
 | If the new model... | WJI... |
-|---|---|
+| --- | --- |
 | Does not support your aspect ratio | Moves you to the closest ratio it does support |
 | Accepts fewer reference images | **Drops the extra ones from the front of the list** |
 | Does not accept references at all | Tells you the model does not support reference images |
 | Has different duration limits | Applies its own default duration |
 
 <Warning>
-  The reference trimming is worth remembering. If you have five references and switch to a model
-  that takes three, you keep the **last three** — the ones you added first are removed.
+  The reference trimming is worth remembering. If you have five references and switch to a model that takes three, you keep the **last three** — the ones you added first are removed.
 </Warning>
 
 Switching models also clears the final prompt and re-optimizes it.
 
 ## Aspect ratio fallbacks
 
-Inside a workspace, if the new model does not support your current ratio, WJI first tries the
-workspace's default ratio, and only then falls back to the model's first supported ratio.
+Inside a workspace, if the new model does not support your current ratio, WJI first tries the workspace's default ratio, and only then falls back to the model's first supported ratio.
 
 ## Model-specific settings
 

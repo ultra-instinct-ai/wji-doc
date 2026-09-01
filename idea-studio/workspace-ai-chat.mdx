@@ -12,24 +12,23 @@ The right-hand panel in Idea Studio is an AI chat scoped to the workspace.
 ## Two modes
 
 <Frame caption="The workspace AI chat panel">
-  <img src="/images/idea-studio/ai-chat-01.png" alt="Right-hand chat panel with the ask and agent mode switch and an idea attached as context" />
+  ![Right-hand chat panel with the ask and agent mode switch and an idea attached as context](/images/The-workspace-AI-chat-panel.png)
 </Frame>
+
 {/* SHOT idea-studio/ai-chat-01
     Screen: the AI chat panel in Idea Studio
     Must show: the mode switch, an attached idea, and a reply containing structured idea data with the save-all button visible
     State: mid-conversation
     UI language: English
     Size: >= 800x1000
-*/}
+  */}
 
 <Tabs>
   <Tab title="Ask">
-    A conversation. The AI answers using whatever context you have given it, but does not change
-    anything in your workspace.
+    A conversation. The AI answers using whatever context you have given it, but does not change anything in your workspace.
   </Tab>
   <Tab title="Agent">
-    The AI can act on your workspace — creating, reading, and modifying files in the tree. Use it
-    when you want work done rather than answered.
+    The AI can act on your workspace — creating, reading, and modifying files in the tree. Use it when you want work done rather than answered.
 
     Agent mode has to be enabled for the workspace before it appears.
   </Tab>
@@ -37,19 +36,15 @@ The right-hand panel in Idea Studio is an AI chat scoped to the workspace.
 
 ## Giving it context
 
-Right-click any idea in the file tree and choose **Add to chat**. The idea is attached to the
-conversation, and the AI can read its summary, content, and prompts.
+Right-click any idea in the file tree and choose **Add to chat**. The idea is attached to the conversation, and the AI can read its summary, content, and prompts.
 
 ## Conversations
 
-Each app in the workspace keeps its own conversation thread, so Idea Studio's chat history stays
-separate from other apps'. You can browse past conversations, start a new one, and pick which agent
-to talk to.
+Each app in the workspace keeps its own conversation thread, so Idea Studio's chat history stays separate from other apps'. You can browse past conversations, start a new one, and pick which agent to talk to.
 
 ## Saving what comes back
 
-When a reply contains structured idea data, a button appears to save it all into your workspace at
-once. Afterwards WJI reports what happened:
+When a reply contains structured idea data, a button appears to save it all into your workspace at once. Afterwards WJI reports what happened:
 
 - how many were **saved**
 - how many **already existed**
@@ -58,6 +53,5 @@ once. Afterwards WJI reports what happened:
 This makes it safe to run a similar request twice — duplicates are recognized rather than piled up.
 
 <Tip>
-  Agent mode is the better choice for tidying jobs: reorganizing folders, filling in missing
-  summaries across a set of characters, or tagging a batch of ideas consistently.
+  Agent mode is the better choice for tidying jobs: reorganizing folders, filling in missing summaries across a set of characters, or tagging a batch of ideas consistently.
 </Tip>

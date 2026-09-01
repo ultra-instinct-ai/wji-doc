@@ -3,25 +3,23 @@ title: "Image generation overview"
 description: "Where to generate media in WJI and how the four generation modes differ."
 ---
 
-WJI has one generation engine, reachable from several places. Wherever you open it, the form works
-the same way.
+WJI has one generation engine, reachable from several places. Wherever you open it, the form works the same way.
 
 ## Where you can generate
 
 | Entry point | What it is |
-|---|---|
+| --- | --- |
 | **Idea Image Generation** app | Inside a workspace. Results attach to the idea you have selected |
 | **Image Creator** in the top nav | A standalone generator, not tied to a workspace |
 | **Image management** dialog | A three-column dialog for working through a dataset's media |
 | **Infinite Canvas** | A different experience — references come from connections, not an upload list |
 
-The workspace app is the one to use for project work. It has three columns: the dataset sidebar on
-the left, the dataset contents in the middle, and the generator on the right. Anything you generate
-is filed against the current dataset automatically, and history defaults to filtering by it.
+The workspace app is the one to use for project work. It has three columns: the dataset sidebar on the left, the dataset contents in the middle, and the generator on the right. Anything you generate is filed against the current dataset automatically, and history defaults to filtering by it.
 
 <Frame caption="The Idea Image Generation app">
-  <img src="/images/image-generation/overview-01.png" alt="Idea Image Generation app showing the dataset sidebar, dataset contents, and the generation form" />
+  ![Idea Image Generation app showing the dataset sidebar, dataset contents, and the generation form](/images/Image-generation-overview-1.png)
 </Frame>
+
 {/* SHOT image-generation/overview-01
     Screen: the Idea Image Generation app inside a workspace
     Must show: all three columns — dataset sidebar, dataset contents grid, generation form on the
@@ -30,7 +28,7 @@ is filed against the current dataset automatically, and history defaults to filt
     UI language: English
     Size: >= 1600x1000
     Anonymize: generic dataset names, no real people in the images
-*/}
+  */}
 
 ## The four modes
 
@@ -40,12 +38,15 @@ Icons at the top of the form switch between them.
   <Card title="Image" icon="image" href="/image-generation/generation-settings">
     Still images from a prompt and optional references.
   </Card>
+
   <Card title="Video" icon="video" href="/image-generation/video-generation">
     Video, with duration, first and last frames, and task modes.
   </Card>
+
   <Card title="Storyboard" icon="table-cells" href="/image-generation/storyboard-mode">
     A grid of shots or camera angles in one image.
   </Card>
+
   <Card title="Text to audio" icon="waveform" href="/image-generation/models">
     Speech from text, with speaker and rate controls.
   </Card>
@@ -57,28 +58,22 @@ Your mode choice and model selections are remembered between sessions.
 
 <Steps>
   <Step title="Write a prompt">
-    See [Writing prompts](/image-generation/prompts). WJI can rewrite it into an optimized final
-    prompt before sending.
+    See [Writing prompts](/image-generation/prompts). WJI can rewrite it into an optimized final prompt before sending.
   </Step>
   <Step title="Pick a model">
-    The model determines which settings are even available. See
-    [Choosing a model](/image-generation/models).
+    The model determines which settings are even available. See [Choosing a model](/image-generation/models).
   </Step>
   <Step title="Add references">
-    Optional, but this is how you keep characters and places consistent. See
-    [Reference images](/image-generation/reference-images).
+    Optional, but this is how you keep characters and places consistent. See [Reference images](/image-generation/reference-images).
   </Step>
   <Step title="Check the cost, then submit">
-    The generate button shows an estimate before you commit. See
-    [How credits work](/billing/how-credits-work).
+    The generate button shows an estimate before you commit. See [How credits work](/billing/how-credits-work).
   </Step>
   <Step title="Work with the result">
-    Results land in history below the form. See
-    [History and results](/image-generation/history-and-results).
+    Results land in history below the form. See [History and results](/image-generation/history-and-results).
   </Step>
 </Steps>
 
 <Warning>
-  A generation cannot be cancelled once submitted. There is no stop button — check your settings and
-  the cost estimate before you press generate.
+  A generation cannot be cancelled once submitted. There is no stop button — check your settings and the cost estimate before you press generate.
 </Warning>
