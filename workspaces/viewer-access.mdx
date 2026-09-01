@@ -3,42 +3,39 @@ title: "Viewer access"
 description: "Control what viewers can see and do, down to individual apps and canvases."
 ---
 
-Viewers get read-only access by default, but you can narrow it further. Open
-**Settings → Members → Viewer permissions**. Only the workspace owner sees this panel.
+Viewers get read-only access by default, but you can narrow it further. Open **Settings → Members → Viewer permissions**. Only the workspace owner sees this panel.
 
 It has four sections.
 
 ## Credit visibility
 
-A single toggle. When it is off, viewers do not see the credit badge in the app bar or any spend
-figures. Turn it off when you are sharing work with a client and do not want costs on screen.
+A single toggle. When it is off, viewers do not see the credit badge in the app bar or any spend figures. Turn it off when you are sharing work with a client and do not want costs on screen.
 
 ## Visible apps
 
 Tick the apps viewers may open. Anything you untick disappears from their left panel.
 
 <Note>
-  If you hide the Infinite Canvas from viewers, they are told the app has not been added rather than
-  seeing an empty panel.
+  If you hide the Infinite Canvas from viewers, they are told the app has not been added rather than seeing an empty panel.
 </Note>
 
 ## Comments and likes
 
-Two toggles controlling whether viewers can leave comments and likes on assets. Both are off unless
-you enable them.
+Two toggles controlling whether viewers can leave comments and likes on assets. Both are off unless you enable them.
 
 ## Visible canvases
 
 <Frame caption="Choosing which canvases and color tags viewers can see">
-  <img src="/images/workspaces/viewer-permissions-01.png" alt="Viewer permissions panel with per-canvas checkboxes, visible color tags, and the annotation toggle" />
+  ![Viewer permissions panel with per-canvas checkboxes, visible color tags, and the annotation toggle](/images/##-Visible-canvases.png)
 </Frame>
+
 {/* SHOT workspaces/viewer-permissions-01
     Screen: the visible canvases section of the viewer permissions panel
     Must show: several canvases listed with checkboxes, the color tag selection with named tags, and the annotation toggle
     State: some canvases and tags unticked so the granularity is visible
     UI language: English
     Size: >= 1200x1000
-*/}
+  */}
 
 The most granular section. You choose:
 
@@ -46,15 +43,14 @@ The most granular section. You choose:
 - **Which color tags** are visible — nodes carrying a hidden tag do not appear
 - **Whether viewers may add annotations** — title, comment, task list, and arrow nodes
 
-Color tags make this genuinely useful. Tag your work-in-progress nodes with one color, expose only
-the approved color to viewers, and a client sees a clean board while you keep working around them.
+Color tags make this genuinely useful. Tag your work-in-progress nodes with one color, expose only the approved color to viewers, and a client sees a clean board while you keep working around them.
 
 ## What a viewer actually sees
 
 When viewer restrictions apply, WJI strips the interface down:
 
 | Area | What remains |
-|---|---|
+| --- | --- |
 | Node toolbar | **Download** and **Asset preview** only |
 | Multi-select toolbar | **Download selected** only |
 | Canvas | Asset library, director bar, and settings are hidden; connection handles do not appear |
