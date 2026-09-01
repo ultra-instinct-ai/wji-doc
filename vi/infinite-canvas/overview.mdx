@@ -33,6 +33,39 @@ Khi điều này đã rõ, phần còn lại của canvas sẽ theo sau. Hãy đ
 
 Mở canvas sẽ thu bảng bên trái của không gian làm việc thành một dải hẹp, và nó giữ nguyên như vậy trong suốt thời gian bạn ở đây.
 
+## Phím Alt làm thay đổi ý nghĩa của thao tác kéo
+
+Alt — trên Mac là **Option** — là phím bổ trợ nên học sớm. Không giữ nó, kéo là **di chuyển**. Giữ nó, cùng một thao tác trở thành **cất vào, nhân bản, hoặc tỏa ra**. Nó hoạt động khác nhau tùy vào thứ bạn nắm, nên đáng để xem hết mọi trường hợp ở cùng một chỗ.
+
+### Alt kèm thao tác kéo
+
+| Giữ Alt và kéo | Lên | Kết quả |
+|---|---|---|
+| Một nút | Bất cứ đâu trên canvas | **Nhân bản** nó — bản gốc ở lại chỗ cũ |
+| Tay nắm `+` của một nút | Nhiều nút đang chọn | **Tỏa ra** — mỗi nguồn một nút mới, một đối một |
+| Nút media hoặc văn bản | **Nút dataset** | Cất nó vào dataset đó |
+| Nút media hoặc văn bản | **Dataset trong thư viện tài nguyên** | Cất nó vào đó |
+| Nút media hoặc văn bản | **Khoảng trống giữa các thẻ thư viện** | Tạo dataset mới ngay vị trí đó |
+| Nút media | **Thanh đạo diễn** | Thêm một đoạn, hoặc đặt làm media chính của đoạn có sẵn |
+| **Hình thu nhỏ trong nút dataset** | Nút dataset khác | Chuyển tài nguyên giữa các dataset |
+| **Hình thu nhỏ trong nút dataset** | Canvas trống | Tạo một nút media từ nó |
+| Tài nguyên trong **thư viện tài nguyên** | Canvas | Tạo một nút từ nó |
+
+<Note>
+  Thả vào chỗ mà Alt không có ý nghĩa gì thì WJI sẽ cho biết đâu là đích hợp lệ, thay vì im lặng bỏ qua.
+</Note>
+
+### Alt kèm phím
+
+| Phím tắt | Tác dụng |
+|---|---|
+| `⌥` + `I` / `V` / `A` | Tạo một đối một từ **mỗi** nút đang chọn, thay vì chỉ một nút |
+| `⌥` + `1`–`8` | Lọc theo nhãn — hoặc, khi đang chọn các nút tạo, nối mọi nút mang nhãn đó vào chúng |
+| `⌥` + `0` | Bỏ lọc nhãn |
+| `⌥` + `` ` `` | Bật tắt chế độ chọn tham chiếu |
+
+Thanh công cụ chọn nhiều hiện huy hiệu `⌥` mỗi khi việc giữ Alt sẽ làm thay đổi thao tác kéo kế tiếp, nên bạn không phải nhớ cử chỉ nào mang hai nghĩa.
+
 ## Đi tiếp
 
 <Columns cols={2}>

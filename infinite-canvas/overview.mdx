@@ -56,6 +56,43 @@ Once that clicks, the rest of the canvas follows. Read
 Opening the canvas collapses the workspace's left panel to a narrow rail, and it stays collapsed
 while you are here.
 
+## The Alt key changes what a drag means
+
+Alt — **Option** on a Mac — is the modifier to learn early. Without it, dragging **moves** things.
+Hold it and the same gesture **files, duplicates, or fans out** instead. It behaves differently
+depending on what you grabbed, so it is worth seeing every case in one place.
+
+### Alt with a drag
+
+| Hold Alt and drag | Onto | Result |
+|---|---|---|
+| A node | Anywhere on the canvas | **Duplicates** it — the original stays put |
+| A node's `+` handle | Several selected nodes | **Fan-out** — one new node per source, one to one |
+| A media or text node | A **dataset node** | Files it into that dataset |
+| A media or text node | An **asset library dataset** | Files it there |
+| A media or text node | The **gap between library cards** | Creates a new dataset at that position |
+| A media node | The **director bar** | Adds a clip, or sets an existing clip's main media |
+| A **thumbnail inside a dataset node** | Another dataset node | Moves the asset between datasets |
+| A **thumbnail inside a dataset node** | Empty canvas | Creates a media node from it |
+| An asset in the **asset library** | The canvas | Creates a node from it |
+
+<Note>
+  Drop somewhere Alt means nothing and WJI tells you where the valid targets are, rather than failing
+  silently.
+</Note>
+
+### Alt with a key
+
+| Shortcut | Does |
+|---|---|
+| `⌥` + `I` / `V` / `A` | One-to-one generation from **each** selected node, instead of one node |
+| `⌥` + `1`–`8` | Filter by tag — or, with generation nodes selected, connect every node carrying that tag to them |
+| `⌥` + `0` | Clear the tag filter |
+| `⌥` + `` ` `` | Toggle pick-reference mode |
+
+The multi-select toolbar shows an `⌥` badge whenever holding Alt would change what the next drag
+does, so you do not have to remember which gestures are overloaded.
+
 ## Where to go next
 
 <Columns cols={2}>
