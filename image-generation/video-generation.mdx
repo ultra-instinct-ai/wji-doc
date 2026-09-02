@@ -3,22 +3,20 @@ title: "Video generation"
 description: "Duration, first and last frames, task modes, reference video and audio, and upscaling."
 ---
 
-Switch to video mode with the icons at the top of the form. Most of the form is the same; this page
-covers what is different.
+Switch to video mode with the icons at the top of the form. Most of the form is the same; this page covers what is different.
 
 ## Duration
 
 A slider whose range comes from the model. Switching models applies that model's default.
 
-Seedance models offer **auto duration**. With it on, the slider disappears and the model decides how
-long the clip should be. The cost estimate then shows a per-second rate rather than a total, because
-the final charge depends on what the model produces.
+Seedance models offer **auto duration**. With it on, the slider disappears and the model decides how long the clip should be. The cost estimate then shows a per-second rate rather than a total, because the final charge depends on what the model produces.
 
 ## First and last frames
 
 <Frame caption="First and last frame slots">
-  <img src="/images/image-generation/frame-slots-01.png" alt="First and last frame slots both filled, with the swap control between them" />
+  ![First and last frame slots both filled, with the swap control between them](/images/Screenshot-2026-09-01-at-17.43.33.png)
 </Frame>
+
 {/* SHOT image-generation/frame-slots-01
     Screen: the frame slots in the video generation form
     Must show: both slots filled with visibly different images, the swap control, and each slot remove button
@@ -26,33 +24,27 @@ the final charge depends on what the model produces.
     UI language: English
     Size: >= 1000x600
     Anonymize: no real people
-*/}
+  */}
 
-If a model supports them, slots appear for a start image and an end image. You can upload a file,
-pick from your asset library, or take a frame from a history result. A swap button exchanges the
-two.
+If a model supports them, slots appear for a start image and an end image. You can upload a file, pick from your asset library, or take a frame from a history result. A swap button exchanges the two.
 
-Filter the video model list by *first frame* or *first and last frame* to see only models that
-support this.
+Filter the video model list by _first frame_ or _first and last frame_ to see only models that support this.
 
 ## Task modes
 
 Seedance models offer three:
 
 | Mode | What it does | Requires |
-|---|---|---|
+| --- | --- | --- |
 | **Generate** | Text to video, or multimodal reference | Nothing extra |
 | **Edit** | Modify an existing clip | At least one reference video, and edit keywords in the prompt |
 | **Extend** | Continue an existing clip | At least one reference video, and extend keywords in the prompt |
 
 <Warning>
-  Task mode and prompt wording must agree. Edit mode needs words like *edit*, *add*, *remove*, or
-  *replace* in the prompt; extend mode needs *extend* or *continue*. A generate-mode prompt
-  containing edit keywords will be rejected so it is not misclassified.
+  Task mode and prompt wording must agree. Edit mode needs words like _edit_, _add_, _remove_, or _replace_ in the prompt; extend mode needs _extend_ or _continue_. A generate-mode prompt containing edit keywords will be rejected so it is not misclassified.
 </Warning>
 
-Edit and extend mode force the aspect ratio to adaptive and hide the ratio picker. Edit mode also
-forces MOV output.
+Edit and extend mode force the aspect ratio to adaptive and hide the ratio picker. Edit mode also forces MOV output.
 
 ## Video upscaling
 
@@ -63,16 +55,12 @@ A separate capability with its own settings:
 - **Resolution** — original, 720p, 1080p, 2K, or 4K
 - **Bit depth** — 8, 10, or 12-bit
 
-Seedance results also offer HD upscaling directly from the history card, provided the original has a
-seed. The available resolutions depend on the model and the original resolution.
+Seedance results also offer HD upscaling directly from the history card, provided the original has a seed. The available resolutions depend on the model and the original resolution.
 
 ## Text to audio
 
-The fourth mode generates speech. Its settings come from the TTS model: speaker, speech rate, pitch,
-loudness, sample rate, and format.
+The fourth mode generates speech. Its settings come from the TTS model: speaker, speech rate, pitch, loudness, sample rate, and format.
 
 ## What video editing is not
 
-WJI has no timeline editor in this app, and no way to cancel a running generation. Selective
-regeneration of part of a clip exists, but only on the
-[Infinite Canvas](/infinite-canvas/video-tools).
+WJI has no timeline editor in this app, and no way to cancel a running generation. Selective regeneration of part of a clip exists, but only on the [Infinite Canvas](/infinite-canvas/video-tools).
