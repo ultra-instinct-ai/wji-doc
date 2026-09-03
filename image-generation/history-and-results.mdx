@@ -10,18 +10,18 @@ Everything you generate appears in the history below the form, newest first. Scr
 Two rows of controls:
 
 | Row | Options |
-|---|---|
+| --- | --- |
 | Scope | **All**, the current dataset's name, or **Bookmarked** |
 | Media type | **All**, **Image**, **Video**, **Audio** |
 
-A view toggle switches between list and grid. Audio only appears as an option when you are working
-in a dataset context.
+A view toggle switches between list and grid. Audio only appears as an option when you are working in a dataset context.
 
 ## What each entry shows
 
 <Frame caption="Anatomy of a history entry">
-  <img src="/images/image-generation/history-entry-01.png" alt="History entry showing mode, model, aspect ratio, seed, credits charged, final prompt, and reference thumbnails" />
+  ![History entry showing mode, model, aspect ratio, seed, credits charged, final prompt, and reference thumbnails](/images/history.png)
 </Frame>
+
 {/* SHOT image-generation/history-entry-01
     Screen: one entry in the generation history, cropped to itself
     Must show: every metadata field named in the page, especially the seed tag and the credits charged
@@ -29,7 +29,7 @@ in a dataset context.
     UI language: English
     Size: >= 1400x800
     Anonymize: no real people
-*/}
+  */}
 
 - Mode, model, aspect ratio, resolution
 - **Seed** — click it to copy
@@ -42,7 +42,7 @@ in a dataset context.
 ## Actions on an entry
 
 | Action | Notes |
-|---|---|
+| --- | --- |
 | **Bookmark** | Adds it to the bookmarked filter |
 | **Edit again** | Loads model, ratio, batch size, prompt, references, and model settings back into the form |
 | **Rerun** | Restores the settings and submits immediately, skipping prompt optimization |
@@ -53,15 +53,16 @@ in a dataset context.
 ## Actions on a single result
 
 <Frame caption="The action menu on a single result">
-  <img src="/images/image-generation/result-actions-01.png" alt="Action menu over a generated image offering download, describe, edit again, reference, frame, and save options" />
+  ![Action menu over a generated image offering download, describe, edit again, reference, frame, and save options](/images/9月1日\(16\).gif)
 </Frame>
+
 {/* SHOT image-generation/result-actions-01
     Screen: the hover action menu on one result inside the history
     Must show: the full menu, taken inside a workspace so the Save to Idea entries are present
     State: hovering a completed image result
     UI language: English
     Size: >= 900x900
-*/}
+  */}
 
 Hovering an individual image or clip gives you more:
 
@@ -76,14 +77,10 @@ You can also drag a result straight onto a canvas, or click it to open the full 
 
 ## Retrying a failure
 
-There is no retry button. Use **Rerun** on the history entry, or **Edit again** if you want to
-change something first.
+There is no retry button. Use **Rerun** on the history entry, or **Edit again** if you want to change something first.
 
-Failures show a plain-language reason. See [Troubleshooting](/reference/troubleshooting) for what
-each one means.
+Failures show a plain-language reason. See [Troubleshooting](/reference/troubleshooting) for what each one means.
 
 ## Credits
 
-The credits figure on a history entry is the **actual** charge, not the estimate. For models billed
-per second or per minute it is filled in shortly after the result completes, once the real duration
-is known.
+The credits figure on a history entry is the **actual** charge, not the estimate. For models billed per second or per minute it is filled in shortly after the result completes, once the real duration is known.

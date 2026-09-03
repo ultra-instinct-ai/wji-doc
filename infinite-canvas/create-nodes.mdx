@@ -6,15 +6,16 @@ description: "Six ways to add a node, from double-clicking the board to dragging
 ## Six entry points
 
 <Frame caption="The create panel">
-  <img src="/images/infinite-canvas/create-panel-01.png" alt="Create panel listing every node type available to place on the canvas" />
+  ![Create panel listing every node type available to place on the canvas](/images/Screenshot-2026-09-02-at-15.25.57.png)
 </Frame>
+
 {/* SHOT infinite-canvas/create-panel-01
     Screen: the create panel opened from the first capsule toolbar icon
     Must show: the full list of node types, and the Annotation grouping
     State: nothing selected on the canvas behind it
     UI language: English
     Size: >= 1000x900
-*/}
+  */}
 
 <Steps>
   <Step title="Double-click empty space">
@@ -24,16 +25,13 @@ description: "Six ways to add a node, from double-clicking the board to dragging
     Gives you **Upload**, **Create node**, and **Paste**.
   </Step>
   <Step title="The Create button">
-    First icon in the capsule toolbar. Opens the create panel; clicking a type places it at the
-    centre of your view.
+    First icon in the capsule toolbar. Opens the create panel; clicking a type places it at the centre of your view.
   </Step>
   <Step title="Drag from a connection handle">
-    Drag a node's `+` handle into empty space and release. The menu that appears creates the new
-    node **already connected**.
+    Drag a node's `+` handle into empty space and release. The menu that appears creates the new node **already connected**.
   </Step>
   <Step title="Keyboard">
-    `I`, `V`, and `A` create image, video, and audio generation nodes at the pointer. If something
-    is selected, the new node is connected to it automatically.
+    `I`, `V`, and `A` create image, video, and audio generation nodes at the pointer. If something is selected, the new node is connected to it automatically.
   </Step>
   <Step title="Drag, paste, or upload">
     See **Adding files to the canvas** below.
@@ -43,29 +41,24 @@ description: "Six ways to add a node, from double-clicking the board to dragging
 ## What the create menu offers
 
 <Frame caption="The create menu, opened by double-clicking empty space">
-  <img src="/images/infinite-canvas/create-menu-01.png" alt="Context menu on the canvas listing media node types above a divider and an Annotation submenu below" />
+  ![Context menu on the canvas listing media node types above a divider and an Annotation submenu below](/images/9月1日\(30\).gif)
 </Frame>
+
 {/* SHOT infinite-canvas/create-menu-01
     Screen: the double-click create menu open on empty canvas
     Must show: the media type list, the divider, and the Annotation submenu expanded
     State: menu opened over empty space, existing nodes visible behind
     UI language: English
     Size: >= 1000x900
-*/}
+  */}
 
-The full menu lists media types — text, table, image, panorama, video, audio, dataset, bundle,
-group — then a divider, then an **Annotation** submenu containing title, comment, task list, and
-arrow.
+The full menu lists media types — text, table, image, panorama, video, audio, dataset, bundle, group — then a divider, then an **Annotation** submenu containing title, comment, task list, and arrow.
 
-Dragging from a `+` handle gives a shorter list, because not everything makes sense as the target of
-a connection. Dataset and group are excluded. If the source is an image node with media, panorama is
-added. A **More** submenu carries describe, storyboard, depth video, video upscale, image-to-sketch,
-and character sheet.
+Dragging from a `+` handle gives a shorter list, because not everything makes sense as the target of a connection. Dataset and group are excluded. If the source is an image node with media, panorama is added. A **More** submenu carries describe, storyboard, depth video, video upscale, image-to-sketch, and character sheet.
 
 ## Adding files to the canvas
 
-You never have to upload a file somewhere else first. Drop it on the board and WJI works out what it
-is.
+You never have to upload a file somewhere else first. Drop it on the board and WJI works out what it is.
 
 ### Four ways in
 
@@ -80,15 +73,14 @@ is.
     Choose **Upload** and pick files.
   </Step>
   <Step title="A node's upload button">
-    Image, video, audio, and dataset nodes each have an upload control in their toolbar, for putting
-    a file into a node that already exists.
+    Image, video, audio, and dataset nodes each have an upload control in their toolbar, for putting a file into a node that already exists.
   </Step>
 </Steps>
 
 ### What each file type becomes
 
 | Drop this | You get |
-|---|---|
+| --- | --- |
 | An image file | An **image** node |
 | A video file — `mp4`, `mov`, `webm`, `m4v`, `mkv`, `avi` | A **video** node |
 | An audio file — `mp3`, `wav`, `m4a`, `aac`, `ogg`, `flac`, `opus`, `weba`, `webm` | An **audio** node |
@@ -96,18 +88,13 @@ is.
 | A Markdown or text document | A **text** node |
 | A YouTube link, pasted as text | A **YouTube** node |
 
-Images are recognized by type rather than by extension, so anything your browser treats as an image
-works.
+Images are recognized by type rather than by extension, so anything your browser treats as an image works.
 
 <Warning>
-  Uploads are capped at **25 MB** for images, audio, and documents, and **200 MB** for video. See
-  [Supported file types](/reference/supported-file-types) for the full limits, including the tighter
-  ones that apply to reference video.
+  Uploads are capped at **25 MB** for images, audio, and documents, and **200 MB** for video. See [Supported file types](/reference/supported-file-types) for the full limits, including the tighter ones that apply to reference video.
 </Warning>
 
-Dragging an existing **asset** rather than a file — from the asset library, from generation history,
-or from another part of the app — also creates a node. That and every other drag gesture is
-catalogued in [Drag and drop](/image-generation/drag-and-drop).
+Dragging an existing **asset** rather than a file — from the asset library, from generation history, or from another part of the app — also creates a node. That and every other drag gesture is catalogued in [Drag and drop](/image-generation/drag-and-drop).
 
 ## Pasting
 
@@ -119,15 +106,12 @@ catalogued in [Drag and drop](/image-generation/drag-and-drop).
 4. **Plain text** → a YouTube node if it is a YouTube link, otherwise a text node
 5. **Nodes you copied earlier** in WJI → pasted with their connections intact
 
-Pasting places content at the pointer if you have moved the mouse, otherwise slightly offset from
-the last paste.
+Pasting places content at the pointer if you have moved the mouse, otherwise slightly offset from the last paste.
 
 ## Table rows become nodes
 
-Dragging a connection out of a **table node** to create a non-table node creates **one connected
-node per row**. This is the fastest way to turn a shot list into a set of generation nodes.
+Dragging a connection out of a **table node** to create a non-table node creates **one connected node per row**. This is the fastest way to turn a shot list into a set of generation nodes.
 
 <Tip>
-  Paste a shot list as a table, map the column holding the prompt, then drag out from the table.
-  Every row arrives as its own generation node, already connected and already carrying its prompt.
+  Paste a shot list as a table, map the column holding the prompt, then drag out from the table. Every row arrives as its own generation node, already connected and already carrying its prompt.
 </Tip>

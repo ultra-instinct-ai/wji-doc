@@ -6,8 +6,9 @@ description: "Zoom, pan, fit the view, use the minimap, and switch rendering per
 ## Zoom
 
 <Frame caption="The viewport control bar">
-  <img src="/images/infinite-canvas/viewport-bar-01.png" alt="Viewport control bar showing undo, redo, zoom out, zoom percentage, zoom in, fit, minimap toggle, and performance mode" />
+  ![Viewport control bar showing undo, redo, zoom out, zoom percentage, zoom in, fit, minimap toggle, and performance mode](/images/9月1日\(24\).gif)
 </Frame>
+
 {/* SHOT infinite-canvas/viewport-bar-01
     Screen: close crop of the viewport control bar, bottom left of the canvas
     Must show: every button, and the zoom percentage reading a non-round value such as 87%
@@ -15,17 +16,16 @@ description: "Zoom, pan, fit the view, use the minimap, and switch rendering per
     UI language: English
     Size: >= 900x220, cropped tight
     Anonymize: none needed
-*/}
+  */}
 
 | Action | How |
-|---|---|
+| --- | --- |
 | Zoom in and out | `⌘` + scroll wheel |
 | Zoom in | `⌘ =` |
 | Zoom out | `⌘ -` |
 | Pinch | Trackpad pinch, with extra sensitivity on Mac |
 
-The zoom range is **10% to 312.5%**. The current percentage shows in the viewport control bar
-bottom left.
+The zoom range is **10% to 312.5%**. The current percentage shows in the viewport control bar bottom left.
 
 <Note>
   WJI intercepts `⌘` + scroll so the browser does not zoom the whole page instead.
@@ -42,18 +42,18 @@ Dragging a node toward the edge of the screen scrolls the canvas automatically.
 ## Framing the view
 
 | Action | Shortcut |
-|---|---|
+| --- | --- |
 | **Fit all nodes** | `Shift + Z`, or the button in the control bar |
 | **Zoom to selection** | `Tab` or `Z` |
 
-Both animate rather than jumping. When you zoom to a single generation node, the generation panel
-below it is included in the framing so you can read it.
+Both animate rather than jumping. When you zoom to a single generation node, the generation panel below it is included in the framing so you can read it.
 
 ## Minimap
 
 <Frame caption="The minimap, colored by node tag">
-  <img src="/images/infinite-canvas/minimap-01.png" alt="Minimap in the corner of the canvas showing node positions in several tag colors" />
+  ![Minimap in the corner of the canvas showing node positions in several tag colors](/images/9月1日\(28\).gif)
 </Frame>
+
 {/* SHOT infinite-canvas/minimap-01
     Screen: the minimap open, cropped to itself plus a little surrounding canvas
     Must show: at least three different tag colors so the color mapping is obvious
@@ -61,30 +61,24 @@ below it is included in the framing so you can read it.
     UI language: English
     Size: >= 800x600
     Anonymize: none needed
-*/}
+  */}
 
-Toggle it from the map icon in the control bar. It is capped at 220×140, colors nodes by their color
-tag, and clicking it navigates.
+Toggle it from the map icon in the control bar. It is capped at 220×140, colors nodes by their color tag, and clicking it navigates.
 
 ## Grid
 
-The background is a dot grid in world coordinates — 20 px spacing, scaling with zoom. It is always
-on.
+The background is a dot grid in world coordinates — 20 px spacing, scaling with zoom. It is always on.
 
 <Warning>
-  There are no snap or alignment guides while dragging. Alignment in WJI is a deliberate action you
-  apply afterwards from the multi-select toolbar, not something that happens as you move a node.
+  There are no snap or alignment guides while dragging. Alignment in WJI is a deliberate action you apply afterwards from the multi-select toolbar, not something that happens as you move a node.
 </Warning>
 
 ## Performance mode
 
-The lightning icon switches between **standard** and **fast** rendering. Fast mode hides connection
-lines and label chrome, and stops drawing connection handles below 20% zoom. On a heavy canvas it is
-the difference between smooth panning and not.
+The lightning icon switches between **standard** and **fast** rendering. Fast mode hides connection lines and label chrome, and stops drawing connection handles below 20% zoom. On a heavy canvas it is the difference between smooth panning and not.
 
 The setting is remembered.
 
 ## Viewport memory
 
-Your zoom and position are remembered per canvas, so returning to a canvas puts you back where you
-were.
+Your zoom and position are remembered per canvas, so returning to a canvas puts you back where you were.

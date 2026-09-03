@@ -8,28 +8,38 @@ Selecting a generation node opens the **generate panel** beneath it.
 ## The prompt
 
 <Frame caption="The generate panel">
-  <img src="/images/infinite-canvas/generate-panel-01.png" alt="Generate panel below a node with the prompt box, model selector, parameters button, reference list, cost estimate, and send button" />
+  <img
+    src="/images/##-The-prompt.png"
+    alt="Generate panel below a node with the prompt box, model selector, parameters button, reference list, cost estimate, and send button"
+    lightAlt="Generate panel below a node with the prompt box, model selector, parameters button, reference list, cost estimate, and send button"
+    darkAlt="Generate panel below a node with the prompt box, model selector, parameters button, reference list, cost estimate, and send button"
+    className="dark:hidden"
+  />
+  <img
+    src="images/##-The-prompt.png"
+    alt="Generate panel below a node with the prompt box, model selector, parameters button, reference list, cost estimate, and send button"
+    lightAlt="Generate panel below a node with the prompt box, model selector, parameters button, reference list, cost estimate, and send button"
+    darkAlt="Generate panel below a node with the prompt box, model selector, parameters button, reference list, cost estimate, and send button"
+    className="hidden dark:block"
+  />
 </Frame>
+
 {/* SHOT infinite-canvas/generate-panel-01
     Screen: a generation node selected with its panel open
     Must show: prompt box with placeholder or short prompt, model selector, parameters icon, reference list, and the send button carrying a credit estimate
     State: two or three references connected
     UI language: English
     Size: >= 1400x1000
-*/}
+  */}
 
-The prompt box tells you what it accepts: describe what you want, press `@` to reference an asset,
-press `/` for commands.
+The prompt box tells you what it accepts: describe what you want, press `@` to reference an asset, press `/` for commands.
 
 - **`@` mentions** address your connected references by name — `@image1`, `@video1`, `@audio1`
-- **`/`** opens the prompt preset picker, with tabs for workspace, personal, and marketplace presets.
-  Choosing one creates a text node at the pointer
+- **`/`** opens the prompt preset picker, with tabs for workspace, personal, and marketplace presets. Choosing one creates a text node at the pointer
 
 ## Improving the prompt
 
-The panel has the same two-tab arrangement as the standalone generator — your prompt, and the
-AI-optimized final prompt. You can regenerate the optimization or accept it as written. **Save as
-prompt preset** stores a prompt you want to keep.
+The panel has the same two-tab arrangement as the standalone generator — your prompt, and the AI-optimized final prompt. You can regenerate the optimization or accept it as written. **Save as prompt preset** stores a prompt you want to keep.
 
 ## The reference list
 
@@ -40,54 +50,63 @@ Everything wired into this node appears here.
 - A counter shows how many of the model's allowance you are using, for example "3 / 5"
 - Long text references have a **view full text** control
 
-For video models with frame support, first and last frame slots appear, with a swap control and
-individual remove buttons.
+For video models with frame support, first and last frame slots appear, with a swap control and individual remove buttons.
 
 ## Settings and cost
 
 <Frame caption="Generation parameters on the canvas">
-  <img src="/images/infinite-canvas/generate-params-01.png" alt="Generation parameters popover with aspect ratio, batch size, and model specific settings" />
+  <img
+    src="/images/9月1日(35).gif"
+    alt="Generation parameters popover with aspect ratio, batch size, and model specific settings"
+    lightAlt="Generation parameters popover with aspect ratio, batch size, and model specific settings"
+    darkAlt="Generation parameters popover with aspect ratio, batch size, and model specific settings"
+    className="dark:hidden"
+  />
+  <img
+    src="/images/9月1日(36).gif"
+    alt="Generation parameters popover with aspect ratio, batch size, and model specific settings"
+    lightAlt="Generation parameters popover with aspect ratio, batch size, and model specific settings"
+    darkAlt="Generation parameters popover with aspect ratio, batch size, and model specific settings"
+    className="hidden dark:block"
+  />
 </Frame>
+
 {/* SHOT infinite-canvas/generate-params-01
     Screen: the generation parameters popover open from the generate panel
     Must show: aspect ratio choices, batch size, and at least two model specific fields such as seed and resolution
     State: an image model selected
     UI language: English
     Size: >= 1000x900
-*/}
+  */}
 
-The generation parameters popover holds the same settings as the standalone generator, filtered to
-what the selected model supports. The estimated cost updates as you change things.
+The generation parameters popover holds the same settings as the standalone generator, filtered to what the selected model supports. The estimated cost updates as you change things.
 
 Press the send button to submit.
 
 ## Working in bulk
 
 <Frame caption="The bulk submit review dialog">
-  <img src="/images/infinite-canvas/bulk-review-01.png" alt="Review dialog listing each selected node with its prompt, references, model, and parameters before submitting" />
+  ![Review dialog listing each selected node with its prompt, references, model, and parameters before submitting](/images/9月1日\(38\).gif)
 </Frame>
+
 {/* SHOT infinite-canvas/bulk-review-01
     Screen: the review dialog opened by bulk submit
     Must show: at least three rows so the per-node breakdown is clear, plus the submit-all button
     State: nodes with differing reference counts so the value of reviewing is visible
     UI language: English
     Size: >= 1400x1000
-*/}
+  */}
 
-This is where the canvas pays off. Select several generation nodes and the multi-select toolbar
-gives you:
+This is where the canvas pays off. Select several generation nodes and the multi-select toolbar gives you:
 
 - **Model settings** — apply one model and its settings to every selected node of that type
 - **Improve prompt** — optimize all the prompts at once
-- **Submit** — opens a review dialog listing every node's prompt, references, model, and parameters,
-  so you can check the batch before committing, then submits them together
+- **Submit** — opens a review dialog listing every node's prompt, references, model, and parameters, so you can check the batch before committing, then submits them together
 
 <Tip>
-  The review dialog before bulk submit is the last checkpoint you get — generations cannot be
-  cancelled. Read it, especially the reference counts, before pressing submit on twenty nodes.
+  The review dialog before bulk submit is the last checkpoint you get — generations cannot be cancelled. Read it, especially the reference counts, before pressing submit on twenty nodes.
 </Tip>
 
 ## After it runs
 
-Results attach to the node. The node's history picker lets you look through every result it has
-produced and promote a different one to be the node's main output.
+Results attach to the node. The node's history picker lets you look through every result it has produced and promote a different one to be the node's main output.

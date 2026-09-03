@@ -5,31 +5,30 @@ description: "Connections are how you feed context to AI. This is the core idea 
 
 This is the page that makes the rest of the canvas make sense.
 
-**A connection into a generation node is a reference.** Everything you wire in becomes context the
-model receives.
+**A connection into a generation node is a reference.** Everything you wire in becomes context the model receives.
 
 ## Making a connection
 
 <Frame caption="Dragging from a connection handle">
-  <img src="/images/infinite-canvas/connection-handles-01.png" alt="A node with plus handles on both sides and a connection line being dragged toward a generation node" />
+  ![A node with plus handles on both sides and a connection line being dragged toward a generation node](/images/9月1日\(31\).gif)
 </Frame>
+
 {/* SHOT infinite-canvas/connection-handles-01
     Screen: mid-drag, a connection being pulled from an image node to a generation node
     Must show: both plus handles on the source node, and the in-progress line rendered green to mean the drop is valid
     State: capture mid-gesture; a second frame showing the red invalid state would also be useful
     UI language: English
     Size: >= 1400x900
-*/}
+  */}
 
 Hovering a node shows a `+` handle on each side. Drag from one to another node and release.
 
-Direction is fixed: **right is the output, left is the input**. Dragging out of a left handle simply
-flips the relationship so the result still reads right to left.
+Direction is fixed: **right is the output, left is the input**. Dragging out of a left handle simply flips the relationship so the result still reads right to left.
 
 While dragging, the line tells you whether the drop is valid:
 
 | Color | Meaning |
-|---|---|
+| --- | --- |
 | Green | This connection is allowed |
 | Red | Not allowed |
 | Grey | Not over a target yet |
@@ -38,37 +37,37 @@ While dragging, the line tells you whether the drop is valid:
 
 <Columns cols={2}>
   <Card title="Text, table, YouTube" icon="align-left">
-    Their content is **prepended to the prompt**, labelled with the node's name. This is how you give
-    a generation a script, a shot description, or a summary.
+    Their content is **prepended to the prompt**, labelled with the node's name. This is how you give a generation a script, a shot description, or a summary.
   </Card>
+
   <Card title="Image, video, audio, panorama" icon="image">
     Added as reference media, subject to the model's limits for each type.
   </Card>
+
   <Card title="Dataset and bundle" icon="folder">
     Expanded into their member assets, so one connection can carry many references.
   </Card>
+
   <Card title="First and last frames" icon="film">
     On models that support them, the frame slots are filled from connections rather than uploads.
   </Card>
 </Columns>
 
 <Note>
-  A dataset node in **content view** contributes its text; in **asset view** it contributes its
-  media. The same connection means different things depending on the node's mode.
+  A dataset node in **content view** contributes its text; in **asset view** it contributes its media. The same connection means different things depending on the node's mode.
 </Note>
 
 ## Multi-connect and fan-out
 
 | Gesture | Result |
-|---|---|
+| --- | --- |
 | Select several nodes, drag any `+` | All of them connect to the target |
 | **Alt** + drag `+` from a selection | **Fan-out** — each source gets its own new node, one to one |
 | Drag out of a table node | One connected node **per row** |
 
 The multi-select toolbar shows an `⌥` badge as a reminder that Alt switches to fan-out.
 
-You can also connect by tag: `⌥1`–`⌥8` with generation nodes selected connects every node carrying
-that tag to them.
+You can also connect by tag: `⌥1`–`⌥8` with generation nodes selected connects every node carrying that tag to them.
 
 ## What is not allowed
 
@@ -81,44 +80,41 @@ that tag to them.
 ## Fine-tuning a connection
 
 <Frame caption="The reference list on a generation node">
-  <img src="/images/infinite-canvas/reference-list-01.png" alt="Reference list showing connected assets with names, a usage counter, and drag handles for reordering" />
+  ![Reference list showing connected assets with names, a usage counter, and drag handles for reordering](/images/connection.png)
 </Frame>
+
 {/* SHOT infinite-canvas/reference-list-01
     Screen: the reference list inside an open generate panel
     Must show: at least three references with distinct names, the counter reading something like 3 / 5, and one text reference with its view full text control
     State: a mix of image and text references so both rendering styles appear
     UI language: English
     Size: >= 1200x900
-*/}
+  */}
 
 Connections carry more than "these are joined":
 
-- **Disabled assets** — for dataset and bundle sources, individual members can be excluded without
-  removing the connection
+- **Disabled assets** — for dataset and bundle sources, individual members can be excluded without removing the connection
 - **Reference role and label** — what the reference is called, which is what `@image1` addresses
 - **Frame slots** — which connection is the first frame and which is the last
 
-Manage these from the generate panel's reference list, where you can also reorder references by
-dragging.
+Manage these from the generate panel's reference list, where you can also reorder references by dragging.
 
 ## Removing a connection
 
 <Frame caption="Cutting a connection">
-  <img src="/images/infinite-canvas/cut-connection-01.png" alt="A selected connection line with the scissors button showing at its midpoint" />
+  ![A selected connection line with the scissors button showing at its midpoint](/images/9月1日\(34\).gif)
 </Frame>
+
 {/* SHOT infinite-canvas/cut-connection-01
     Screen: a connection clicked so the cut control appears
     Must show: the scissors button at the midpoint of the line, and both connected nodes
     State: one connection selected, others unselected for contrast
     UI language: English
     Size: >= 1200x700
-*/}
+  */}
 
-Click the line. A scissors button appears at its midpoint — **cut connection**. You can also select
-a connection and press `Backspace` or `Delete`. Both can be undone.
+Click the line. A scissors button appears at its midpoint — **cut connection**. You can also select a connection and press `Backspace` or `Delete`. Both can be undone.
 
 <Tip>
-  When a generation is not picking up something you expect, check the connections before rewriting
-  the prompt. A disabled dataset member or a reference dropped for exceeding the model's limit looks
-  exactly like a prompt that is not working.
+  When a generation is not picking up something you expect, check the connections before rewriting the prompt. A disabled dataset member or a reference dropped for exceeding the model's limit looks exactly like a prompt that is not working.
 </Tip>

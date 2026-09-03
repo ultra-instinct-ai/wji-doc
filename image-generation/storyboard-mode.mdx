@@ -3,8 +3,7 @@ title: "Storyboard mode"
 description: "Generate a grid of shots or multiple angles in one image, then upscale the frames you keep."
 ---
 
-Storyboard mode produces a single image divided into a grid, where each cell is a different shot or
-a different angle on the same subject.
+Storyboard mode produces a single image divided into a grid, where each cell is a different shot or a different angle on the same subject.
 
 ## Two modes
 
@@ -13,16 +12,16 @@ a different angle on the same subject.
     Each cell is a **different shot** — a sequence. Use it to block out how a scene cuts together.
   </Tab>
   <Tab title="Multi-angle">
-    Each cell is the **same subject from a different angle**. Use it for character turnarounds and
-    reference sheets.
+    Each cell is the **same subject from a different angle**. Use it for character turnarounds and reference sheets.
   </Tab>
 </Tabs>
 
 ## Layout
 
 <Frame caption="A 3x3 storyboard result">
-  <img src="/images/image-generation/storyboard-grid-01.png" alt="A single generated image divided into nine cells, each a different shot, with the per-cell upscale menu open" />
+  ![A single generated image divided into nine cells, each a different shot, with the per-cell upscale menu open](/images/角色完美融合寫實肖像-分鏡-3x3_s0IYz6DsjAmJL7zaARgjgyba.png)
 </Frame>
+
 {/* SHOT image-generation/storyboard-grid-01
     Screen: a completed storyboard result in the history
     Must show: all nine cells clearly distinct, and the upscale menu open on one of them offering 2K and 4K
@@ -30,12 +29,12 @@ a different angle on the same subject.
     UI language: English
     Size: >= 1400x1200
     Anonymize: no real people
-*/}
+  */}
 
 Three layouts, chosen from a dropdown:
 
 | Layout | Cells |
-|---|---|
+| --- | --- |
 | 2×2 | 4 |
 | 3×3 | 9 |
 | 4×4 | 16 |
@@ -46,8 +45,7 @@ Choosing a layout forces batch size to 1 — the grid is the output.
 
 ## Upscaling a cell
 
-The grid is one image, so an individual cell is only a fraction of its resolution. When you find a
-frame worth keeping, upscale it.
+The grid is one image, so an individual cell is only a fraction of its resolution. When you find a frame worth keeping, upscale it.
 
 <Steps>
   <Step title="Pick the cell">
@@ -62,18 +60,13 @@ frame worth keeping, upscale it.
 </Steps>
 
 <Note>
-  Cell upscaling requires a specific model to be available on your account. If it is missing, WJI
-  tells you rather than silently substituting a different one.
+  Cell upscaling requires a specific model to be available on your account. If it is missing, WJI tells you rather than silently substituting a different one.
 </Note>
 
 ## On the canvas
 
-The canvas has its own storyboard tools that go further — one-click 2×2, 3×3, and 4×4 grids from an
-existing image, plus a storyboard builder for assembling frames. See
-[Image presets and storyboards](/infinite-canvas/image-presets-and-storyboard).
+The canvas has its own storyboard tools that go further — one-click 2×2, 3×3, and 4×4 grids from an existing image, plus a storyboard builder for assembling frames. See [Image presets and storyboards](/infinite-canvas/image-presets-and-storyboard).
 
 <Tip>
-  Storyboard mode is at its best early, when you are deciding how a scene should be covered. Once
-  you know the shots you want, generate them individually at full resolution instead — you get more
-  control per frame and do not have to upscale afterwards.
+  Storyboard mode is at its best early, when you are deciding how a scene should be covered. Once you know the shots you want, generate them individually at full resolution instead — you get more control per frame and do not have to upscale afterwards.
 </Tip>

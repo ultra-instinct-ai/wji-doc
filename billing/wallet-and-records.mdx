@@ -8,28 +8,27 @@ Your dashboard holds the balance card; **Usage** holds the detail.
 ## The balance card
 
 <Frame caption="Credit buckets and their expiry dates">
-  <img src="/images/billing/balance-card-01.png" alt="Balance card expanded to show each credit bucket with its remaining amount and expiry date" />
+  ![Balance card expanded to show each credit bucket with its remaining amount and expiry date](/images/9月1日\(21\).gif)
 </Frame>
+
 {/* SHOT billing/balance-card-01
     Screen: the balance card on the dashboard with View details expanded
     Must show: at least three buckets with different expiry dates, so the soonest-expires-first rule has something to illustrate
     State: a mix of granted and purchased buckets
     UI language: English
     Size: >= 1000x900
-*/}
+  */}
 
-Shows your total spendable credits, a menu of top-up packages, and a promo code box.
-**View details** expands to show each credit bucket separately — how much is left in it, how much it
-started with, and when it expires.
+Shows your total spendable credits, a menu of top-up packages, and a promo code box. **View details** expands to show each credit bucket separately — how much is left in it, how much it started with, and when it expires.
 
-This matters because buckets expire at different times, and WJI spends the soonest-expiring one
-first.
+This matters because buckets expire at different times, and WJI spends the soonest-expiring one first.
 
 ## Usage
 
 <Frame caption="The consumption tab">
-  <img src="/images/billing/usage-consumption-01.png" alt="Consumption table with credit change, discount, and refund columns, and the date, model, and workspace filters" />
+  ![Consumption table with credit change, discount, and refund columns, and the date, model, and workspace filters](/images/9月1日\(22\).gif)
 </Frame>
+
 {/* SHOT billing/usage-consumption-01
     Screen: the Consumption tab of the usage page
     Must show: the filters and several rows, including at least one with a refund and one with a discount so those columns are populated
@@ -37,26 +36,21 @@ first.
     UI language: English
     Size: >= 1800x900
     Anonymize: generic workspace and operator names
-*/}
+  */}
 
 Three tabs.
 
 <Tabs>
   <Tab title="Statistics">
-    Total credits consumed and number of calls, broken down by workspace. Expanding a workspace shows
-    each person's consumption, their share, and their call count.
+    Total credits consumed and number of calls, broken down by workspace. Expanding a workspace shows each person's consumption, their share, and their call count.
   </Tab>
   <Tab title="Consumption">
-    A row per charge, with title, model, workspace, operator, description, input and output tokens,
-    **credit change**, **discount** (hover for the original price, the discounted price, the rate,
-    and where it came from), **refunds** (hover for each one), and time.
+    A row per charge, with title, model, workspace, operator, description, input and output tokens, **credit change**, **discount** (hover for the original price, the discounted price, the rate, and where it came from), **refunds** (hover for each one), and time.
 
     Filter by date range, model, and workspace.
   </Tab>
   <Tab title="Top-ups">
-    Two tables. The **credit buckets** table shows title, type (purchased, granted, or manual),
-    description, amount, remaining balance, effective time, and expiry — with "permanent" where there
-    is none. The **top-up orders** table shows ID, title, amount, status, creation time, and actions.
+    Two tables. The **credit buckets** table shows title, type (purchased, granted, or manual), description, amount, remaining balance, effective time, and expiry — with "permanent" where there is none. The **top-up orders** table shows ID, title, amount, status, creation time, and actions.
   </Tab>
 </Tabs>
 
@@ -64,12 +58,10 @@ Three tabs.
 
 The orders page lists top-up orders with the same columns, filtered by date range.
 
-Order statuses: pending, authorized, completed, cancelled, and failed. An unpaid order expires two
-hours after it is created.
+Order statuses: pending, authorized, completed, cancelled, and failed. An unpaid order expires two hours after it is created.
 
 <Warning>
-  **Subscription orders do not appear here.** Both the orders page and the top-ups tab show top-up
-  orders only. There is no view of your subscription payment history.
+  **Subscription orders do not appear here.** Both the orders page and the top-ups tab show top-up orders only. There is no view of your subscription payment history.
 </Warning>
 
 ## Receipts and exports
@@ -77,6 +69,5 @@ hours after it is created.
 A completed Stripe order offers **Download receipt**, which opens the receipt in a new tab.
 
 <Note>
-  There is no CSV, Excel, or PDF export of billing data anywhere in WJI. Individual Stripe receipts
-  are the only downloadable record.
+  There is no CSV, Excel, or PDF export of billing data anywhere in WJI. Individual Stripe receipts are the only downloadable record.
 </Note>

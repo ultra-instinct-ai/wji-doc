@@ -3,13 +3,12 @@ title: "Infinite Canvas overview"
 description: "A node-based workspace where connections carry context into every generation."
 ---
 
-The **Infinite Canvas** is a board you place nodes on and wire together. It is the app to use when
-one image is not the unit of work — when you are building a sequence, keeping a set of shots
-consistent, or assembling a cut.
+The **Infinite Canvas** is a board you place nodes on and wire together. It is the app to use when one image is not the unit of work — when you are building a sequence, keeping a set of shots consistent, or assembling a cut.
 
 <Frame caption="A canvas with connected nodes">
-  <img src="/images/infinite-canvas/overview-01.png" alt="Infinite Canvas showing image and text nodes connected into a generation node" />
+  ![Infinite Canvas showing image and text nodes connected into a generation node](/images/infinite-canvas/overview-01.png)
 </Frame>
+
 {/* SHOT infinite-canvas/overview-01
     Screen: a canvas with a small working graph
     Must show: two image nodes and one text node connected into a generation node, the capsule
@@ -19,23 +18,22 @@ consistent, or assembling a cut.
     UI language: English
     Size: >= 1600x1000
     Anonymize: generic canvas name, no real people in images
-*/}
+  */}
 
 ## The one idea that matters
 
 **A connection is not decoration. It is how context reaches the AI.**
 
-Wire an image node into a generation node and that image becomes a reference. Wire a text node in
-and its content is prepended to the prompt. Wire in a dataset and its members are expanded.
+Wire an image node into a generation node and that image becomes a reference. Wire a text node in and its content is prepended to the prompt. Wire in a dataset and its members are expanded.
 
-Once that clicks, the rest of the canvas follows. Read
-[Connections and references](/infinite-canvas/connections-and-references) before anything else.
+Once that clicks, the rest of the canvas follows. Read [Connections and references](/infinite-canvas/connections-and-references) before anything else.
 
 ## What is on screen
 
 <Frame caption="The canvas chrome: capsule toolbar, top bar, and viewport control bar">
-  <img src="/images/infinite-canvas/chrome-01.png" alt="Canvas with the capsule toolbar on the left, top bar above, and viewport control bar bottom left highlighted" />
+  ![Canvas with the capsule toolbar on the left, top bar above, and viewport control bar bottom left highlighted](/images/WJI-workspace-with-the-Infinite-Canvas-2.png)
 </Frame>
+
 {/* SHOT infinite-canvas/chrome-01
     Screen: a canvas with a few nodes, nothing selected
     Must show: the whole viewport so all three chrome areas are visible at once
@@ -43,29 +41,26 @@ Once that clicks, the rest of the canvas follows. Read
     UI language: English
     Size: >= 1600x1000
     Anonymize: generic canvas name
-*/}
+  */}
 
 | Area | Contains |
-|---|---|
+| --- | --- |
 | **Capsule toolbar**, left | Create, asset library, generation history, director bar, settings, shortcuts |
 | **Top bar** | Color tag filter, canvas switcher, search, canvas settings |
 | **Viewport control bar**, bottom left | Undo/redo, zoom, fit, minimap, performance mode |
 | **Director bar**, bottom | A timeline for assembling clips — opened from the capsule toolbar |
 | **Save status**, top left | Pending, saving, saved, or failed |
 
-Opening the canvas collapses the workspace's left panel to a narrow rail, and it stays collapsed
-while you are here.
+Opening the canvas collapses the workspace's left panel to a narrow rail, and it stays collapsed while you are here.
 
 ## The Alt key changes what a drag means
 
-Alt — **Option** on a Mac — is the modifier to learn early. Without it, dragging **moves** things.
-Hold it and the same gesture **files, duplicates, or fans out** instead. It behaves differently
-depending on what you grabbed, so it is worth seeing every case in one place.
+Alt — **Option** on a Mac — is the modifier to learn early. Without it, dragging **moves** things. Hold it and the same gesture **files, duplicates, or fans out** instead. It behaves differently depending on what you grabbed, so it is worth seeing every case in one place.
 
 ### Alt with a drag
 
 | Hold Alt and drag | Onto | Result |
-|---|---|---|
+| --- | --- | --- |
 | A node | Anywhere on the canvas | **Duplicates** it — the original stays put |
 | A node's `+` handle | Several selected nodes | **Fan-out** — one new node per source, one to one |
 | A media or text node | A **dataset node** | Files it into that dataset |
@@ -77,21 +72,19 @@ depending on what you grabbed, so it is worth seeing every case in one place.
 | An asset in the **asset library** | The canvas | Creates a node from it |
 
 <Note>
-  Drop somewhere Alt means nothing and WJI tells you where the valid targets are, rather than failing
-  silently.
+  Drop somewhere Alt means nothing and WJI tells you where the valid targets are, rather than failing silently.
 </Note>
 
 ### Alt with a key
 
 | Shortcut | Does |
-|---|---|
+| --- | --- |
 | `⌥` + `I` / `V` / `A` | One-to-one generation from **each** selected node, instead of one node |
 | `⌥` + `1`–`8` | Filter by tag — or, with generation nodes selected, connect every node carrying that tag to them |
 | `⌥` + `0` | Clear the tag filter |
-| `⌥` + `` ` `` | Toggle pick-reference mode |
+| `⌥` + ``` | Toggle pick-reference mode |
 
-The multi-select toolbar shows an `⌥` badge whenever holding Alt would change what the next drag
-does, so you do not have to remember which gestures are overloaded.
+The multi-select toolbar shows an `⌥` badge whenever holding Alt would change what the next drag does, so you do not have to remember which gestures are overloaded.
 
 ## Where to go next
 
@@ -99,12 +92,15 @@ does, so you do not have to remember which gestures are overloaded.
   <Card title="Navigating the canvas" icon="magnifying-glass" href="/infinite-canvas/navigate-the-canvas">
     Zoom, pan, fit, and the minimap.
   </Card>
+
   <Card title="Creating nodes" icon="plus" href="/infinite-canvas/create-nodes">
     Six ways to put something on the board.
   </Card>
+
   <Card title="Node types" icon="shapes" href="/infinite-canvas/node-types">
     All fourteen, and what each is for.
   </Card>
+
   <Card title="Connections and references" icon="link" href="/infinite-canvas/connections-and-references">
     The core concept. Start here.
   </Card>

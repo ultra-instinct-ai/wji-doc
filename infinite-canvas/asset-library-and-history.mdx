@@ -6,8 +6,9 @@ description: "Browse your workspace assets and pull results from generation hist
 ## The asset library
 
 <Frame caption="The asset library panel">
-  <img src="/images/infinite-canvas/asset-library-01.png" alt="Asset library showing the workspace folder tree and dataset cards with their action menus" />
+  ![Asset library showing the workspace folder tree and dataset cards with their action menus](/images/assetlibrary.png)
 </Frame>
+
 {/* SHOT infinite-canvas/asset-library-01
     Screen: the asset library opened with command-B
     Must show: the folder tree, several dataset cards with thumbnails, and one card menu open
@@ -15,43 +16,38 @@ description: "Browse your workspace assets and pull results from generation hist
     UI language: English
     Size: >= 1200x1000
     Anonymize: generic dataset names
-*/}
+  */}
 
-Open it with `⌘B` or the second icon in the capsule toolbar. It shows your workspace's folder tree
-and its datasets.
+Open it with `⌘B` or the second icon in the capsule toolbar. It shows your workspace's folder tree and its datasets.
 
 Each dataset's `⋮` menu offers:
 
 - **Edit**
 - **Switch between asset view and content view**
-- **Create image** and **Create video** — starts a generation using that dataset's image or video
-  prompt
+- **Create image** and **Create video** — starts a generation using that dataset's image or video prompt
 - **Download**
 - **Delete**
 
 You can also create folders and datasets, refresh, search, and reorder datasets by dragging.
 
-**Alt + drag** an asset from the library onto the canvas to create a node from it. Dragging a whole
-dataset card creates a dataset node.
+**Alt + drag** an asset from the library onto the canvas to create a node from it. Dragging a whole dataset card creates a dataset node.
 
 <Note>
-  The hint in the panel says it: Alt-drag to the canvas creates a node; drag onto another dataset
-  node to move the asset instead.
+  The hint in the panel says it: Alt-drag to the canvas creates a node; drag onto another dataset node to move the asset instead.
 </Note>
 
 ## Generation history
 
-The third capsule icon opens the canvas-wide history panel. It scrolls indefinitely and shows each
-result's thumbnail, prompt, type, and time. Results without a prompt are labelled as such. Clicking
-one opens the large preview.
+The third capsule icon opens the canvas-wide history panel. It scrolls indefinitely and shows each result's thumbnail, prompt, type, and time. Results without a prompt are labelled as such. Clicking one opens the large preview.
 
 This is history for the whole canvas, regardless of which node produced it.
 
 ## Node history
 
 <Frame caption="The node history picker">
-  <img src="/images/infinite-canvas/node-history-picker-01.png" alt="History picker listing every result a node has produced, with one promoted as the main output" />
+  ![History picker listing every result a node has produced, with one promoted as the main output](/images/infinite-canvas/node-history-picker-01.png)
 </Frame>
+
 {/* SHOT infinite-canvas/node-history-picker-01
     Screen: the history picker open on a media node
     Must show: four or more results so comparison is the obvious use, and a clear indication of which is current
@@ -59,15 +55,12 @@ This is history for the whole canvas, regardless of which node produced it.
     UI language: English
     Size: >= 1200x900
     Anonymize: no real people
-*/}
+  */}
 
-Media nodes have their own history picker in the toolbar. It lists every result that node has
-produced and lets you **promote a different result to be the node's main output**.
+Media nodes have their own history picker in the toolbar. It lists every result that node has produced and lets you **promote a different result to be the node's main output**.
 
 <Tip>
-  This is how you compare takes without cluttering the canvas. Generate four versions on one node,
-  then flip between them in the history picker and keep the best — rather than creating four nodes
-  and deleting three.
+  This is how you compare takes without cluttering the canvas. Generate four versions on one node, then flip between them in the history picker and keep the best — rather than creating four nodes and deleting three.
 </Tip>
 
 ## Preview dialogs
@@ -75,7 +68,7 @@ produced and lets you **promote a different result to be the node's main output*
 Depending on what you open, you get a different preview:
 
 | Node | Preview |
-|---|---|
+| --- | --- |
 | Image | Lightbox, or the full asset preview dialog |
 | Dataset | Dataset preview — reorder thumbnails, edit fields inline |
 | Bundle | Bundle preview — enable, disable, rename, reorder, remove members |

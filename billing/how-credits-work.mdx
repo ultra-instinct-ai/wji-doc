@@ -3,13 +3,12 @@ title: "How credits work"
 description: "Estimates before you generate, deductions when you submit, and the final charge."
 ---
 
-**Credits** are WJI's unit of spend. Every generation costs credits, and the amount depends on the
-model and what you asked it to produce.
+**Credits** are WJI's unit of spend. Every generation costs credits, and the amount depends on the model and what you asked it to produce.
 
 ## Where credits come from
 
 | Source | Amount |
-|---|---|
+| --- | --- |
 | **Monthly free grant** | 300 credits a month, on the anniversary of your sign-up rather than the 1st |
 | **Subscription** | 4,500 a month on VIP, 10,000 on SVIP |
 | **Top-up packages** | 3,000, 9,000, or 30,000 credits |
@@ -20,77 +19,68 @@ Credits arrive in separate buckets, and the buckets have different expiry dates.
 ## The order credits are spent in
 
 <Warning>
-  Credits are **not** spent oldest-first. WJI spends **the bucket that expires soonest**, and among
-  buckets that never expire it spends granted credits before purchased ones.
+  Credits are **not** spent oldest-first. WJI spends **the bucket that expires soonest**, and among buckets that never expire it spends granted credits before purchased ones.
 </Warning>
 
-This works in your favour — expiring credits get used before they are lost — but it does mean your
-purchased balance can sit untouched while granted credits drain.
+This works in your favour — expiring credits get used before they are lost — but it does mean your purchased balance can sit untouched while granted credits drain.
 
 ## The three stages of a charge
 
 <Frame caption="The estimate on the generate button">
-  <img src="/images/billing/cost-estimate-01.png" alt="Generate button carrying its credit estimate, beside a per-second rate shown for a model with automatic duration" />
+  ![Generate button carrying its credit estimate, beside a per-second rate shown for a model with automatic duration](/images/##-charge.png)
 </Frame>
+
 {/* SHOT billing/cost-estimate-01
     Screen: the generate button with a cost estimate
     Must show: a fixed total in one frame and, ideally as a second capture, the per-second rate a duration-based model displays instead
     State: settings that produce a non-trivial estimate
     UI language: English
     Size: >= 900x300, cropped tight
-*/}
+  */}
 
 <Steps>
   <Step title="Estimate, before you commit">
-    The generate button carries an estimated cost, recalculated as you change the model, prompt,
-    ratio, batch size, duration, or references.
+    The generate button carries an estimated cost, recalculated as you change the model, prompt, ratio, batch size, duration, or references.
   </Step>
   <Step title="Deduction, on submit">
-    Your balance drops immediately so you can see where you stand. For models billed by actual
-    duration, nothing is deducted up front — the charge waits for the result.
+    Your balance drops immediately so you can see where you stand. For models billed by actual duration, nothing is deducted up front — the charge waits for the result.
   </Step>
   <Step title="Settlement, on completion">
-    Once the result exists, WJI knows the real duration and settles the true cost. The history entry
-    then shows the actual credits charged.
+    Once the result exists, WJI knows the real duration and settles the true cost. The history entry then shows the actual credits charged.
   </Step>
 </Steps>
 
 ## Three billing modes
 
 | Mode | Used for | The estimate shows |
-|---|---|---|
+| --- | --- | --- |
 | **Fixed** | Images, and video where you chose the duration | A total |
 | **Per second** | Models where the duration is decided by the model | A rate, plus an upper bound |
 | **Per minute** | Certain video enhancement models | A rate, always settled afterwards |
 
 ## Refunds on failure
 
-A failed generation is refunded. In a batch, the refund is **proportional** — five clips requested,
-two failed, two clips' worth comes back. Refunds appear against the original charge in your records.
+A failed generation is refunded. In a batch, the refund is **proportional** — five clips requested, two failed, two clips' worth comes back. Refunds appear against the original charge in your records.
 
 <Warning>
-  This applies to the generation pipeline. In **Digital Host**, failed generations are still charged
-  and counted in the program's credit total.
+  This applies to the generation pipeline. In **Digital Host**, failed generations are still charged and counted in the program's credit total.
 </Warning>
 
 ## Where to see your balance
 
 | Place | Shows |
-|---|---|
+| --- | --- |
 | Top navigation badge | Your balance, with floating +/- animations as it changes |
 | Workspace app bar badge | The workspace's remaining allowance and limit |
 | Dashboard balance card | Total credits, and each bucket's remaining amount and expiry |
 | Usage page | Statistics, consumption, and top-ups |
 
-Inside an organization, the badge shows your spendable allowance there rather than your personal
-wallet.
+Inside an organization, the badge shows your spendable allowance there rather than your personal wallet.
 
 ## Workspace limits
 
-A workspace can carry a **total** and a **monthly** spending cap. Hitting one stops generation with a
-message saying the workspace has reached its total or monthly limit.
+A workspace can carry a **total** and a **monthly** spending cap. Hitting one stops generation with a message saying the workspace has reached its total or monthly limit.
 
 <Note>
-  For features where the cost cannot be estimated in advance, such as streaming chat, a workspace
-  that has spent exactly its limit cannot start new work — it does not need to exceed it.
+  For features where the cost cannot be estimated in advance, such as streaming chat, a workspace that has spent exactly its limit cannot start new work — it does not need to exceed it.
 </Note>

@@ -6,18 +6,23 @@ description: "Save, organize, preview, reorder, rename, and comment on the media
 ## Filing a result
 
 <Frame caption="Choosing a destination dataset">
-  <img src="/images/image-generation/move-to-dialog-01.png" alt="Tree picker for choosing the destination dataset when moving or copying assets" />
+  <img
+    src="/images/result.png"
+    alt="Tree picker for choosing the destination dataset when moving or copying assets"
+    style={{ width:"51%" }}
+  />
 </Frame>
+
 {/* SHOT image-generation/move-to-dialog-01
     Screen: the destination picker opened from Move to
     Must show: the folder tree with datasets, one selected, and the selection count at the bottom
     State: opened on a multi-selection so the count is greater than one
     UI language: English
     Size: >= 1000x900
-*/}
+  */}
 
 | Action | Where | What it does |
-|---|---|---|
+| --- | --- | --- |
 | **Save to Idea** | Result menu, workspace only | Attaches the asset to the current idea |
 | **Set as Idea cover** | Result menu | Makes it the idea's cover image |
 | **Create idea from image** | Result menu | Creates a new idea with this image attached |
@@ -25,8 +30,7 @@ description: "Save, organize, preview, reorder, rename, and comment on the media
 | **Move to** | Asset menu | Moves between datasets — removed from the source |
 | **Copy to** | Asset menu | Adds to the target and keeps the original |
 
-**Move to** and **Copy to** open a tree picker where you select the destination dataset. Both work
-on a multi-selection, and report how many items were moved or copied.
+**Move to** and **Copy to** open a tree picker where you select the destination dataset. Both work on a multi-selection, and report how many items were moved or copied.
 
 <Note>
   Moving an asset that is the source dataset's cover promotes another image to cover automatically.
@@ -35,8 +39,9 @@ on a multi-selection, and report how many items were moved or copied.
 ## Preview
 
 <Frame caption="The asset preview dialog">
-  <img src="/images/image-generation/asset-preview-01.png" alt="Asset preview dialog with the image, the info panel showing generation details, and the comments tab" />
+  ![Asset preview dialog with the image, the info panel showing generation details, and the comments tab](/images/preview.png)
 </Frame>
+
 {/* SHOT image-generation/asset-preview-01
     Screen: the asset preview dialog opened from a result
     Must show: the info panel with generation details expanded, the seed, the credits charged, both prompts, and the use-for-generation-again control
@@ -44,12 +49,12 @@ on a multi-selection, and report how many items were moved or copied.
     UI language: English
     Size: >= 1600x1000
     Anonymize: no real people, generic asset name
-*/}
+  */}
 
 Six different preview surfaces exist, each suited to a different job.
 
 | Preview | Opens from | Good for |
-|---|---|---|
+| --- | --- | --- |
 | **Lightbox** | Clicking an image | Quick look, arrow-key paging, zoom |
 | **Asset preview dialog** | The eye icon, thumbnails, history | Everything — info, generation details, comments, reuse |
 | **Dataset preview** | A canvas dataset node | Reviewing and reordering a set, editing its fields inline |
@@ -58,20 +63,17 @@ Six different preview surfaces exist, each suited to a different job.
 | **Gallery view** | Idea detail | Full-screen browsing with keyboard navigation |
 
 <Warning>
-  The lightbox is for images only. Video deliberately does not use it, because clicking would
-  trigger a download instead of playing.
+  The lightbox is for images only. Video deliberately does not use it, because clicking would trigger a download instead of playing.
 </Warning>
 
-The **asset preview dialog** is the one worth knowing well. It carries basic info, file details,
-full generation details, both prompts with copy buttons, the references used, tags, comments,
-likes, inline renaming, and **Use for generation again**.
+The **asset preview dialog** is the one worth knowing well. It carries basic info, file details, full generation details, both prompts with copy buttons, the references used, tags, comments, likes, inline renaming, and **Use for generation again**.
 
 ## Reordering
 
 Nine different lists support drag-to-reorder, and they persist in different places:
 
 | List | Persists as |
-|---|---|
+| --- | --- |
 | Datasets in the sidebar | The folder's child order |
 | Datasets in the asset library | The parent's child order |
 | Assets inside a dataset | The dataset's image order |
@@ -87,19 +89,14 @@ Nine different lists support drag-to-reorder, and they persist in different plac
 
 ## Renaming, tagging, and deleting
 
-Rename inline at the top of the asset preview dialog, or in its info panel. Tags are added in the
-same panel — type and press Enter.
+Rename inline at the top of the asset preview dialog, or in its info panel. Tags are added in the same panel — type and press Enter.
 
-Delete from the asset menu, the sidebar thumbnail popover, or the idea detail view. Deleting a
-single asset asks for confirmation; deleting a multi-selection tells you how many will go.
+Delete from the asset menu, the sidebar thumbnail popover, or the idea detail view. Deleting a single asset asks for confirmation; deleting a multi-selection tells you how many will go.
 
 ## Comments and likes
 
-Both live in the asset preview dialog, and both depend on the workspace allowing them. Hovering a
-like shows who liked it and when. See [Viewer access](/workspaces/viewer-access).
+Both live in the asset preview dialog, and both depend on the workspace allowing them. Hovering a like shows who liked it and when. See [Viewer access](/workspaces/viewer-access).
 
 ## AI description
 
-**Describe image**, **Describe video**, or **Describe audio** runs AI over the asset and returns a
-written description you can copy. On the canvas, the same feature creates a text node from the
-result.
+**Describe image**, **Describe video**, or **Describe audio** runs AI over the asset and returns a written description you can copy. On the canvas, the same feature creates a text node from the result.

@@ -6,7 +6,7 @@ description: "Select, move, duplicate, align, group, rename, resize, and color-t
 ## Selecting
 
 | Action | How |
-|---|---|
+| --- | --- |
 | Select one | Click it |
 | Add to selection | `Shift` + click, or `⌘` + click |
 | Marquee | Drag on empty space. Anything the box **touches** is selected, not only what it fully contains |
@@ -16,28 +16,23 @@ description: "Select, move, duplicate, align, group, rename, resize, and color-t
 | Clear selection | `Esc` |
 
 <Warning>
-  **Select all and select-by-tag are capped at 50 nodes.** On a large canvas you will not get
-  everything. If a color tag filter is active, select all only takes nodes carrying that tag.
+  **Select all and select-by-tag are capped at 50 nodes.** On a large canvas you will not get everything. If a color tag filter is active, select all only takes nodes carrying that tag.
 </Warning>
 
-An unselected node is selected on mouse **release**, not on press, so starting a drag does not
-trigger its panel.
+An unselected node is selected on mouse **release**, not on press, so starting a drag does not trigger its panel.
 
 ## Moving and duplicating
 
 - Drag to move
-- **Alt + drag** to duplicate — the original stays behind. Alt changes several other drags too;
-  see [the Alt key](/infinite-canvas/overview#the-alt-key-changes-what-a-drag-means)
+- **Alt + drag** to duplicate — the original stays behind. Alt changes several other drags too; see [the Alt key](/infinite-canvas/overview#the-alt-key-changes-what-a-drag-means)
 - `⌘D` duplicates the selection in place
 - `⌘C` and `⌘V` copy and paste, **including the connections between the copied nodes**
 
 ## Resizing
 
-Nodes that support it have a handle at the bottom right. Minimum sizes vary: group 120×80, text
-120×60, YouTube 240×135. Arrows are resized by dragging either endpoint.
+Nodes that support it have a handle at the bottom right. Minimum sizes vary: group 120×80, text 120×60, YouTube 240×135. Arrows are resized by dragging either endpoint.
 
-Text nodes also respond to `[` and `]`, which scale the window proportionally. With several selected,
-the spacing between them is preserved.
+Text nodes also respond to `[` and `]`, which scale the window proportionally. With several selected, the spacing between them is preserved.
 
 ## Renaming
 
@@ -46,20 +41,21 @@ the spacing between them is preserved.
 ## The multi-select toolbar
 
 <Frame caption="The multi-select toolbar">
-  <img src="/images/infinite-canvas/multi-select-toolbar-01.png" alt="Multi-select toolbar with color tag, align, group, add reference, model settings, improve prompt, submit, and download buttons" />
+  ![Multi-select toolbar with color tag, align, group, add reference, model settings, improve prompt, submit, and download buttons](/images/Screenshot-2026-09-02-at-16.35.41.png)
 </Frame>
+
 {/* SHOT infinite-canvas/multi-select-toolbar-01
     Screen: the multi-select toolbar as it slides up from the bottom
     Must show: every button in the bar, and the option-key fan-out badge on the right
     State: three or more generation nodes selected so all buttons are enabled
     UI language: English
     Size: >= 1400x400, cropped to the toolbar plus a little canvas above it
-*/}
+  */}
 
 Selecting two or more nodes slides a toolbar up from the bottom:
 
 | Button | Does |
-|---|---|
+| --- | --- |
 | <img src="/images/infinite-canvas/icons/color-tag.png" alt="Color tag icon" width="20" /> **Color tag** | Applies a tag to everything selected |
 | <img src="/images/infinite-canvas/icons/align.png" alt="Align icon" width="20" /> **Align** | Horizontal, vertical, or automatic |
 | <img src="/images/infinite-canvas/icons/group.png" alt="Group icon" width="20" /> **Group** | Wraps the selection in a group node |
@@ -75,56 +71,63 @@ Selecting two or more nodes slides a toolbar up from the bottom:
     State: the button in its normal, enabled state
     UI language: English
     Size: 64x64, exported at 2x so it stays sharp
-*/}
+  */}
+
 {/* SHOT infinite-canvas/icons/align
     Screen: close crop of the align button in the multi-select toolbar
     Must show: the icon alone, square crop, transparent or matching background
     State: the button in its normal, enabled state
     UI language: English
     Size: 64x64, exported at 2x so it stays sharp
-*/}
+  */}
+
 {/* SHOT infinite-canvas/icons/group
     Screen: close crop of the group button in the multi-select toolbar
     Must show: the icon alone, square crop, transparent or matching background
     State: the button in its normal, enabled state
     UI language: English
     Size: 64x64, exported at 2x so it stays sharp
-*/}
+  */}
+
 {/* SHOT infinite-canvas/icons/add-reference
     Screen: close crop of the add reference button in the multi-select toolbar
     Must show: the icon alone, square crop, transparent or matching background
     State: the button in its normal, enabled state
     UI language: English
     Size: 64x64, exported at 2x so it stays sharp
-*/}
+  */}
+
 {/* SHOT infinite-canvas/icons/model-settings
     Screen: close crop of the model settings button in the multi-select toolbar
     Must show: the icon alone, square crop, transparent or matching background
     State: the button in its normal, enabled state
     UI language: English
     Size: 64x64, exported at 2x so it stays sharp
-*/}
+  */}
+
 {/* SHOT infinite-canvas/icons/improve-prompt
     Screen: close crop of the improve prompt button in the multi-select toolbar
     Must show: the icon alone, square crop, transparent or matching background
     State: the button in its normal, enabled state
     UI language: English
     Size: 64x64, exported at 2x so it stays sharp
-*/}
+  */}
+
 {/* SHOT infinite-canvas/icons/submit
     Screen: close crop of the submit button in the multi-select toolbar
     Must show: the icon alone, square crop, transparent or matching background
     State: the button in its normal, enabled state
     UI language: English
     Size: 64x64, exported at 2x so it stays sharp
-*/}
+  */}
+
 {/* SHOT infinite-canvas/icons/download-selected
     Screen: close crop of the download selected button in the multi-select toolbar
     Must show: the icon alone, square crop, transparent or matching background
     State: the button in its normal, enabled state
     UI language: English
     Size: 64x64, exported at 2x so it stays sharp
-*/}
+  */}
 
 For viewers, only **Download selected** remains.
 
@@ -133,13 +136,12 @@ For viewers, only **Download selected** remains.
 Alignment is a one-off action, not a live guide:
 
 | Action | Shortcut |
-|---|---|
+| --- | --- |
 | Horizontal align | `H` |
 | Vertical align | `V` |
 | Auto align | `⌘K` |
 
-Group nodes take a 40 px margin around the selection. Dragging a group carries along any node that
-touches it.
+Group nodes take a 40 px margin around the selection. Dragging a group carries along any node that touches it.
 
 <Note>
   With two or more nodes selected, `V` means vertical align rather than "new video node".
@@ -148,36 +150,46 @@ touches it.
 ## Color tags
 
 <Frame caption="The color tag popover, with tags named">
-  <img src="/images/infinite-canvas/color-tag-popover-01.png" alt="Color tag popover showing eight colors with editable names and a clear tag option" />
+  <img
+    src="/images/##-Color-tags.png"
+    alt="Color tag popover showing eight colors with editable names and a clear tag option"
+    lightAlt="Color tag popover showing eight colors with editable names and a clear tag option"
+    darkAlt="Color tag popover showing eight colors with editable names and a clear tag option"
+    className="dark:hidden"
+  />
+  <img
+    src="/images/infinite-canvas/color-tag-popover-01.png"
+    alt="Color tag popover showing eight colors with editable names and a clear tag option"
+    lightAlt="Color tag popover showing eight colors with editable names and a clear tag option"
+    darkAlt="Color tag popover showing eight colors with editable names and a clear tag option"
+    className="hidden dark:block"
+  />
 </Frame>
+
 {/* SHOT infinite-canvas/color-tag-popover-01
     Screen: the color tag popover open from the multi-select toolbar
     Must show: all eight colors, at least three with meaningful names such as approved / needs revision / client-visible
     State: one color currently applied to the selection
     UI language: English
     Size: >= 900x800
-*/}
+  */}
 
 Eight colors, each of which can be named for the whole canvas.
 
 | Action | Shortcut |
-|---|---|
+| --- | --- |
 | Toggle a tag on the selection | `⌘1`–`⌘8` |
 | Clear tags | `⌘0` |
 | Select nodes with a tag | `Shift 1`–`Shift 8` |
 | Filter the canvas by tag | `⌥1`–`⌥8` |
 | Clear the filter | `⌥0` |
 
-Tags drive the minimap colors, the top bar filter, bulk download by tag, and what viewers are allowed
-to see.
+Tags drive the minimap colors, the top bar filter, bulk download by tag, and what viewers are allowed to see.
 
 <Tip>
-  Name your tags. "Approved", "needs revision", "client-visible" turn a color-coding habit into
-  something the whole team can read — and the visible-tag setting in viewer access then does real
-  work for you.
+  Name your tags. "Approved", "needs revision", "client-visible" turn a color-coding habit into something the whole team can read — and the visible-tag setting in viewer access then does real work for you.
 </Tip>
 
 ## What you cannot do
 
-There is no node locking, and no bring-to-front or send-to-back. Layering is fixed: group nodes
-always render behind everything else.
+There is no node locking, and no bring-to-front or send-to-back. Layering is fixed: group nodes always render behind everything else.
