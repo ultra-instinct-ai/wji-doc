@@ -8,20 +8,21 @@ Inviting is done from the organization console, and requires owner or admin righ
 ## Creating an invitation
 
 <Frame caption="Creating an organization invite">
-  <img src="/images/organizations/invite-block-01.png" alt="Invite block with the email, role, monthly limit, and permanent limit fields above the generate button" />
+  ![Invite block with the email, role, monthly limit, and permanent limit fields above the generate button](/images/invite-1.png)
 </Frame>
+
 {/* SHOT organizations/invite-block-01
     Screen: the invite block at the top of the Members and limits tab
     Must show: every field and the generate invite link button
     State: role set to member, limits left blank so the default template note applies
     UI language: English
     Size: >= 1400x600
-*/}
+  */}
 
 Open **Console → Members and limits**. The invite block sits at the top.
 
 | Field | Notes |
-|---|---|
+| --- | --- |
 | **Email** | Optional. If set, only that account can accept the invitation |
 | **Role** | Member or admin. **Owner cannot be granted by invitation** |
 | **Monthly limit** | Optional |
@@ -30,43 +31,34 @@ Open **Console → Members and limits**. The invite block sits at the top.
 Click **Generate invite link**. The link is copied to your clipboard immediately.
 
 <Warning>
-  **Copy it somewhere safe now.** There is no list of existing invitations — once you close the
-  dialog, the link cannot be retrieved.
+  **Copy it somewhere safe now.** There is no list of existing invitations — once you close the dialog, the link cannot be retrieved.
 </Warning>
 
 ## How invitations behave
 
 - They are valid for **7 days**, and this cannot be changed
 - They can be used by **more than one person** until they expire
-- An organization can have **any number of invitations open at once** — creating a new one does not
-  cancel earlier ones
+- An organization can have **any number of invitations open at once** — creating a new one does not cancel earlier ones
 - **They cannot be revoked.** If a link needs to stop working, you have to wait for it to expire
 
 <Warning>
-  WJI's invalid-invitation page says a link "may have been revoked by an administrator". That is
-  misleading — organization invitations cannot be revoked. Only expiry stops them.
+  WJI's invalid-invitation page says a link "may have been revoked by an administrator". That is misleading — organization invitations cannot be revoked. Only expiry stops them.
 </Warning>
 
-Invitations are **not emailed**. The email field only restricts who may accept; you have to send the
-link yourself.
+Invitations are **not emailed**. The email field only restricts who may accept; you have to send the link yourself.
 
 ## What the invited person sees
 
-The invitation page shows the organization's name, the role they are being given, and the monthly
-and permanent limits assigned to them. Buttons offer to accept and join, or to decline and return to
-their workspace.
+The invitation page shows the organization's name, the role they are being given, and the monthly and permanent limits assigned to them. Buttons offer to accept and join, or to decline and return to their workspace.
 
-They have to be signed in. If they are not, they are sent to sign in and returned to the invitation
-afterwards.
+They have to be signed in. If they are not, they are sent to sign in and returned to the invitation afterwards.
 
 Accepting switches them into the organization straight away.
 
-Common refusals: the invitation does not exist, has expired, has been used up, the email does not
-match their account, or they are already a member.
+Common refusals: the invitation does not exist, has expired, has been used up, the email does not match their account, or they are already a member.
 
 <Note>
-  Someone who was previously removed and then accepts a new invitation is restored, with the role and
-  limits from the new invitation.
+  Someone who was previously removed and then accepts a new invitation is restored, with the role and limits from the new invitation.
 </Note>
 
 ## Removing someone
@@ -74,6 +66,5 @@ match their account, or they are already a member.
 From the member row's `⋯` menu, choose **Remove from organization**.
 
 <Warning>
-  A member who is still the **budget owner** of a workspace cannot be removed. WJI names the
-  workspaces involved so you can reassign them first.
+  A member who is still the **budget owner** of a workspace cannot be removed. WJI names the workspaces involved so you can reassign them first.
 </Warning>
