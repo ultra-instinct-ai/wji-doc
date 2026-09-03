@@ -6,23 +6,23 @@ description: "How your work is saved, what undo covers, and what it does not."
 ## There is no save button
 
 <Frame caption="The save status capsule">
-  <img src="/images/infinite-canvas/save-status-01.png" alt="Save status capsule at the top left of the canvas showing the saved state" />
+  ![Save status capsule at the top left of the canvas showing the saved state](/images/9月1日\(46\).gif)
 </Frame>
+
 {/* SHOT infinite-canvas/save-status-01
     Screen: close crop of the save status capsule, top left of the canvas
     Must show: the capsule clearly. Capture the saving and saved states as two frames if you can, and use the saved one here
     State: after an edit has been written
     UI language: English
     Size: >= 700x200, cropped tight
-*/}
+  */}
 
-The canvas saves itself. Changes are batched and written after about 1.5 seconds of inactivity, and
-at most 3 seconds during continuous editing.
+The canvas saves itself. Changes are batched and written after about 1.5 seconds of inactivity, and at most 3 seconds during continuous editing.
 
 A status capsule at the top left shows where you are:
 
 | Status | Meaning |
-|---|---|
+| --- | --- |
 | **Pending** | Changes are queued |
 | **Saving** | Being written |
 | **Saved** | Everything is stored |
@@ -33,43 +33,35 @@ Closing the tab or leaving the canvas forces a final save first.
 ## Undo has limits worth knowing
 
 <Warning>
-  Undo holds **40 steps**, lives **only in the current session**, and is **cleared when you switch
-  canvases**. Reloading the page empties it.
+  Undo holds **40 steps**, lives **only in the current session**, and is **cleared when you switch canvases**. Reloading the page empties it.
 </Warning>
 
 More importantly, undo does not cover everything.
 
 <Columns cols={2}>
   <Card title="Can be undone" icon="rotate-left">
-    Moving nodes · Resizing · Resizing a text window · Aligning · Deleting nodes · Deleting a
-    connection · Making a connection · Setting a color tag · Editing text · Editing an annotation
+    Moving nodes · Resizing · Resizing a text window · Aligning · Deleting nodes · Deleting a connection · Making a connection · Setting a color tag · Editing text · Editing an annotation
   </Card>
+
   <Card title="Cannot be undone" icon="ban">
-    Creating a node · Pasting · Duplicating · Uploading · AI generation results · Creating a group ·
-    Creating or deleting a canvas
+    Creating a node · Pasting · Duplicating · Uploading · AI generation results · Creating a group · Creating or deleting a canvas
   </Card>
 </Columns>
 
-The practical consequence: if you paste twenty nodes by accident, `⌘Z` will not take them back. You
-have to select and delete them — and *that* deletion is undoable.
+The practical consequence: if you paste twenty nodes by accident, `⌘Z` will not take them back. You have to select and delete them — and _that_ deletion is undoable.
 
-`⌘Z` undoes, `⌘⇧Z` redoes (`Ctrl+Y` also works on Windows). The viewport control bar has buttons for
-both.
+`⌘Z` undoes, `⌘⇧Z` redoes (`Ctrl+Y` also works on Windows). The viewport control bar has buttons for both.
 
 ## Real-time sync
 
-Canvases sync between people working on them. Incoming changes from teammates are applied to your
-board without a refresh.
+Canvases sync between people working on them. Incoming changes from teammates are applied to your board without a refresh.
 
-WJI holds an incoming change back briefly if you are mid-interaction, and ignores the echo of your
-own writes, so a teammate's edit does not interrupt a drag you are in the middle of.
+WJI holds an incoming change back briefly if you are mid-interaction, and ignores the echo of your own writes, so a teammate's edit does not interrupt a drag you are in the middle of.
 
 <Note>
-  There are no presence indicators — no cursors, no avatars, no highlight showing what a teammate
-  has selected. You see the results of their edits, not their pointer.
+  There are no presence indicators — no cursors, no avatars, no highlight showing what a teammate has selected. You see the results of their edits, not their pointer.
 </Note>
 
 ## What is not stored
 
-Undo history and your current selection are session-only. Viewport position, performance mode, and
-panel widths are remembered locally in your browser, per canvas.
+Undo history and your current selection are session-only. Viewport position, performance mode, and panel widths are remembered locally in your browser, per canvas.

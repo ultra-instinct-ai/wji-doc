@@ -3,14 +3,14 @@ title: "Managing canvases"
 description: "Create, rename, reorder, search, configure, and delete canvases."
 ---
 
-A workspace can hold as many canvases as you need. The switcher sits at the right of the top bar and
-shows the current canvas name.
+A workspace can hold as many canvases as you need. The switcher sits at the right of the top bar and shows the current canvas name.
 
 ## The switcher
 
 <Frame caption="The canvas switcher">
-  <img src="/images/infinite-canvas/canvas-switcher-01.png" alt="Canvas switcher listing several canvases with search, reorder handles, and a new canvas action" />
+  ![Canvas switcher listing several canvases with search, reorder handles, and a new canvas action](/images/##-switcher.png)
 </Frame>
+
 {/* SHOT infinite-canvas/canvas-switcher-01
     Screen: the canvas switcher dropdown open from the top bar
     Must show: four or more canvases with meaningful names, the search field, the reorder handles, and the per-row gear
@@ -18,7 +18,7 @@ shows the current canvas name.
     UI language: English
     Size: >= 1000x900
     Anonymize: generic canvas names such as Act one, Act two
-*/}
+  */}
 
 Opening it gives you:
 
@@ -32,40 +32,36 @@ The current canvas is reflected in the URL, so you can link straight to one.
 ## Canvas settings
 
 | Section | Contains |
-|---|---|
+| --- | --- |
 | **Canvas info** | Creation time |
-| **Name** | |
+| **Name** |  |
 | **Generation defaults** | Default image model, default video model, aspect ratio (16:9, 9:16, 21:9) |
 | **Text node font size** | Small, standard, large, or extra large |
 | **Danger zone** | Delete canvas |
 
-Generation defaults are per canvas, not per workspace. That is more useful than it sounds — a canvas
-for vertical social cuts and a canvas for 21:9 hero shots can sit in the same workspace with
-different defaults.
+Generation defaults are per canvas, not per workspace. That is more useful than it sounds — a canvas for vertical social cuts and a canvas for 21:9 hero shots can sit in the same workspace with different defaults.
 
 ## Filtering by color tag
 
 <Frame caption="Filtering the canvas by color tag">
-  <img src="/images/infinite-canvas/tag-filter-01.png" alt="Color tag filter in the top bar listing each tag with its name, node count, and a download action" />
+  ![Color tag filter in the top bar listing each tag with its name, node count, and a download action](/images/##-Filtering-by-color-tag.png)
 </Frame>
+
 {/* SHOT infinite-canvas/tag-filter-01
     Screen: the color tag filter dropdown open from the left of the top bar
     Must show: the All entry plus several named tags with node counts, and the download-this-tag action revealed on hover
     State: tags named as workflow states
     UI language: English
     Size: >= 900x800
-*/}
+  */}
 
-The left of the top bar has the color tag filter: **All**, plus the eight tags with their names and
-node counts. Hovering a tag reveals **download all assets with this tag**.
+The left of the top bar has the color tag filter: **All**, plus the eight tags with their names and node counts. Hovering a tag reveals **download all assets with this tag**.
 
-Filtering changes what select-all picks up, so tag-then-filter-then-select-all is a practical way to
-work on a subset of a busy canvas.
+Filtering changes what select-all picks up, so tag-then-filter-then-select-all is a practical way to work on a subset of a busy canvas.
 
 ## Organizing across canvases
 
-There is no move-between-canvases command. To carry work across, copy the nodes with `⌘C`, switch
-canvas, and paste with `⌘V` — connections between the copied nodes come with them.
+There is no move-between-canvases command. To carry work across, copy the nodes with `⌘C`, switch canvas, and paste with `⌘V` — connections between the copied nodes come with them.
 
 <Warning>
   Undo history is cleared when you switch canvases. Anything you want to undo, undo before you leave.
@@ -76,7 +72,5 @@ canvas, and paste with `⌘V` — connections between the copied nodes come with
 From canvas settings, in the danger zone. Deletion asks for confirmation.
 
 <Tip>
-  Canvases are cheap. Rather than letting one board grow to a thousand nodes, split by sequence or by
-  act and use the switcher. Performance stays better, select-all's 50-node cap stops being a
-  problem, and viewer access can be granted one canvas at a time.
+  Canvases are cheap. Rather than letting one board grow to a thousand nodes, split by sequence or by act and use the switcher. Performance stays better, select-all's 50-node cap stops being a problem, and viewer access can be granted one canvas at a time.
 </Tip>

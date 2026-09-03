@@ -6,8 +6,9 @@ description: "Trim, capture frames, regenerate a section, upscale, and create pa
 ## Local tools
 
 <Frame caption="A video node and its toolbar">
-  <img src="/images/infinite-canvas/video-node-toolbar-01.png" alt="Video node with a toolbar offering trim, frame capture, selective regeneration, preview switching, and director bar" />
+  ![Video node with a toolbar offering trim, frame capture, selective regeneration, preview switching, and director bar](/images/localtools.png)
 </Frame>
+
 {/* SHOT infinite-canvas/video-node-toolbar-01
     Screen: a selected video node showing a frame of its clip
     Must show: the complete node toolbar with every icon legible
@@ -15,12 +16,12 @@ description: "Trim, capture frames, regenerate a section, upscale, and create pa
     UI language: English
     Size: >= 1200x900
     Anonymize: no real people in the clip
-*/}
+  */}
 
 These run in your browser and do not cost credits.
 
 | Tool | Node | Does |
-|---|---|---|
+| --- | --- | --- |
 | **Trim** | Video, audio | Shortens the clip |
 | **Capture frame** | Video | Takes a still, as a new image node |
 | **Crop** | Image | Standard cropping |
@@ -31,15 +32,16 @@ These run in your browser and do not cost credits.
 ## Selective regeneration
 
 <Frame caption="Selective regeneration, with all four previews">
-  <img src="/images/infinite-canvas/selective-edit-01.png" alt="Video node offering preview switching between original, segment, generated replacement, and stitched result" />
+  ![Video node offering preview switching between original, segment, generated replacement, and stitched result](/images/9月1日\(42\).gif)
 </Frame>
+
 {/* SHOT infinite-canvas/selective-edit-01
     Screen: a video node after a selective regeneration has completed
     Must show: the four preview options, and the stitch control
     State: a finished selective edit, not one still running
     UI language: English
     Size: >= 1200x900
-*/}
+  */}
 
 The most useful video feature on the canvas: regenerate **part** of a clip and stitch it back.
 
@@ -51,30 +53,25 @@ The most useful video feature on the canvas: regenerate **part** of a clip and s
     WJI uploads the segment and regenerates it in edit mode.
   </Step>
   <Step title="Review the four tracks">
-    The node can preview the original, the segment, the generated replacement, and the stitched
-    result.
+    The node can preview the original, the segment, the generated replacement, and the stitched result.
   </Step>
   <Step title="Stitch">
-    **Stitch full video** joins it back together. The result can be added to the director bar as the
-    stitched clip, the generated segment alone, or the before-and-after arrangement.
+    **Stitch full video** joins it back together. The result can be added to the director bar as the stitched clip, the generated segment alone, or the before-and-after arrangement.
   </Step>
 </Steps>
 
-Selective editing requires a model that supports it. The status runs through pending, running, done,
-and failed.
+Selective editing requires a model that supports it. The status runs through pending, running, done, and failed.
 
 ## AI video tools
 
 | Tool | Notes |
-|---|---|
+| --- | --- |
 | **Depth video** | Requires a depth model to be available |
 | **Video upscale** | Creates an upscale generation node |
 | **Generate panorama** | Turns an image into a 360° panorama, viewable in the panorama viewer |
 
-If a required model is not available on your account, WJI names the missing model rather than
-failing quietly.
+If a required model is not available on your account, WJI names the missing model rather than failing quietly.
 
 ## The panorama viewer
 
-Panorama nodes open a dedicated viewer, either by double-clicking or from the toolbar. The viewer can
-export the current view as a JPEG.
+Panorama nodes open a dedicated viewer, either by double-clicking or from the toolbar. The viewer can export the current view as a JPEG.

@@ -3,55 +3,56 @@ title: "Image presets and storyboards"
 description: "One-click sketches, character sheets, storyboard grids, and multi-angle sets."
 ---
 
-Image, dataset, and bundle nodes carry a set of one-click generation presets. Each one is a prepared
-prompt applied to the node's image, so you do not have to write it yourself.
+Image, dataset, and bundle nodes carry a set of one-click generation presets. Each one is a prepared prompt applied to the node's image, so you do not have to write it yourself.
 
 ## The ten presets
 
 <Frame caption="Storyboard tools and generation presets on an image node">
-  <img src="/images/infinite-canvas/preset-menu-01.png" alt="Menu on an image node listing sketch, character sheet, storyboard grid, and multi-angle presets" />
+  ![Menu on an image node listing sketch, character sheet, storyboard grid, and multi-angle presets](/images/presets.png)
 </Frame>
+
 {/* SHOT infinite-canvas/preset-menu-01
     Screen: the storyboard tools or generation presets menu open on an image node
     Must show: every preset entry, including all three grid sizes for both storyboard and multi-angle
     State: an image node with media selected
     UI language: English
     Size: >= 1100x900
-*/}
+  */}
 
 <Columns cols={2}>
   <Card title="Image to sketch" icon="pencil">
     Turns a finished image into a line drawing.
   </Card>
+
   <Card title="Character sheets" icon="user">
     Three variants: a base sheet, an expressions sheet, and a lighting-setup sheet.
   </Card>
+
   <Card title="Storyboard grids" icon="table-cells">
     2×2, 3×3, and 4×4. Each cell is a different shot, using a prepared cinematic storyboard prompt.
   </Card>
+
   <Card title="Multi-angle grids" icon="cube">
     2×2, 3×3, and 4×4. Each cell is the same subject from a different angle.
   </Card>
 </Columns>
 
-Find them under **Storyboard tools** and **Generation presets** on the node toolbar, or under
-**More** when you drag out from a `+` handle.
+Find them under **Storyboard tools** and **Generation presets** on the node toolbar, or under **More** when you drag out from a `+` handle.
 
-**Presets work on a multi-selection.** Select a row of character images and generate character
-sheets for all of them in one action.
+**Presets work on a multi-selection.** Select a row of character images and generate character sheets for all of them in one action.
 
 ## Storyboards from text
 
-A text node can produce a storyboard grid directly, without an image to work from. The node's
-content becomes the shot description.
+A text node can produce a storyboard grid directly, without an image to work from. The node's content becomes the shot description.
 
 If the text node is empty you are told so rather than getting an empty grid.
 
 ## The storyboard builder
 
 <Frame caption="The storyboard builder">
-  <img src="/images/infinite-canvas/storyboard-builder-01.png" alt="Storyboard builder dialog with available frames on one side and a reorderable selection on the other" />
+  ![Storyboard builder dialog with available frames on one side and a reorderable selection on the other](/images/9月1日\(39\).gif)
 </Frame>
+
 {/* SHOT infinite-canvas/storyboard-builder-01
     Screen: the storyboard builder open from an image or dataset node
     Must show: the frame filter, the pool of frames, and four or more frames dragged into the selection in order
@@ -59,26 +60,20 @@ If the text node is empty you are told so rather than getting an empty grid.
     UI language: English
     Size: >= 1600x1000
     Anonymize: no real people
-*/}
+  */}
 
-Opened from an image, dataset, or bundle node, the **storyboard builder** is a dialog for assembling
-frames rather than generating one grid.
+Opened from an image, dataset, or bundle node, the **storyboard builder** is a dialog for assembling frames rather than generating one grid.
 
-Inside it you can filter the available frames, drag frames into a selection, and reorder that
-selection by dragging. When you finish, generated images are placed as new image nodes just to the
-right of the source node.
+Inside it you can filter the available frames, drag frames into a selection, and reorder that selection by dragging. When you finish, generated images are placed as new image nodes just to the right of the source node.
 
 ## Upscaling a cell
 
-Grid cells are a fraction of the full image's resolution. Each cell's menu offers **Upscale to 2K**
-and **Upscale to 4K**, which crops that cell and regenerates it at size.
+Grid cells are a fraction of the full image's resolution. Each cell's menu offers **Upscale to 2K** and **Upscale to 4K**, which crops that cell and regenerates it at size.
 
 <Note>
-  Cell upscaling depends on a specific model being available to your account. If it is missing, WJI
-  says so rather than substituting another model.
+  Cell upscaling depends on a specific model being available to your account. If it is missing, WJI says so rather than substituting another model.
 </Note>
 
 <Tip>
-  Generate a 3×3 storyboard to decide coverage, pick the two or three frames that work, upscale
-  those, and throw the rest away. Grids are for deciding, not for delivering.
+  Generate a 3×3 storyboard to decide coverage, pick the two or three frames that work, upscale those, and throw the rest away. Grids are for deciding, not for delivering.
 </Tip>
