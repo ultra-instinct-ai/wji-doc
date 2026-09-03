@@ -3,8 +3,7 @@ title: "Reference images"
 description: "Add references, label them by type, and understand the per-model limits."
 ---
 
-References are how you keep a character looking like the same person across a hundred shots. They
-matter more than prompt wording for consistency.
+References are how you keep a character looking like the same person across a hundred shots. They matter more than prompt wording for consistency.
 
 ## Six ways to add one
 
@@ -32,8 +31,9 @@ matter more than prompt wording for consistency.
 ## Reference types
 
 <Frame caption="Reference images with their types set">
-  <img src="/images/image-generation/reference-block-01.png" alt="Reference block with several cards, each labelled by type such as character, location, and style" />
+  ![Reference block with several cards, each labelled by type such as character, location, and style](/images/reference.png)
 </Frame>
+
 {/* SHOT image-generation/reference-block-01
     Screen: the unified reference block in the generation form
     Must show: at least three references with different types, their names, and the add control
@@ -41,12 +41,12 @@ matter more than prompt wording for consistency.
     UI language: English
     Size: >= 1200x700
     Anonymize: no real people in the reference images
-*/}
+  */}
 
 Every reference carries a type. Set it by clicking the card.
 
 | Type | Use for |
-|---|---|
+| --- | --- |
 | **Character** | People |
 | **Location** | Places and sets |
 | **Outfit** | Clothing |
@@ -55,16 +55,13 @@ Every reference carries a type. Set it by clicking the card.
 | **Layout** | Composition |
 | **Other** | Anything else |
 
-References pulled from a dataset inherit their type automatically, which is a good reason to keep
-your idea types accurate.
+References pulled from a dataset inherit their type automatically, which is a good reason to keep your idea types accurate.
 
-Each reference can also be named. Names default to `image1`, `image2` and so on, and are what you
-address with `@` mentions in the prompt.
+Each reference can also be named. Names default to `image1`, `image2` and so on, and are what you address with `@` mentions in the prompt.
 
 ## Limits
 
-**The maximum number of references is set by the model, not by WJI.** When you exceed it, new
-references are added at the end and the oldest ones are dropped from the front.
+**The maximum number of references is set by the model, not by WJI.** When you exceed it, new references are added at the end and the oldest ones are dropped from the front.
 
 Vertex-protocol models cap a single reference image at 20 MB.
 
@@ -73,7 +70,7 @@ Vertex-protocol models cap a single reference image at 20 MB.
 In video mode you can also add reference video and audio.
 
 | Constraint | Value |
-|---|---|
+| --- | --- |
 | Format | MP4 or MOV |
 | Default maximum | 3 clips |
 | Duration | 2–15 seconds, extended to 30 on some models |
@@ -88,12 +85,8 @@ In video mode you can also add reference video and audio.
 
 ## Weights
 
-There is a single **reference weight** slider applying to all references at once, not one per image.
-Midjourney-family models add separate image weight and style reference weight controls in the
-model-specific settings.
+There is a single **reference weight** slider applying to all references at once, not one per image. Midjourney-family models add separate image weight and style reference weight controls in the model-specific settings.
 
 ## On the canvas
 
-The Infinite Canvas does not use an upload list. References come from **connections** — you wire an
-image, video, or audio node into a generation node and it becomes a reference. See
-[Connections and references](/infinite-canvas/connections-and-references).
+The Infinite Canvas does not use an upload list. References come from **connections** — you wire an image, video, or audio node into a generation node and it becomes a reference. See [Connections and references](/infinite-canvas/connections-and-references).
