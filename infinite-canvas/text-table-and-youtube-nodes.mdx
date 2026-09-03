@@ -8,66 +8,60 @@ Three node types carry their own AI assistants. All of them can take connected r
 ## Text nodes
 
 <Frame caption="A text node and its toolbar">
-  <img src="/images/infinite-canvas/text-node-toolbar-01.png" alt="Text node showing rendered Markdown with a toolbar offering AI assistant, formatting, import, and download" />
+  ![Text node showing rendered Markdown with a toolbar offering AI assistant, formatting, import, and download](/images/##-Text-nodes.png)
 </Frame>
+
 {/* SHOT infinite-canvas/text-node-toolbar-01
     Screen: a selected text node with real prose in it
     Must show: the full node toolbar with every icon, and enough body text that the Markdown rendering is visible
     State: node selected, not in edit mode
     UI language: English
     Size: >= 1200x900
-*/}
+  */}
 
 <Tabs>
   <Tab title="AI assistant">
-    The toolbar's AI button takes an instruction and produces a **new** node — text or table. You can
-    ask for multiple outputs, and choose which agent handles it.
+    The toolbar's AI button takes an instruction and produces a **new** node — text or table. You can ask for multiple outputs, and choose which agent handles it.
   </Tab>
   <Tab title="Generate and replace">
-    The text generate panel rewrites or expands the text **in place**. Its prompt box explains that
-    you can connect images, video, audio, and text nodes as references.
+    The text generate panel rewrites or expands the text **in place**. Its prompt box explains that you can connect images, video, audio, and text nodes as references.
 
     If you connect a video reference, you are asked to pick an agent with video understanding.
   </Tab>
 </Tabs>
 
-Text nodes also handle documents: **import a document** to replace the content, and download the
-content as Markdown, plain text, or Word.
+Text nodes also handle documents: **import a document** to replace the content, and download the content as Markdown, plain text, or Word.
 
 ## Table nodes
 
 <Frame caption="Column mapping on a table node">
-  <img src="/images/infinite-canvas/table-field-mapping-01.png" alt="Table node with the field mapping control showing which column is the text and which is the prompt" />
+  ![Table node with the field mapping control showing which column is the text and which is the prompt](/images/table.png)
 </Frame>
+
 {/* SHOT infinite-canvas/table-field-mapping-01
     Screen: a table node holding a short shot list, with the field mapping control open
     Must show: at least four rows of real-looking shot data, and the prompt column clearly mapped
     State: mapping panel open over the table
     UI language: English
     Size: >= 1400x900
-*/}
+  */}
 
 | Action | Result |
-|---|---|
+| --- | --- |
 | **Edit table** | Add and remove rows and columns, reorder rows, validate column names |
 | **AI assistant** | Produces a text node from the table |
 | **AI table generation** | Rewrites the table in place |
 | **Field mapping** | Choose which column is the text, which is the prompt, and which rows are included |
 | **Upload a table file** | From a text node's toolbar, creates a new table node |
 
-Field mapping is what makes a table useful: it tells WJI which column to treat as the prompt when
-you drag connections out of the table to create one generation node per row.
+Field mapping is what makes a table useful: it tells WJI which column to treat as the prompt when you drag connections out of the table to create one generation node per row.
 
 ## YouTube nodes
 
 Paste a YouTube link onto the canvas and a YouTube node appears with the video embedded.
 
-Its AI assistant takes an instruction — summarize, rewrite, turn into a script — and produces a text
-node named after the video. It requires an agent with video understanding, so the automatic agent is
-not offered.
+Its AI assistant takes an instruction — summarize, rewrite, turn into a script — and produces a text node named after the video. It requires an agent with video understanding, so the automatic agent is not offered.
 
 <Tip>
-  A common workflow: paste a reference video from YouTube, ask the assistant for a shot-by-shot
-  breakdown, then drag out of the resulting text node to create generation nodes that already carry
-  the description as context.
+  A common workflow: paste a reference video from YouTube, ask the assistant for a shot-by-shot breakdown, then drag out of the resulting text node to create generation nodes that already carry the description as context.
 </Tip>
